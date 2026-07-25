@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+.kabsa{
+  --navy-950:#042C53;
+  --navy-900:#0C447C;
+  --navy-700:#185FA5;
+  --navy-100:#E6F1FB;
+  --bordeaux:#A32D2D;
+  --bordeaux-700:#791F1F;
+  --paper:#F1EFE8;
+  --ink:#20242B;
+  --grey-500:#6B7280;
+  --grey-200:#D9D6CC;
+  --display:'Oswald',system-ui,sans-serif;
+  --body:'Inter',system-ui,sans-serif;
+  --wrap:1180px;
+  --r:10px;
+  font-family:var(--body);
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.kabsa *{box-sizing:border-box}
+.kabsa a{color:inherit;text-decoration:none}
+.kabsa button{font:inherit;cursor:pointer}
+.kabsa img,.kabsa svg{display:block}
+.kabsa .wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.kabsa .eyebrow{font-family:var(--display);text-transform:uppercase;letter-spacing:.18em;font-weight:500;font-size:.72rem;color:var(--navy-700)}
+
+/* header */
+.kabsa header{position:sticky;top:0;z-index:50;background:var(--navy-950);border-bottom:2px solid var(--bordeaux)}
+.kabsa .bar{display:flex;align-items:center;gap:18px;padding:10px 24px;max-width:var(--wrap);margin:0 auto;position:relative}
+.kabsa .brand{display:flex;align-items:center;gap:12px;margin-right:auto}
+.kabsa .brand .name{font-family:var(--display);color:#fff;line-height:1}
+.kabsa .brand .name b{display:block;font-weight:700;font-size:1.15rem;letter-spacing:.04em}
+.kabsa .brand .name span{display:block;font-weight:400;font-size:.62rem;letter-spacing:.22em;color:#9DC2E8;text-transform:uppercase;margin-top:3px}
+.kabsa nav{display:flex;gap:4px;flex-wrap:wrap}
+.kabsa nav a{font-family:var(--display);text-transform:uppercase;letter-spacing:.06em;font-size:.8rem;font-weight:500;color:#CFE0F2;padding:8px 12px;border-radius:20px;transition:background .18s,color .18s}
+.kabsa nav a:hover{background:var(--navy-700);color:#fff}
+.kabsa nav a.cta{background:var(--bordeaux);color:#fff}
+.kabsa nav a.cta:hover{background:var(--bordeaux-700)}
+.kabsa .burger{display:none;background:none;border:0;color:#fff;font-size:1.6rem;line-height:1}
+
+/* hero */
+.kabsa .hero{background:linear-gradient(180deg,var(--navy-950),var(--navy-900));color:#fff;padding:34px 0 44px}
+.kabsa .hero .wrap{display:grid;grid-template-columns:200px 1fr 220px;gap:24px}
+.kabsa .hero .eyebrow{color:#9DC2E8}
+.kabsa .col-label{font-family:var(--display);text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;color:#9DC2E8;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.kabsa .col-label::after{content:"";flex:1;height:1px;background:rgba(157,194,232,.35)}
+
+.kabsa .rail{display:flex;flex-direction:column;gap:10px}
+.kabsa .rail .col-label{width:100%}
+.kabsa .svc{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid rgba(157,194,232,.22);color:#fff;font-family:var(--display);text-transform:uppercase;letter-spacing:.05em;font-weight:500;font-size:.92rem;padding:13px 14px;border-radius:var(--r);transition:.18s;text-align:left}
+.kabsa .svc:hover{background:var(--navy-700);border-color:var(--navy-700);transform:translateX(3px)}
+.kabsa .svc.accent{background:var(--bordeaux);border-color:var(--bordeaux)}
+.kabsa .svc.accent:hover{background:var(--bordeaux-700)}
+.kabsa .svc .ic{font-size:1.05rem;width:20px;text-align:center;opacity:.9}
+
+.kabsa .center h1{font-family:var(--display);font-weight:600;font-size:2.5rem;line-height:1.04;letter-spacing:.01em;margin:2px 0 14px}
+.kabsa .center h1 em{font-style:normal;color:#FF9E7A}
+.kabsa .center .lead{color:#D5E4F5;max-width:52ch;font-size:1.02rem}
+.kabsa .featured{margin-top:20px;position:relative;border-radius:14px;overflow:hidden;aspect-ratio:16/9;background:radial-gradient(120% 120% at 30% 20%,#0C447C 0%,#042C53 70%);border:1px solid rgba(157,194,232,.25);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px}
+.kabsa .play{width:70px;height:70px;border-radius:50%;background:var(--bordeaux);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(163,45,45,.5);transition:.2s}
+.kabsa .featured:hover .play{transform:scale(1.06);background:var(--bordeaux-700)}
+.kabsa .play svg{width:26px;height:26px;margin-left:4px}
+.kabsa .featured .cap{font-family:var(--display);text-transform:uppercase;letter-spacing:.14em;font-size:.8rem;color:#B7CFEA}
+.kabsa .featured .soon{position:absolute;top:12px;left:12px;background:rgba(255,255,255,.12);color:#DCE9F7;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;font-family:var(--display);padding:4px 10px;border-radius:20px}
+
+.kabsa .vlist{display:flex;flex-direction:column;gap:10px}
+.kabsa .vitem{display:flex;gap:10px;align-items:center;background:rgba(255,255,255,.05);border:1px solid rgba(157,194,232,.18);border-radius:10px;padding:8px;cursor:pointer;transition:.18s}
+.kabsa .vitem:hover{background:rgba(255,255,255,.1)}
+.kabsa .vthumb{width:62px;height:42px;flex:0 0 auto;border-radius:6px;background:linear-gradient(135deg,#185FA5,#0C447C);display:flex;align-items:center;justify-content:center}
+.kabsa .vthumb svg{width:16px;height:16px}
+.kabsa .vitem .vt{font-size:.82rem;color:#EAF2FB;font-weight:500;line-height:1.25}
+.kabsa .vitem .vs{font-size:.68rem;color:#9DC2E8}
+
+/* values */
+.kabsa .values{background:#fff;padding:46px 0}
+.kabsa .values .wrap{text-align:center}
+.kabsa .values .stars{display:flex;justify-content:center;gap:10px;margin-bottom:8px;color:var(--bordeaux)}
+.kabsa .values .stars svg{width:16px;height:16px}
+.kabsa .values .stars svg:nth-child(2){width:22px;height:22px;margin-top:-4px}
+.kabsa .values h2{font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;font-size:1.5rem;font-weight:600;color:var(--navy-900);margin-bottom:26px}
+.kabsa .triad{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:6px}
+.kabsa .val{border-top:3px solid var(--navy-900);padding-top:16px;text-align:left}
+.kabsa .val:nth-child(2){border-color:var(--bordeaux)}
+.kabsa .val h3{font-family:var(--display);text-transform:uppercase;letter-spacing:.05em;font-size:1.15rem;color:var(--navy-900);margin-bottom:4px}
+.kabsa .val p{color:var(--grey-500);font-size:.94rem}
+
+/* partners */
+.kabsa .partners{background:var(--paper);padding:40px 0;border-top:1px solid var(--grey-200)}
+.kabsa .partners .head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+.kabsa .partners h2{font-family:var(--display);text-transform:uppercase;letter-spacing:.1em;font-size:1.05rem;color:var(--navy-900)}
+.kabsa .partners .note{color:var(--grey-500);font-size:.85rem}
+.kabsa .logos{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.kabsa .logo-ph{height:64px;border:1px dashed var(--grey-200);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#B4B2A9;font-family:var(--display);text-transform:uppercase;letter-spacing:.1em;font-size:.72rem;background:#fff}
+
+/* slogan */
+.kabsa .slogan{background:var(--bordeaux);color:#fff;padding:40px 0}
+.kabsa .slogan .wrap{display:flex;align-items:center;gap:22px;justify-content:center;text-align:center}
+.kabsa .slogan p{font-family:var(--display);font-weight:500;font-size:1.55rem;line-height:1.2;letter-spacing:.01em;max-width:22ch}
+.kabsa .slogan svg{width:52px;height:52px;opacity:.9}
+
+/* footer */
+.kabsa footer{background:var(--navy-950);color:#CFE0F2;padding:44px 0 26px}
+.kabsa .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+.kabsa footer h4{font-family:var(--display);text-transform:uppercase;letter-spacing:.1em;font-size:.9rem;color:#fff;margin-bottom:14px}
+.kabsa footer p,.kabsa footer li{font-size:.9rem;color:#B7CFEA;list-style:none}
+.kabsa footer .row{display:flex;gap:10px;align-items:flex-start;margin-bottom:8px}
+.kabsa footer .row svg{width:16px;height:16px;flex:0 0 auto;margin-top:3px;color:#9DC2E8}
+.kabsa .join{background:rgba(255,255,255,.05);border:1px solid rgba(157,194,232,.2);border-radius:12px;padding:16px}
+.kabsa .join .price{font-family:var(--display);font-weight:700;font-size:2rem;color:#fff;line-height:1}
+.kabsa .join .price span{font-size:.85rem;font-weight:400;color:#9DC2E8}
+.kabsa .join p{margin-top:8px}
+.kabsa .join a{display:inline-block;margin-top:12px;background:var(--bordeaux);color:#fff;font-family:var(--display);text-transform:uppercase;letter-spacing:.05em;font-size:.82rem;padding:9px 16px;border-radius:20px;transition:.18s}
+.kabsa .join a:hover{background:var(--bordeaux-700)}
+.kabsa .fbottom{border-top:1px solid rgba(157,194,232,.18);margin-top:30px;padding-top:18px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.78rem;color:#7FA7CE}
+
+.kabsa .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.kabsa .reveal.in{opacity:1;transform:none}
+
+@media(max-width:900px){
+  .kabsa .hero .wrap{grid-template-columns:1fr}
+  .kabsa .rail{flex-direction:row;flex-wrap:wrap}
+  .kabsa .svc{flex:1 1 40%}
+  .kabsa .vlist{flex-direction:row;flex-wrap:wrap}
+  .kabsa .vitem{flex:1 1 45%}
+  .kabsa .fgrid{grid-template-columns:1fr}
+  .kabsa .logos{grid-template-columns:repeat(3,1fr)}
+  .kabsa nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--navy-950);flex-direction:column;padding:8px 16px 16px;border-bottom:2px solid var(--bordeaux)}
+  .kabsa nav.open{display:flex}
+  .kabsa nav a{padding:12px 8px}
+  .kabsa .burger{display:block}
+  .kabsa .center h1{font-size:2rem}
+  .kabsa .triad{grid-template-columns:1fr}
+  .kabsa .slogan p{font-size:1.25rem}
+}
+@media(prefers-reduced-motion:reduce){.kabsa .reveal{opacity:1;transform:none;transition:none}}
