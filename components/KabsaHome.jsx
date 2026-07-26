@@ -59,6 +59,26 @@ const PlayIcon = () => (
   </svg>
 );
 
+const UploadIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <path d="M12 16V4M12 4l-5 5M12 4l5 5" />
+    <path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3" />
+  </svg>
+);
+
+const UPLOAD_MAILTO =
+  "mailto:contact@kabsa.be" +
+  "?subject=" +
+  encodeURIComponent("Envoi de ma vidéo — Talent KABSA") +
+  "&body=" +
+  encodeURIComponent(
+    "Bonjour KABSA,\n\n" +
+      "Je souhaite vous envoyer ma vidéo pour la section « Vidéo à la une ».\n\n" +
+      "Merci de joindre votre vidéo à ce message si elle est courte, " +
+      "ou de coller ici un lien de partage (WeTransfer, Google Drive, etc.) si le fichier est volumineux.\n\n" +
+      "Nom :\nSport pratiqué :\nDescription de la vidéo :\n"
+  );
+
 const services = [
   { label: "Football", icon: "⚽", id: "football" },
   { label: "Remise à niveau", icon: "↑", id: "remise-a-niveau" },
@@ -155,6 +175,10 @@ export default function KabsaHome() {
                 allowFullScreen
               />
             </div>
+            <a className="upload-cta" href={UPLOAD_MAILTO}>
+              <UploadIcon />
+              Télécharger votre vidéo
+            </a>
           </div>
 
           <div className="vlist">
@@ -254,7 +278,7 @@ export default function KabsaHome() {
                   <rect x="3" y="5" width="18" height="14" rx="2" />
                   <path d="m3 7 9 6 9-6" />
                 </svg>
-                <p>e-mail à confirmer</p>
+                <p>contact@kabsa.be</p>
               </div>
               <div className="row">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">

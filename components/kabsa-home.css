@@ -68,6 +68,9 @@
 .kabsa .featured .soon{position:absolute;top:12px;left:12px;background:rgba(255,255,255,.12);color:#DCE9F7;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;font-family:var(--display);padding:4px 10px;border-radius:20px}
 .kabsa .featured--video{padding:0;background:#000}
 .kabsa .featured--video iframe{width:100%;height:100%;border:0;display:block}
+.kabsa .upload-cta{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:14px;background:var(--bordeaux);color:#fff;font-family:var(--display);text-transform:uppercase;letter-spacing:.06em;font-weight:600;font-size:.92rem;padding:14px 20px;border-radius:10px;transition:.18s;box-shadow:0 6px 20px rgba(163,45,45,.35)}
+.kabsa .upload-cta:hover{background:var(--bordeaux-700);transform:translateY(-1px)}
+.kabsa .upload-cta svg{width:19px;height:19px}
 
 .kabsa .vlist{display:flex;flex-direction:column;gap:10px}
 .kabsa .vitem{display:flex;gap:10px;align-items:center;background:rgba(255,255,255,.05);border:1px solid rgba(157,194,232,.18);border-radius:10px;padding:8px;cursor:pointer;transition:.18s}
