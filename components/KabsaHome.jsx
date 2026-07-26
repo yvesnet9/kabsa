@@ -147,12 +147,13 @@ export default function KabsaHome() {
               nationales et formation : nous accompagnons chaque parcours, du loisir jusqu'à la carrière
               professionnelle.
             </p>
-            <div className="featured">
-              <span className="soon">Bientôt sur YouTube</span>
-              <div className="play">
-                <PlayIcon />
-              </div>
-              <span className="cap">Vidéo à la une</span>
+            <div className="featured featured--video">
+              <iframe
+                src="https://www.youtube.com/embed/8Xo9uGofPJ4"
+                title="Vidéo à la une KABSA"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
             </div>
           </div>
 
