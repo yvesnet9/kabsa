@@ -56,7 +56,7 @@
 .kabsa .svc.accent:hover{background:var(--orange-700);color:#fff}
 .kabsa .svc .ic{font-size:1.05rem;width:20px;text-align:center;opacity:.9}
 
-.kabsa .center h1{font-family:var(--display);font-weight:600;font-size:2.5rem;line-height:1.04;letter-spacing:.01em;margin:2px 0 14px}
+.kabsa .center h1{font-family:var(--display);font-weight:600;font-size:2.5rem;line-height:1.04;letter-spacing:.01em;margin:2px 0 14px;text-transform:uppercase}
 .kabsa .center h1 em{font-style:normal;color:var(--orange-600)}
 .kabsa .center .lead{color:#EAF4FB;max-width:52ch;font-size:1.02rem}
 .kabsa .featured{margin-top:20px;position:relative;border-radius:14px;overflow:hidden;aspect-ratio:16/9;background:linear-gradient(135deg,var(--sky-700),var(--sky-950));border:1px solid rgba(255,255,255,.3);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px}
@@ -137,3 +137,18 @@
   .kabsa .slogan p{font-size:1.25rem}
 }
 @media(prefers-reduced-motion:reduce){.kabsa .reveal{opacity:1;transform:none;transition:none}}
+
+.kabsa .info-block{padding:46px 0}
+.kabsa .info-block.tint{background:var(--sky-100)}
+.kabsa .info-block h2{font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;font-size:1.4rem;font-weight:600;color:var(--sky-900);margin-bottom:14px}
+.kabsa .info-block .lede{color:var(--grey-500);font-size:1rem;max-width:70ch;margin-bottom:22px}
+.kabsa .info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.kabsa .info-card{background:#fff;border:1px solid var(--grey-200);border-radius:12px;padding:18px}
+.kabsa .info-card h3{font-family:var(--display);text-transform:uppercase;letter-spacing:.04em;font-size:1rem;color:var(--sky-900);margin-bottom:6px}
+.kabsa .info-card p{color:var(--grey-500);font-size:.92rem}
+.kabsa .info-cta{display:inline-block;margin-top:6px;background:var(--sky-600);color:#fff;font-family:var(--display);text-transform:uppercase;letter-spacing:.05em;font-size:.82rem;padding:10px 18px;border-radius:20px;transition:.18s}
+.kabsa .info-cta:hover{background:var(--sky-900)}
+
+@media(max-width:900px){
+  .kabsa .info-grid{grid-template-columns:1fr}
+}

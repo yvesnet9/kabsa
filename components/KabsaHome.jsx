@@ -81,12 +81,26 @@ const UPLOAD_MAILTO =
       "Nom :\nSport pratiqué :\nDescription de la vidéo :\n"
   );
 
+const INSTITUTION_MAILTO =
+  "mailto:contact@kabsa.be" +
+  "?subject=" +
+  encodeURIComponent("Demande d'adhésion — Institution / Fédération") +
+  "&body=" +
+  encodeURIComponent(
+    "Bonjour KABSA,\n\n" +
+      "Notre institution/fédération souhaite devenir membre et bénéficier de vos services.\n\n" +
+      "Nom de l'institution/fédération :\nPays :\nServices souhaités :\nContact :\n"
+  );
+
 const services = [
-  { label: "Football", icon: "⚽", id: "football" },
-  { label: "Remise à niveau", icon: "↑", id: "remise-a-niveau" },
-  { label: "Handisport", icon: "♿", id: "handisport" },
-  { label: "Dons", icon: "♥", id: "dons", accent: true },
-  { label: "Formation", icon: "✎", id: "formation" },
+  { label: "Sports", icon: "⚽", href: "#sports" },
+  { label: "Remise à niveau", icon: "↑", href: "#sports" },
+  { label: "Handisport", icon: "♿", href: "#sports" },
+  { label: "Adhésion Institutions & Fédérations", icon: "🤝", href: "#institutions" },
+  { label: "Missions sportives", icon: "🌍", href: "#missions" },
+  { label: "Nos infrastructures & nos formateurs", icon: "🏟️", href: "#infrastructures" },
+  { label: "Formation", icon: "✎", href: "#institutions" },
+  { label: "Dons", icon: "♥", href: "#contact", accent: true },
 ];
 
 const videos = ["Séance d'entraînement", "Match amical", "Préparation physique", "Handisport"];
@@ -151,10 +165,10 @@ export default function KabsaHome() {
           <div className="rail" id="services">
             <div className="col-label">Services</div>
             {services.map((s) => (
-              <button key={s.id} id={s.id} className={s.accent ? "svc accent" : "svc"}>
+              <a key={s.label} href={s.href} className={s.accent ? "svc accent" : "svc"}>
                 <span className="ic">{s.icon}</span>
                 {s.label}
-              </button>
+              </a>
             ))}
           </div>
 
@@ -237,6 +251,107 @@ export default function KabsaHome() {
                 Logo
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="info-block reveal" id="sports">
+        <div className="wrap">
+          <h2>Nos disciplines sportives</h2>
+          <p className="lede">
+            KABSA encadre plusieurs disciplines et accueille tout sportif, handicapé ou valide, débutant
+            ou ancien, pour une remise à niveau et une préparation de haut niveau.
+          </p>
+          <div className="info-grid">
+            <div className="info-card">
+              <h3 id="handisport">Football</h3>
+              <p>Masculin, féminin et handisport — la discipline historique de KABSA.</p>
+            </div>
+            <div className="info-card">
+              <h3>Basketball &amp; Tennis</h3>
+              <p>De nouvelles disciplines rejoignent progressivement l'encadrement de l'académie.</p>
+            </div>
+            <div className="info-card">
+              <h3>Remise à niveau</h3>
+              <p>Un programme de préparation physique et technique pour retrouver le niveau compétition.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="info-block tint reveal" id="institutions">
+        <div className="wrap">
+          <h2>Adhésion Institutions &amp; Fédérations</h2>
+          <p className="lede">
+            Toute fédération de sport ou institution peut devenir membre de KABSA en signant une
+            convention de collaboration, avec accès à nos services à tarif préférentiel.
+          </p>
+          <div className="info-grid">
+            <div className="info-card">
+              <h3>Remise à niveau des sportifs</h3>
+              <p>Visa, billet d'avion, hébergement, entraînement et rapport détaillé du stage.</p>
+            </div>
+            <div className="info-card">
+              <h3>Préparation de tournois</h3>
+              <p>Réception d'équipes nationales, matchs amicaux et évaluation du niveau collectif.</p>
+            </div>
+            <div className="info-card" id="formation">
+              <h3>Formation &amp; sponsoring</h3>
+              <p>Formation du personnel des fédérations, arbitres, et mise en relation avec des sponsors et équipementiers.</p>
+            </div>
+          </div>
+          <a className="info-cta" href={INSTITUTION_MAILTO}>
+            Faire une demande d'adhésion
+          </a>
+        </div>
+      </section>
+
+      <section className="info-block reveal" id="missions">
+        <div className="wrap">
+          <h2>Missions sportives</h2>
+          <p className="lede">
+            KABSA organise des rencontres sportives et des activités culturelles, des visites et des dons
+            dans des complexes sportifs en Belgique et dans le monde, et reçoit des délégations
+            étrangères pour des échanges sportifs ou culturels.
+          </p>
+          <div className="info-grid">
+            <div className="info-card">
+              <h3>Rencontres &amp; échanges</h3>
+              <p>Organisation de matchs et d'activités culturelles associées, en Belgique et à l'international.</p>
+            </div>
+            <div className="info-card">
+              <h3>Visites &amp; dons</h3>
+              <p>Visites de complexes sportifs partenaires et dons dans les structures qui nous accueillent.</p>
+            </div>
+            <div className="info-card">
+              <h3>Accueil de délégations</h3>
+              <p>Réception de personnes ou institutions étrangères pour un échange sportif ou culturel.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="info-block tint reveal" id="infrastructures">
+        <div className="wrap">
+          <h2>Nos infrastructures &amp; nos formateurs</h2>
+          <p className="lede">
+            Les entraînements se déroulent dans des complexes sportifs partenaires (terrains, salles de
+            fitness, salles de préparation tactique), sous la responsabilité d'animateurs qualifiés et
+            d'un coordinateur général. <em>Détails et présentation des formateurs à venir.</em>
+          </p>
+          <div className="info-grid">
+            <div className="info-card">
+              <h3>Terrains &amp; salles</h3>
+              <p>Complexes sportifs, salles fitness et salles tactiques mis à disposition selon l'activité.</p>
+            </div>
+            <div className="info-card">
+              <h3>Animateurs</h3>
+              <p>Chaque activité est encadrée par un animateur qualifié, responsable de son bon déroulement.</p>
+            </div>
+            <div className="info-card">
+              <h3>Coordination générale</h3>
+              <p>Un coordinateur général veille au respect du règlement intérieur et à la qualité des séances.</p>
+            </div>
           </div>
         </div>
       </section>
