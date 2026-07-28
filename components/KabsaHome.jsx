@@ -100,10 +100,43 @@ const services = [
   { label: "Missions sportives", icon: "🌍", href: "#missions" },
   { label: "Nos infrastructures & nos formateurs", icon: "🏟️", href: "#infrastructures" },
   { label: "Formation", icon: "✎", href: "#institutions" },
-  { label: "Dons", icon: "♥", href: "#contact", accent: true },
 ];
 
 const videos = ["Séance d'entraînement", "Match amical", "Préparation physique", "Handisport"];
+
+function LikeButton() {
+  const [count, setCount] = useState(null);
+  const [justLiked, setJustLiked] = useState(false);
+
+  useEffect(() => {
+    fetch("/api/like")
+      .then((r) => r.json())
+      .then((d) => setCount(d.count))
+      .catch(() => {});
+  }, []);
+
+  const handleLike = async () => {
+    try {
+      const res = await fetch("/api/like", { method: "POST" });
+      const data = await res.json();
+      setCount(data.count);
+      setJustLiked(true);
+      setTimeout(() => setJustLiked(false), 2500);
+    } catch (e) {
+      // silencieux : si l'API ne répond pas, on ne bloque pas l'interface
+    }
+  };
+
+  return (
+    <button className="svc like-btn" onClick={handleLike}>
+      <span className="ic">❤️</span>
+      <span className="like-text">
+        {justLiked ? "Merci !" : "Cliquez ici si vous aimez le site, merci"}
+      </span>
+      {count !== null && <span className="like-count">{count}</span>}
+    </button>
+  );
+}
 
 const NAV = [
   ["Accueil", "#accueil"],
@@ -170,6 +203,11 @@ export default function KabsaHome() {
                 {s.label}
               </a>
             ))}
+            <LikeButton />
+            <a href="#contact" className="svc accent">
+              <span className="ic">♥</span>
+              Dons
+            </a>
           </div>
 
           <div className="center" id="apropos">

@@ -152,3 +152,7 @@
 @media(max-width:900px){
   .kabsa .info-grid{grid-template-columns:1fr}
 }
+
+.kabsa .like-btn{justify-content:space-between;width:100%}
+.kabsa .like-text{flex:1}
+.kabsa .like-count{background:var(--orange-600);color:#3A2600;font-size:.72rem;font-weight:700;padding:2px 9px;border-radius:12px;margin-left:8px;flex:0 0 auto}
