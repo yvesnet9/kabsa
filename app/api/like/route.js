@@ -37,7 +37,7 @@ export async function POST() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          from: "KABSA <onboarding@resend.dev>",
+          from: "KABSA <notifications@kabsa.be>",
           to: "contact@kabsa.be",
           subject: "Quelqu'un aime le site KABSA ! ❤️",
           text: `Un visiteur vient d'aimer le site kabsa.be. Total de "J'aime" : ${count}.`,
