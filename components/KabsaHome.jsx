@@ -106,9 +106,13 @@ const videos = ["Séance d'entraînement", "Match amical", "Préparation physiqu
 
 function LikeButton() {
   const [count, setCount] = useState(null);
-  const [justLiked, setJustLiked] = useState(false);
+  const [liked, setLiked] = useState(false);
 
   useEffect(() => {
+    try {
+      if (localStorage.getItem("kabsa_liked") === "1") setLiked(true);
+    } catch (e) {}
+
     fetch("/api/like")
       .then((r) => r.json())
       .then((d) => setCount(d.count))
@@ -116,33 +120,146 @@ function LikeButton() {
   }, []);
 
   const handleLike = async () => {
+    if (liked) return;
+    setLiked(true);
+    try {
+      localStorage.setItem("kabsa_liked", "1");
+    } catch (e) {}
     try {
       const res = await fetch("/api/like", { method: "POST" });
       const data = await res.json();
       setCount(data.count);
-      setJustLiked(true);
-      setTimeout(() => setJustLiked(false), 2500);
-    } catch (e) {
-      // silencieux : si l'API ne répond pas, on ne bloque pas l'interface
-    }
+    } catch (e) {}
   };
 
   return (
-    <button className="svc like-btn" onClick={handleLike}>
+    <button
+      className={liked ? "svc like-btn liked" : "svc like-btn"}
+      onClick={handleLike}
+      disabled={liked}
+      aria-pressed={liked}
+    >
       <span className="ic">❤️</span>
       <span className="like-text">
-        {justLiked ? "Merci !" : "Cliquez ici si vous aimez le site, merci"}
+        {liked ? "Merci pour votre soutien !" : "Cliquez ici si vous aimez le site, merci"}
       </span>
       {count !== null && <span className="like-count">{count}</span>}
     </button>
   );
 }
 
+function RecruiterForm() {
+  const [f, setF] = useState({
+    poste: "",
+    categorie: "Masculin",
+    niveau: "Amateur",
+    nombre: "1",
+    institution: "",
+    pays: "",
+    contact: "",
+    precisions: "",
+  });
+  const [sent, setSent] = useState(false);
+
+  const up = (k) => (e) => setF((s) => ({ ...s, [k]: e.target.value }));
+
+  const submit = (e) => {
+    e.preventDefault();
+    const subject = "Recherche de joueur — " + (f.poste || "poste à préciser");
+    const body =
+      "Bonjour KABSA,\n\n" +
+      "Nous recherchons un ou plusieurs sportifs. Détails ci-dessous :\n\n" +
+      "Poste recherché : " + f.poste + "\n" +
+      "Catégorie : " + f.categorie + "\n" +
+      "Niveau souhaité : " + f.niveau + "\n" +
+      "Nombre de joueurs : " + f.nombre + "\n" +
+      "Institution / Club : " + f.institution + "\n" +
+      "Pays : " + f.pays + "\n" +
+      "Coordonnées : " + f.contact + "\n\n" +
+      "Précisions :\n" + f.precisions + "\n";
+    window.location.href =
+      "mailto:contact@kabsa.be?subject=" +
+      encodeURIComponent(subject) +
+      "&body=" +
+      encodeURIComponent(body);
+    setSent(true);
+  };
+
+  return (
+    <form className="recruit-form" onSubmit={submit}>
+      <div className="rf-grid">
+        <label>
+          Poste recherché
+          <input
+            type="text"
+            value={f.poste}
+            onChange={up("poste")}
+            placeholder="Attaquant, milieu, défenseur, gardien…"
+            required
+          />
+        </label>
+        <label>
+          Catégorie
+          <select value={f.categorie} onChange={up("categorie")}>
+            <option>Masculin</option>
+            <option>Féminin</option>
+            <option>Handisport</option>
+            <option>Jeunes</option>
+          </select>
+        </label>
+        <label>
+          Niveau souhaité
+          <select value={f.niveau} onChange={up("niveau")}>
+            <option>Débutant</option>
+            <option>Amateur</option>
+            <option>Semi-professionnel</option>
+            <option>Professionnel</option>
+          </select>
+        </label>
+        <label>
+          Nombre de joueurs
+          <input type="number" min="1" value={f.nombre} onChange={up("nombre")} />
+        </label>
+        <label>
+          Institution / Club
+          <input type="text" value={f.institution} onChange={up("institution")} />
+        </label>
+        <label>
+          Pays
+          <input type="text" value={f.pays} onChange={up("pays")} />
+        </label>
+        <label className="rf-full">
+          Vos coordonnées (email ou téléphone)
+          <input type="text" value={f.contact} onChange={up("contact")} required />
+        </label>
+        <label className="rf-full">
+          Précisions
+          <textarea
+            rows={4}
+            value={f.precisions}
+            onChange={up("precisions")}
+            placeholder="Profil recherché, période, budget, etc."
+          />
+        </label>
+      </div>
+      <button type="submit" className="info-cta">
+        Envoyer la demande
+      </button>
+      {sent && (
+        <p className="rf-sent">
+          Votre logiciel de messagerie s'ouvre avec la demande pré-remplie. Merci !
+        </p>
+      )}
+    </form>
+  );
+}
+
 const NAV = [
   ["Accueil", "#accueil"],
+  ["Handisport", "#handisport", "handi"],
   ["Qui sommes-nous", "#apropos"],
   ["Services", "#services"],
-  ["Handisport", "#handisport"],
+  ["Recherche d'un joueur", "#recherche"],
   ["Dons", "#dons"],
   ["Formation", "#formation"],
 ];
@@ -181,11 +298,17 @@ export default function KabsaHome() {
             ☰
           </button>
           <nav className={menuOpen ? "open" : ""}>
-            {NAV.map(([label, href]) => (
-              <a key={href} href={href} onClick={() => setMenuOpen(false)}>
+            {NAV.map(([label, href, cls]) => (
+              <a key={href} href={href} className={cls || undefined} onClick={() => setMenuOpen(false)}>
                 {label}
               </a>
             ))}
+            <a className="cta cta-member" href="#adhesion" onClick={() => setMenuOpen(false)}>
+              Devenir membre
+            </a>
+            <a className="cta cta-inst" href="#institutions" onClick={() => setMenuOpen(false)}>
+              Institutions &amp; Fédérations
+            </a>
             <a className="cta" href="#contact" onClick={() => setMenuOpen(false)}>
               Contact
             </a>
@@ -344,6 +467,18 @@ export default function KabsaHome() {
         </div>
       </section>
 
+      <section className="info-block reveal" id="recherche">
+        <div className="wrap">
+          <h2>Recherche d'un joueur</h2>
+          <p className="lede">
+            Vous êtes une institution, une fédération ou un club et vous recherchez un joueur à un poste
+            précis ou un sportif talentueux ? Décrivez votre besoin ci-dessous : votre demande nous est
+            transmise directement par email.
+          </p>
+          <RecruiterForm />
+        </div>
+      </section>
+
       <section className="info-block reveal" id="missions">
         <div className="wrap">
           <h2>Missions sportives</h2>
@@ -449,11 +584,12 @@ export default function KabsaHome() {
                 <li className="row"><p><a href="#apropos">Qui sommes-nous</a></p></li>
                 <li className="row"><p><a href="#services">Nos services</a></p></li>
                 <li className="row"><p><a href="#handisport">Handisport</a></p></li>
+                <li className="row"><p><a href="#recherche">Recherche d'un joueur</a></p></li>
                 <li className="row"><p><a href="#formation">Formation</a></p></li>
                 <li className="row"><p><a href="#dons">Faire un don</a></p></li>
               </ul>
             </div>
-            <div>
+            <div id="adhesion">
               <h4>Devenir membre</h4>
               <div className="join">
                 <div className="price">

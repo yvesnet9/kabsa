@@ -156,3 +156,56 @@
 .kabsa .like-btn{justify-content:space-between;width:100%}
 .kabsa .like-text{flex:1}
 .kabsa .like-count{background:var(--orange-600);color:#3A2600;font-size:.72rem;font-weight:700;padding:2px 9px;border-radius:12px;margin-left:8px;flex:0 0 auto}
+
+/* ===== Ajouts KABSA — mise à jour (juillet 2026) ===== */
+.kabsa nav a.handi {
+  color: #0B4870;
+  font-weight: 700;
+  border: 2px solid #F5A623;
+  border-radius: 999px;
+  padding: 5px 14px;
+  background: #FFF7EA;
+}
+.kabsa nav a.handi:hover { background: #F5A623; color: #fff; }
+.kabsa nav a.cta-inst { background: #2E86C1; }
+.kabsa .like-btn.liked { opacity: 0.9; cursor: default; }
+.kabsa .recruit-form { margin-top: 22px; }
+.kabsa .rf-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.kabsa .rf-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0B4870;
+}
+.kabsa .rf-grid .rf-full { grid-column: 1 / -1; }
+.kabsa .rf-grid input,
+.kabsa .rf-grid select,
+.kabsa .rf-grid textarea {
+  font: inherit;
+  font-weight: 400;
+  padding: 10px 12px;
+  border: 1px solid #d5dde5;
+  border-radius: 10px;
+  background: #fff;
+  color: #1a2b3a;
+  width: 100%;
+}
+.kabsa .rf-grid textarea { resize: vertical; }
+.kabsa .rf-grid input:focus,
+.kabsa .rf-grid select:focus,
+.kabsa .rf-grid textarea:focus {
+  outline: none;
+  border-color: #2E86C1;
+  box-shadow: 0 0 0 3px rgba(46, 134, 193, 0.15);
+}
+.kabsa .recruit-form .info-cta { margin-top: 18px; border: none; cursor: pointer; }
+.kabsa .rf-sent { margin-top: 12px; color: #1a7a3a; font-weight: 600; }
+@media (max-width: 640px) {
+  .kabsa .rf-grid { grid-template-columns: 1fr; }
+}
