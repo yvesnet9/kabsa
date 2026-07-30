@@ -590,7 +590,7 @@ export default function KabsaHome() {
               </ul>
             </div>
             <div id="adhesion">
-              <h4>Devenir membre</h4>
+              <h4>Devenir membre particulier</h4>
               <div className="join">
                 <div className="price">
                   175 € <span>/ adhésion</span>
@@ -600,6 +600,16 @@ export default function KabsaHome() {
                   possible en plusieurs mensualités.
                 </p>
                 <a href="#contact">Nous rejoindre</a>
+              </div>
+            </div>
+            <div>
+              <h4>Devenir membre — Institutions &amp; Fédérations</h4>
+              <div className="join">
+                <p>
+                  Fédérations, institutions et clubs : rejoignez KABSA via une convention de
+                  collaboration et accédez à nos services à tarif préférentiel.
+                </p>
+                <a href={INSTITUTION_MAILTO}>Faire une demande d'adhésion</a>
               </div>
             </div>
           </div>
