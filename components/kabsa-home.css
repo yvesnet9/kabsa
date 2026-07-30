@@ -209,3 +209,20 @@
 @media (max-width: 640px) {
   .kabsa .rf-grid { grid-template-columns: 1fr; }
 }
+
+.kabsa .svc.highlight{background:var(--orange-600);border-color:#fff;color:#3A2600;font-weight:600;box-shadow:0 0 0 2px rgba(255,255,255,.6),0 6px 18px rgba(245,166,35,.5);font-size:1rem}
+.kabsa .svc.highlight:hover{background:var(--orange-700);color:#fff;transform:translateX(3px)}
+.kabsa .like-btn.liked{opacity:.85;cursor:default}
+.kabsa .like-btn.liked:hover{transform:none;background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.25)}
+
+/* ===== Footer : regrouper les 2 cartes "Devenir membre" dans la colonne de droite ===== */
+.kabsa footer .fgrid {
+  align-items: start;
+}
+.kabsa footer .fgrid > div:nth-child(3),
+.kabsa footer .fgrid > div:nth-child(4) {
+  grid-column: 3;
+}
+.kabsa footer .fgrid > div:nth-child(4) {
+  margin-top: 22px;
+}
