@@ -215,3 +215,18 @@
 .kabsa .like-btn.liked{opacity:.85;cursor:default}
 .kabsa .like-btn.liked:hover{transform:none;background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.25)}
 
+
+/* ===== Footer : aligner les 2 cartes membre par le haut ===== */
+.kabsa footer .fgrid { align-items: start; }
+.kabsa footer .fgrid > div { display: flex; flex-direction: column; }
+.kabsa footer .fgrid > div > h4 { min-height: 2.6em; }
+.kabsa footer .join { margin-top: auto; }
+
+/* ===== Colonne services : Handisport mis en couleur ===== */
+.kabsa .rail .svc:first-of-type {
+  background: var(--orange-600, #F5A623);
+  color: #0B4870;
+  font-weight: 700;
+  border-color: var(--orange-600, #F5A623);
+}
+.kabsa .rail .svc:first-of-type .ic { filter: none; }
