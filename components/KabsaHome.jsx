@@ -107,6 +107,8 @@ const videos = ["Séance d'entraînement", "Match amical", "Préparation physiqu
 function LikeButton() {
   const [count, setCount] = useState(null);
   const [liked, setLiked] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [form, setForm] = useState({ nom: "", email: "", ville: "" });
 
   useEffect(() => {
     try {
@@ -119,32 +121,86 @@ function LikeButton() {
       .catch(() => {});
   }, []);
 
-  const handleLike = async () => {
-    if (liked) return;
+  const up = (k) => (e) => setForm((s) => ({ ...s, [k]: e.target.value }));
+
+  const submit = (e) => {
+    e.preventDefault();
+    if (!form.nom.trim() || !form.email.trim() || !form.ville.trim()) return;
+
+    // Notifie contact@kabsa.be via le logiciel mail du visiteur
+    const subject = "Nouveau soutien : " + form.nom + " aime le site KABSA";
+    const body =
+      "Bonjour KABSA,\n\n" +
+      "Une personne a aimé le site :\n\n" +
+      "Nom complet : " + form.nom + "\n" +
+      "Email : " + form.email + "\n" +
+      "Ville : " + form.ville + "\n";
+    window.location.href =
+      "mailto:contact@kabsa.be?subject=" +
+      encodeURIComponent(subject) +
+      "&body=" +
+      encodeURIComponent(body);
+
+    // Verrouille l'appareil + incrémente le compteur global
     setLiked(true);
+    setOpen(false);
     try {
       localStorage.setItem("kabsa_liked", "1");
     } catch (e) {}
-    try {
-      const res = await fetch("/api/like", { method: "POST" });
-      const data = await res.json();
-      setCount(data.count);
-    } catch (e) {}
+    fetch("/api/like", { method: "POST" })
+      .then((r) => r.json())
+      .then((d) => setCount(d.count))
+      .catch(() => {});
   };
 
+  if (liked) {
+    return (
+      <div className="svc like-btn liked" aria-pressed="true">
+        <span className="ic">❤️</span>
+        <span className="like-text">Merci pour votre soutien !</span>
+        {count !== null && <span className="like-count">{count}</span>}
+      </div>
+    );
+  }
+
   return (
-    <button
-      className={liked ? "svc like-btn liked" : "svc like-btn"}
-      onClick={handleLike}
-      disabled={liked}
-      aria-pressed={liked}
-    >
-      <span className="ic">❤️</span>
-      <span className="like-text">
-        {liked ? "Merci pour votre soutien !" : "Cliquez ici si vous aimez le site, merci"}
-      </span>
-      {count !== null && <span className="like-count">{count}</span>}
-    </button>
+    <div className="like-wrap">
+      <button className="svc like-btn" onClick={() => setOpen((o) => !o)}>
+        <span className="ic">❤️</span>
+        <span className="like-text">Cliquez ici si vous aimez le site, merci</span>
+        {count !== null && <span className="like-count">{count}</span>}
+      </button>
+
+      {open && (
+        <form className="like-form" onSubmit={submit}>
+          <input
+            type="text"
+            placeholder="Nom complet"
+            value={form.nom}
+            onChange={up("nom")}
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            value={form.email}
+            onChange={up("email")}
+            required
+          />
+          <input
+            type="text"
+            placeholder="Ville"
+            value={form.ville}
+            onChange={up("ville")}
+            required
+          />
+          <button type="submit" className="like-send">Envoyer</button>
+          <p className="like-rgpd">
+            Vos informations servent uniquement à remercier vos soutiens et ne sont pas partagées.
+          </p>
+        </form>
+      )}
+    </div>
   );
 }
 
