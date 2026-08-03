@@ -93,9 +93,9 @@ const INSTITUTION_MAILTO =
   );
 
 const services = [
+  { label: "Handisport", icon: "♿", href: "#sports" },
   { label: "Sports", icon: "⚽", href: "#sports" },
   { label: "Remise à niveau", icon: "↑", href: "#sports" },
-  { label: "Handisport", icon: "♿", href: "#sports" },
   { label: "Adhésion Institutions & Fédérations", icon: "🤝", href: "#institutions" },
   { label: "Missions sportives", icon: "🌍", href: "#missions" },
   { label: "Nos infrastructures & nos formateurs", icon: "🏟️", href: "#infrastructures" },
@@ -260,6 +260,7 @@ const NAV = [
   ["Qui sommes-nous", "#apropos"],
   ["Services", "#services"],
   ["Recherche d'un joueur", "#recherche"],
+  ["Compétitions dans le monde", "#competitions"],
   ["Dons", "#dons"],
   ["Formation", "#formation"],
 ];
@@ -476,6 +477,30 @@ export default function KabsaHome() {
             transmise directement par email.
           </p>
           <RecruiterForm />
+        </div>
+      </section>
+
+      <section className="info-block tint reveal" id="competitions">
+        <div className="wrap">
+          <h2>Nos compétitions dans le monde</h2>
+          <p className="lede">
+            KABSA participe et organise des compétitions sportives en Belgique et à
+            l'international, pour faire progresser ses sportifs et rayonner au-delà des frontières.
+          </p>
+          <div className="info-grid">
+            <div className="info-card">
+              <h3>Compétitions nationales</h3>
+              <p>Participation de nos équipes aux championnats et tournois organisés en Belgique.</p>
+            </div>
+            <div className="info-card">
+              <h3>Compétitions internationales</h3>
+              <p>Rencontres et tournois à l'étranger, échanges sportifs et représentation de KABSA dans le monde.</p>
+            </div>
+            <div className="info-card">
+              <h3>Calendrier</h3>
+              <p>Le programme détaillé de nos prochaines compétitions sera publié ici prochainement.</p>
+            </div>
+          </div>
         </div>
       </section>
 

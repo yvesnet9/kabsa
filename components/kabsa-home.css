@@ -104,7 +104,7 @@
 .kabsa .slogan svg{width:52px;height:52px;opacity:.9}
 
 .kabsa footer{background:var(--sky-950);color:#D9EEFB;padding:44px 0 26px}
-.kabsa .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+.kabsa .fgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:28px}
 .kabsa footer h4{font-family:var(--display);text-transform:uppercase;letter-spacing:.1em;font-size:.9rem;color:#fff;margin-bottom:14px}
 .kabsa footer p,.kabsa footer li{font-size:.9rem;color:#AFDBF4;list-style:none}
 .kabsa footer .row{display:flex;gap:10px;align-items:flex-start;margin-bottom:8px}
@@ -215,14 +215,3 @@
 .kabsa .like-btn.liked{opacity:.85;cursor:default}
 .kabsa .like-btn.liked:hover{transform:none;background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.25)}
 
-/* ===== Footer : regrouper les 2 cartes "Devenir membre" dans la colonne de droite ===== */
-.kabsa footer .fgrid {
-  align-items: start;
-}
-.kabsa footer .fgrid > div:nth-child(3),
-.kabsa footer .fgrid > div:nth-child(4) {
-  grid-column: 3;
-}
-.kabsa footer .fgrid > div:nth-child(4) {
-  margin-top: 22px;
-}
