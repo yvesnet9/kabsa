@@ -127,27 +127,24 @@ function LikeButton() {
     e.preventDefault();
     if (!form.nom.trim() || !form.email.trim() || !form.ville.trim()) return;
 
-    // Notifie contact@kabsa.be via le logiciel mail du visiteur
-    const subject = "Nouveau soutien : " + form.nom + " aime le site KABSA";
-    const body =
-      "Bonjour KABSA,\n\n" +
-      "Une personne a aimé le site :\n\n" +
-      "Nom complet : " + form.nom + "\n" +
-      "Email : " + form.email + "\n" +
-      "Ville : " + form.ville + "\n";
-    window.location.href =
-      "mailto:contact@kabsa.be?subject=" +
-      encodeURIComponent(subject) +
-      "&body=" +
-      encodeURIComponent(body);
-
-    // Verrouille l'appareil + incrémente le compteur global
+    // Verrouille l'appareil tout de suite
     setLiked(true);
     setOpen(false);
     try {
       localStorage.setItem("kabsa_liked", "1");
     } catch (e) {}
-    fetch("/api/like", { method: "POST" })
+
+    // Envoie nom + email + ville au serveur, qui incrémente le compteur
+    // ET envoie automatiquement le mail à contact@kabsa.be
+    fetch("/api/like", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        nom: form.nom,
+        email: form.email,
+        ville: form.ville,
+      }),
+    })
       .then((r) => r.json())
       .then((d) => setCount(d.count))
       .catch(() => {});
