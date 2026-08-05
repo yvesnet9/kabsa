@@ -717,8 +717,9 @@ export default function KabsaHome() {
               </div>
             </div>
           </div>
+          <div className="fdevise">Discipline — Persévérance — Succès</div>
           <div className="fbottom">
-            <span>© 2026 KA Bruxelles Sport Académie asbl · Discipline — Persévérance — Succès</span>
+            <span>© 2026 KA Bruxelles Sport Académie asbl</span>
             <span>Bruxelles, Belgique</span>
           </div>
         </div>

@@ -273,3 +273,15 @@
   line-height: 1.4;
   opacity: 0.8;
 }
+
+/* ===== Devise centrée dans le pied de page ===== */
+.kabsa footer .fdevise {
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0.9;
+  margin: 24px 0 8px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+}
