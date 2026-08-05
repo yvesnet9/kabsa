@@ -285,3 +285,16 @@
   padding-top: 18px;
   border-top: 1px solid rgba(255,255,255,0.12);
 }
+
+/* ===== Sous-blocs de la section Recherche d'un joueur ===== */
+.kabsa .rf-blocktitle {
+  margin: 4px 0 2px;
+  color: #0B4870;
+  font-size: 18px;
+}
+.kabsa .rf-blocktitle--2 {
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(11,72,112,0.15);
+}
+.kabsa .rf-error { color: #c0392b; }
