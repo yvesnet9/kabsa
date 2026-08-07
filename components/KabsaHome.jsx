@@ -242,7 +242,7 @@ function RecruiterForm() {
     <form className="recruit-form" onSubmit={submit}>
       <div className="rf-grid">
         <label>
-          Poste recherché
+          Poste recherché <span className="req">*</span>
           <input
             type="text"
             value={f.poste}
@@ -252,8 +252,8 @@ function RecruiterForm() {
           />
         </label>
         <label>
-          Catégorie
-          <select value={f.categorie} onChange={up("categorie")}>
+          Catégorie <span className="req">*</span>
+          <select value={f.categorie} onChange={up("categorie")} required>
             <option>Masculin</option>
             <option>Féminin</option>
             <option>Handisport</option>
@@ -274,15 +274,15 @@ function RecruiterForm() {
           <input type="number" min="1" value={f.nombre} onChange={up("nombre")} />
         </label>
         <label>
-          Institution / Club
-          <input type="text" value={f.institution} onChange={up("institution")} />
+          Institution / Club <span className="req">*</span>
+          <input type="text" value={f.institution} onChange={up("institution")} required />
         </label>
         <label>
           Pays
           <input type="text" value={f.pays} onChange={up("pays")} />
         </label>
         <label className="rf-full">
-          Vos coordonnées (email ou téléphone)
+          Vos coordonnées (email ou téléphone) <span className="req">*</span>
           <input type="text" value={f.contact} onChange={up("contact")} required />
         </label>
         <label className="rf-full">
@@ -327,7 +327,7 @@ function PlayerForm() {
 
   const submit = async (e) => {
     e.preventDefault();
-    if (!f.nom.trim() || !f.poste.trim() || !f.contact.trim()) return;
+    if (!f.nom.trim() || !f.poste.trim() || !f.naissance.trim() || !f.villeclub.trim() || !f.contact.trim()) return;
     setSending(true);
     setError(false);
     try {
@@ -357,16 +357,16 @@ function PlayerForm() {
     <form className="recruit-form" onSubmit={submit}>
       <div className="rf-grid">
         <label className="rf-full">
-          Nom complet
+          Nom complet <span className="req">*</span>
           <input type="text" value={f.nom} onChange={up("nom")} required />
         </label>
         <label>
-          Poste
+          Poste <span className="req">*</span>
           <input type="text" value={f.poste} onChange={up("poste")} placeholder="Attaquant, milieu, gardien…" required />
         </label>
         <label>
-          Date de naissance
-          <input type="date" value={f.naissance} onChange={up("naissance")} />
+          Date de naissance <span className="req">*</span>
+          <input type="date" value={f.naissance} onChange={up("naissance")} required />
         </label>
         <label>
           Taille / Poids
@@ -381,8 +381,8 @@ function PlayerForm() {
           </select>
         </label>
         <label>
-          Ville / Club actuel
-          <input type="text" value={f.villeclub} onChange={up("villeclub")} />
+          Ville / Club actuel <span className="req">*</span>
+          <input type="text" value={f.villeclub} onChange={up("villeclub")} required />
         </label>
         <label className="rf-full">
           Lien vidéo (YouTube, Hudl…)
@@ -393,7 +393,7 @@ function PlayerForm() {
           <textarea rows={4} value={f.pointsforts} onChange={up("pointsforts")} placeholder="Qualités techniques, physiques, tactiques, mental…" />
         </label>
         <label className="rf-full">
-          Vos coordonnées (email ou téléphone)
+          Vos coordonnées (email ou téléphone) <span className="req">*</span>
           <input type="text" value={f.contact} onChange={up("contact")} required />
         </label>
       </div>
@@ -626,7 +626,7 @@ export default function KabsaHome() {
 
       <section className="info-block reveal" id="recherche">
         <div className="wrap">
-          <h2>Recherche d'un joueur</h2>
+          <h2>Recherche d'un joueur ou d'un sportif talentueux de toutes disciplines</h2>
 
           <h3 className="rf-blocktitle">Vous recherchez un joueur ?</h3>
           <p className="lede">
@@ -636,7 +636,7 @@ export default function KabsaHome() {
           </p>
           <RecruiterForm />
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Vous êtes un joueur ? Présentez-vous</h3>
+          <h3 className="rf-blocktitle rf-blocktitle--2">Vous êtes un joueur ou un sportif talentueux ? Présentez-vous</h3>
           <p className="lede">
             Remplissez votre fiche de présentation ci-dessous. Elle est transmise automatiquement à
             KABSA, qui pourra revenir vers vous.

@@ -298,3 +298,6 @@
   border-top: 1px solid rgba(11,72,112,0.15);
 }
 .kabsa .rf-error { color: #c0392b; }
+
+/* ===== Astérisque champs obligatoires ===== */
+.kabsa .req { color: #c0392b; font-weight: 700; margin-left: 1px; }
