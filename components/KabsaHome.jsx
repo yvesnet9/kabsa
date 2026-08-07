@@ -154,7 +154,7 @@ function LikeButton() {
     return (
       <div className="svc like-btn liked" aria-pressed="true">
         <span className="ic">❤️</span>
-        <span className="like-text">Merci pour votre soutien !</span>
+        <span className="like-text">J'aime le site<br />Clique ici</span>
         {count !== null && <span className="like-count">{count}</span>}
       </div>
     );
@@ -164,7 +164,7 @@ function LikeButton() {
     <div className="like-wrap">
       <button className="svc like-btn" onClick={() => setOpen((o) => !o)}>
         <span className="ic">❤️</span>
-        <span className="like-text">Cliquez ici si vous aimez le site, merci</span>
+        <span className="like-text">J'aime le site<br />Clique ici</span>
         {count !== null && <span className="like-count">{count}</span>}
       </button>
 

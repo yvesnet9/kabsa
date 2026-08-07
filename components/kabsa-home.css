@@ -301,3 +301,6 @@
 
 /* ===== Astérisque champs obligatoires ===== */
 .kabsa .req { color: #c0392b; font-weight: 700; margin-left: 1px; }
+
+/* ===== Titre "Vous êtes un joueur" en gras ===== */
+.kabsa .rf-blocktitle--2 { font-weight: 800; }
