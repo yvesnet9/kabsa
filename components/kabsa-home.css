@@ -304,3 +304,29 @@
 
 /* ===== Titre "Vous êtes un joueur" en gras ===== */
 .kabsa .rf-blocktitle--2 { font-weight: 800; }
+
+/* ===== Édito du Fondateur ===== */
+.kabsa #apropos .edito-quote {
+  font-size: 24px;
+  line-height: 1.4;
+  font-style: italic;
+  font-weight: 600;
+  color: #0B4870;
+  margin: 8px 0 22px;
+  max-width: 820px;
+}
+.kabsa #apropos .edito-punch {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0B4870;
+  margin-top: 8px;
+}
+.kabsa #apropos .edito-sign {
+  margin-top: 18px;
+  font-weight: 700;
+  color: #0B4870;
+}
+.kabsa #apropos .edito-sign span {
+  font-weight: 400;
+  opacity: 0.8;
+}
