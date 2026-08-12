@@ -818,6 +818,18 @@ export default function KabsaHome() {
               <h3>Un entourage de confiance</h3>
               <p>Conseils, mise en relation avec des experts (juridiques, financiers) et un cadre bienveillant pour que chaque sportif avance sereinement.</p>
             </div>
+            <div className="info-card">
+              <h3>Accompagnement juridique</h3>
+              <p>Orientation vers des conseils adaptés pour comprendre et défendre ses droits en cas de litige (contrat, sélection, discrimination).</p>
+            </div>
+            <div className="info-card">
+              <h3>Éducation financière</h3>
+              <p>Sensibiliser les jeunes talents à gérer primes et revenus, éviter les pièges et préparer sereinement l'avenir.</p>
+            </div>
+            <div className="info-card">
+              <h3>Reconversion &amp; après-carrière</h3>
+              <p>Anticiper la fin de carrière sportive et préparer une transition sereine : formation, projet professionnel, nouveau départ.</p>
+            </div>
           </div>
         </div>
       </section>
