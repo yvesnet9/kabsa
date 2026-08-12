@@ -330,3 +330,8 @@
   font-weight: 400;
   opacity: 0.8;
 }
+
+/* ===== Section Dons ===== */
+.kabsa #dons .don-card { margin-top: 14px; max-width: 560px; }
+.kabsa #dons .don-card p { margin: 4px 0; }
+.kabsa #dons .don-legal { margin-top: 12px; font-size: 13px; opacity: 0.75; }
