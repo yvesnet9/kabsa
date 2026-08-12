@@ -787,6 +787,38 @@ export default function KabsaHome() {
         </div>
       </section>
 
+      <section className="info-block reveal" id="formation">
+        <div className="wrap">
+          <h2>Formation</h2>
+          <p className="lede">
+            KABSA ne forme pas seulement des sportifs : l'académie accompagne aussi les encadrants, les
+            clubs et les institutions pour diffuser une culture du sport inclusif et de qualité.
+          </p>
+          <div className="info-grid">
+            <div className="info-card">
+              <h3>Formation des encadrants</h3>
+              <p>Préparer entraîneurs et animateurs à un encadrement de qualité, adapté aux sportifs valides et handisport.</p>
+            </div>
+            <div className="info-card">
+              <h3>Formation des arbitres</h3>
+              <p>Accompagner arbitres et officiels dans la maîtrise des règles, y compris en handisport.</p>
+            </div>
+            <div className="info-card">
+              <h3>Formation du personnel des fédérations</h3>
+              <p>Appuyer les institutions et fédérations partenaires dans la montée en compétence de leurs équipes.</p>
+            </div>
+            <div className="info-card">
+              <h3>Sensibilisation à l'inclusion</h3>
+              <p>Des ateliers pour faire évoluer le regard sur le handicap et promouvoir la mixité dans le sport.</p>
+            </div>
+            <div className="info-card">
+              <h3>Accompagnement des jeunes talents</h3>
+              <p>Un parcours structuré, du repérage jusqu'à la préparation à une carrière professionnelle.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="info-block tint reveal" id="institutions">
         <div className="wrap">
           <h2>Adhésion Institutions &amp; Fédérations</h2>
@@ -803,7 +835,7 @@ export default function KabsaHome() {
               <h3>Préparation de tournois</h3>
               <p>Réception d'équipes nationales, matchs amicaux et évaluation du niveau collectif.</p>
             </div>
-            <div className="info-card" id="formation">
+            <div className="info-card">
               <h3>Formation &amp; sponsoring</h3>
               <p>Formation du personnel des fédérations, arbitres, et mise en relation avec des sponsors et équipementiers.</p>
             </div>
