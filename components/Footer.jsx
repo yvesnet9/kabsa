@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { INSTITUTION_MAILTO } from "./constants";
 
 export default function Footer() {
@@ -43,12 +44,12 @@ export default function Footer() {
           <div>
             <h4>Naviguer</h4>
             <ul>
-              <li className="row"><p><a href="#apropos">Qui sommes-nous</a></p></li>
-              <li className="row"><p><a href="#services">Nos services</a></p></li>
-              <li className="row"><p><a href="#handisport">Handisport</a></p></li>
-              <li className="row"><p><a href="#recherche">Recherche d'un joueur</a></p></li>
-              <li className="row"><p><a href="#formation">Formation</a></p></li>
-              <li className="row"><p><a href="#dons">Faire un don</a></p></li>
+              <li className="row"><p><Link href="/qui-sommes-nous">Qui sommes-nous</Link></p></li>
+              <li className="row"><p><Link href="/services">Nos services</Link></p></li>
+              <li className="row"><p><Link href="/handisport">Handisport</Link></p></li>
+              <li className="row"><p><Link href="/recherche-joueur">Recherche d'un joueur</Link></p></li>
+              <li className="row"><p><Link href="/formation">Formation</Link></p></li>
+              <li className="row"><p><Link href="/dons">Faire un don</Link></p></li>
             </ul>
           </div>
           <div id="adhesion">
