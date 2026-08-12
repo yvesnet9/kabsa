@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 function Logo({ size = 46 }) {
   return (
@@ -46,15 +47,15 @@ function Logo({ size = 46 }) {
 }
 
 const NAV = [
-  ["Accueil", "#accueil"],
-  ["Handisport", "#handisport", "handi"],
-  ["Qui sommes-nous", "#apropos"],
-  ["Services", "#services"],
-  ["Recherche d'un joueur", "#recherche"],
-  ["Compétitions dans le monde", "#competitions"],
-  ["Droits & carrière des sportifs", "#accompagnement"],
-  ["Dons", "#dons"],
-  ["Formation", "#formation"],
+  ["Accueil", "/"],
+  ["Handisport", "/handisport", "handi"],
+  ["Qui sommes-nous", "/qui-sommes-nous"],
+  ["Services", "/services"],
+  ["Recherche d'un joueur", "/recherche-joueur"],
+  ["Compétitions dans le monde", "/competitions"],
+  ["Droits & carrière des sportifs", "/droits-carriere"],
+  ["Dons", "/dons"],
+  ["Formation", "/formation"],
 ];
 
 export default function Header() {
@@ -63,21 +64,21 @@ export default function Header() {
   return (
     <header>
       <div className="bar">
-        <a className="brand" href="#accueil">
+        <Link className="brand" href="/">
           <Logo />
           <span className="name">
             <b>KABSA</b>
             <span>KA Bruxelles Sport Académie</span>
           </span>
-        </a>
+        </Link>
         <button className="burger" aria-label="Menu" onClick={() => setMenuOpen((o) => !o)}>
           ☰
         </button>
         <nav className={menuOpen ? "open" : ""}>
           {NAV.map(([label, href, cls]) => (
-            <a key={href} href={href} className={cls || undefined} onClick={() => setMenuOpen(false)}>
+            <Link key={href} href={href} className={cls || undefined} onClick={() => setMenuOpen(false)}>
               {label}
-            </a>
+            </Link>
           ))}
           <a className="cta cta-member" href="#adhesion" onClick={() => setMenuOpen(false)}>
             Devenir membre
