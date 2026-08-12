@@ -475,7 +475,7 @@ export default function KabsaHome() {
 
       <section className="hero" id="accueil">
         <div className="wrap">
-          <div className="rail" id="services">
+          <div className="rail">
             <div className="col-label">Services</div>
             {services.map((s) => (
               <a key={s.label} href={s.href} className={s.accent ? "svc accent" : "svc"}>
@@ -704,6 +704,46 @@ export default function KabsaHome() {
             <div className="info-card">
               <h3>Parking réservé</h3>
               <p>Places de stationnement réservées à proximité immédiate des installations.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="info-block reveal" id="services">
+        <div className="wrap">
+          <h2>Nos services</h2>
+          <p className="lede">
+            KABSA met à disposition des sportifs — valides ou en situation de handicap — et des
+            institutions tout ce qu'il faut pour progresser, du loisir jusqu'au haut niveau.
+          </p>
+          <div className="info-grid">
+            <div className="info-card">
+              <h3>Coaching technique &amp; tactique</h3>
+              <p>Un encadrement personnalisé pour progresser dans sa discipline et affiner son jeu.</p>
+            </div>
+            <div className="info-card">
+              <h3>Préparation physique</h3>
+              <p>Des préparateurs dédiés pour développer la condition, l'endurance et la performance.</p>
+            </div>
+            <div className="info-card">
+              <h3>Suivi kinésithérapeute</h3>
+              <p>Massages et soins après l'entraînement, et prévention des blessures.</p>
+            </div>
+            <div className="info-card">
+              <h3>Matériel &amp; infrastructures adaptés</h3>
+              <p>Équipements spécialisés et lieux d'entraînement accessibles à chacun.</p>
+            </div>
+            <div className="info-card">
+              <h3>Coaching nutritionnel</h3>
+              <p>Un accompagnement alimentaire au service de la santé et de la performance.</p>
+            </div>
+            <div className="info-card">
+              <h3>Hébergement des délégations</h3>
+              <p>Logement temporaire pour les équipes et délégations en stage.</p>
+            </div>
+            <div className="info-card">
+              <h3>Assurance pendant les activités</h3>
+              <p>Les participants sont couverts durant l'ensemble des séances encadrées.</p>
             </div>
           </div>
         </div>
