@@ -17,26 +17,6 @@ const PlayIcon = () => (
   </svg>
 );
 
-const UploadIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-    <path d="M12 16V4M12 4l-5 5M12 4l5 5" />
-    <path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3" />
-  </svg>
-);
-
-const UPLOAD_MAILTO =
-  "mailto:contact@kabsa.be" +
-  "?subject=" +
-  encodeURIComponent("Envoi de ma vidéo — Talent KABSA") +
-  "&body=" +
-  encodeURIComponent(
-    "Bonjour KABSA,\n\n" +
-      "Je souhaite vous envoyer ma vidéo pour la section « Vidéo à la une ».\n\n" +
-      "Merci de joindre votre vidéo à ce message si elle est courte, " +
-      "ou de coller ici un lien de partage (WeTransfer, Google Drive, etc.) si le fichier est volumineux.\n\n" +
-      "Nom :\nSport pratiqué :\nDescription de la vidéo :\n"
-  );
-
 const services = [
   { label: "Handisport", icon: "♿", href: "/handisport" },
   { label: "Sports", icon: "⚽", href: "/handisport" },
@@ -214,6 +194,80 @@ function ContactForm() {
   );
 }
 
+function VideoForm() {
+  const [f, setF] = useState({ nom: "", email: "", video: "", message: "" });
+  const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState(false);
+
+  const up = (k) => (e) => setF((s) => ({ ...s, [k]: e.target.value }));
+
+  const submit = async (e) => {
+    e.preventDefault();
+    if (!f.nom.trim() || !f.email.trim() || !f.video.trim()) return;
+    setSending(true);
+    setError(false);
+    try {
+      const res = await fetch("/api/video", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(f),
+      });
+      if (!res.ok) throw new Error("fail");
+      setSent(true);
+    } catch (err) {
+      setError(true);
+    } finally {
+      setSending(false);
+    }
+  };
+
+  if (sent) {
+    return (
+      <p className="rf-sent">
+        Merci ! Votre vidéo a bien été transmise à KABSA.
+      </p>
+    );
+  }
+
+  return (
+    <form className="recruit-form" onSubmit={submit}>
+      <div className="rf-grid">
+        <label>
+          Nom <span className="req">*</span>
+          <input type="text" value={f.nom} onChange={up("nom")} required />
+        </label>
+        <label>
+          Email <span className="req">*</span>
+          <input type="email" value={f.email} onChange={up("email")} required />
+        </label>
+        <label className="rf-full">
+          Lien de la vidéo <span className="req">*</span>
+          <input
+            type="url"
+            value={f.video}
+            onChange={up("video")}
+            placeholder="https://… (YouTube, Google Drive ou WeTransfer)"
+            required
+          />
+        </label>
+        <label className="rf-full">
+          Message
+          <textarea rows={4} value={f.message} onChange={up("message")} />
+        </label>
+      </div>
+      <button type="submit" className="info-cta" disabled={sending}>
+        {sending ? "Envoi en cours…" : "Envoyer ma vidéo"}
+      </button>
+      {error && (
+        <p className="rf-sent rf-error">
+          Une erreur s'est produite. Réessayez, ou écrivez à contact@kabsa.be.
+        </p>
+      )}
+    </form>
+  );
+}
+
 export default function KabsaHome() {
   useEffect(() => {
     const io = new IntersectionObserver(
@@ -269,10 +323,13 @@ export default function KabsaHome() {
                 allowFullScreen
               />
             </div>
-            <a className="upload-cta" href={UPLOAD_MAILTO}>
-              <UploadIcon />
-              Télécharger votre vidéo
-            </a>
+            <h3>Partagez votre vidéo avec KABSA</h3>
+            <p>
+              Vous êtes un sportif ? Envoyez-nous le lien de votre vidéo, nous la découvrirons. Pas
+              besoin de la rendre publique : vous pouvez utiliser YouTube (en mode « non répertorié »),
+              Google Drive ou WeTransfer — le lien reste privé et n'est partagé qu'avec nous.
+            </p>
+            <VideoForm />
           </div>
 
           <div className="vlist">
