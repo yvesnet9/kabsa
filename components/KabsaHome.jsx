@@ -324,7 +324,8 @@ export default function KabsaHome() {
             <span className="note">Cet espace est réservé à nos futurs partenaires et sponsors.</span>
           </div>
           <div className="logos">
-            {[0, 1, 2, 3, 4].map((i) => (
+            <div className="logo-ph">Institutions fédérales belges</div>
+            {[1, 2, 3, 4].map((i) => (
               <div className="logo-ph" key={i}>
                 Logo
               </div>
