@@ -48,9 +48,10 @@ export default function DonsPage() {
           Vous souhaitez soutenir KABSA ? Vous pouvez faire un don par virement bancaire :
         </p>
         <div className="info-card don-card">
-          <p><strong>Bénéficiaire :</strong> KA Bruxelles Sport Académie ASBL</p>
-          <p><strong>IBAN :</strong> [IBAN à compléter]</p>
-          <p><strong>Communication :</strong> « Don »</p>
+          <p><strong>Titulaire du compte :</strong> Amandin KAMGA</p>
+          <p><strong>IBAN :</strong> BE74 6501 4723 4307</p>
+          <p><strong>BIC :</strong> REVOBEB2</p>
+          <p><strong>Communication :</strong> « Don KABSA »</p>
           <p className="don-legal">
             KA Bruxelles Sport Académie ASBL — Rue Joseph Claes 21, 1060 Bruxelles — BE1038390334
           </p>

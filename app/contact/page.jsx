@@ -100,7 +100,7 @@ export default function ContactPage() {
         <div className="info-card">
           <h3>Nos coordonnées</h3>
           <p>Rue Joseph Claes 21, 1060 Bruxelles</p>
-          <p>0465 95 91 40</p>
+          <p>+32 465 95 91 40</p>
           <p>contact@kabsa.be</p>
         </div>
       </div>
