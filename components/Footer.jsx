@@ -62,7 +62,7 @@ export default function Footer() {
                 50 € inscription · 100 € fonds de solidarité · 25 € cotisation mensuelle. Paiement
                 possible en plusieurs mensualités.
               </p>
-              <a href="#contact">Nous rejoindre</a>
+              <Link href="/contact">Nous rejoindre</Link>
             </div>
           </div>
           <div>

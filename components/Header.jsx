@@ -80,15 +80,15 @@ export default function Header() {
               {label}
             </Link>
           ))}
-          <a className="cta cta-member" href="#adhesion" onClick={() => setMenuOpen(false)}>
+          <Link className="cta cta-member" href="/devenir-membre" onClick={() => setMenuOpen(false)}>
             Devenir membre
-          </a>
-          <a className="cta cta-inst" href="#institutions" onClick={() => setMenuOpen(false)}>
+          </Link>
+          <Link className="cta cta-inst" href="/institutions" onClick={() => setMenuOpen(false)}>
             Institutions &amp; Fédérations
-          </a>
-          <a className="cta" href="#contact" onClick={() => setMenuOpen(false)}>
+          </Link>
+          <Link className="cta" href="/contact" onClick={() => setMenuOpen(false)}>
             Contact
-          </a>
+          </Link>
         </nav>
       </div>
     </header>
