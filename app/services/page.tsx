@@ -24,8 +24,9 @@ export default function ServicesPage() {
       <div className="wrap">
         <h2>Nos services</h2>
         <p className="lede">
-          KABSA met à disposition des sportifs — valides ou en situation de handicap — et des
-          institutions tout ce qu'il faut pour progresser, du loisir jusqu'au haut niveau.
+          KA Bruxelles Sport Académie propulse les athlètes valides et en situation de handicap, et
+          accompagne les institutions sportives mondiales à travers des « solutions clés en main »,
+          inclusives et professionnelles.
         </p>
         <div className="info-grid">
           <div className="info-card">
@@ -55,6 +56,18 @@ export default function ServicesPage() {
           <div className="info-card">
             <h3>Assurance pendant les activités</h3>
             <p>Les participants sont couverts durant l'ensemble des séances encadrées.</p>
+          </div>
+          <div className="info-card">
+            <h3>Fonds de solidarité</h3>
+            <p>Un soutien aux sportifs face aux injustices sportives et aux difficultés de carrière.</p>
+          </div>
+          <div className="info-card">
+            <h3>Intermédiaire de transport</h3>
+            <p>Organisation et prise en charge des déplacements des sportifs et délégations.</p>
+          </div>
+          <div className="info-card">
+            <h3>Intermédiaire de visa &amp; billet d'avion</h3>
+            <p>Accompagnement dans les démarches de visa et la réservation des billets d'avion.</p>
           </div>
         </div>
       </div>
