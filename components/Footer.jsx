@@ -40,6 +40,13 @@ export default function Footer() {
               </svg>
               <p>Chaîne YouTube KABSA — à venir</p>
             </div>
+            <div className="row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <path d="M8 8h8M8 12h8M8 16h5" />
+              </svg>
+              <p>N° d'entreprise : BE1038390334</p>
+            </div>
           </div>
           <div>
             <h4>Naviguer</h4>
