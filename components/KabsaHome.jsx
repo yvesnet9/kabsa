@@ -19,7 +19,7 @@ const PlayIcon = () => (
 
 const services = [
   { label: "Handisport", icon: "♿", href: "/handisport" },
-  { label: "Sports", icon: "⚽", href: "/handisport" },
+  { label: "Sports", icon: "⚽", href: "/sport" },
   { label: "Remise à niveau", icon: "↑", href: "/services" },
   { label: "Adhésion Institutions & Fédérations", icon: "🤝", href: "#institutions" },
   { label: "Missions sportives", icon: "🌍", href: "/services" },
