@@ -264,11 +264,11 @@ function VideoForm() {
   return (
     <form className="recruit-form" onSubmit={submit}>
       <button type="submit" className="info-cta" disabled={sending}>
-        {sending ? "Envoi en cours…" : "Télécharger ma vidéo"}
+        {sending ? "Envoi en cours…" : "Envoyer ma vidéo"}
       </button>
       <div className="rf-grid">
         <label className="rf-full">
-          Votre vidéo (fichier, max 20 Mo)
+          Télécharger votre vidéo (max 20 Mo)
           <input type="file" accept="video/*" onChange={onFile} />
         </label>
         <label className="rf-full">
