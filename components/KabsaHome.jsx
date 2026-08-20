@@ -194,25 +194,56 @@ function ContactForm() {
   );
 }
 
+const MAX_VIDEO_BYTES = 20 * 1024 * 1024;
+
 function VideoForm() {
   const [f, setF] = useState({ nom: "", email: "", video: "", message: "" });
+  const [file, setFile] = useState(null);
+  const [fieldError, setFieldError] = useState("");
   const [sent, setSent] = useState(false);
   const [sending, setSending] = useState(false);
   const [error, setError] = useState(false);
 
   const up = (k) => (e) => setF((s) => ({ ...s, [k]: e.target.value }));
 
+  const onFile = (e) => {
+    const picked = e.target.files?.[0] || null;
+    setFieldError("");
+    if (picked && picked.size > MAX_VIDEO_BYTES) {
+      setFieldError(
+        "La vidéo dépasse 20 Mo. Utilisez plutôt le champ lien (YouTube, Google Drive, WeTransfer)."
+      );
+      setFile(null);
+      e.target.value = "";
+      return;
+    }
+    setFile(picked);
+  };
+
   const submit = async (e) => {
     e.preventDefault();
-    if (!f.nom.trim() || !f.email.trim() || !f.video.trim()) return;
+    setFieldError("");
+    if (!f.nom.trim() || !f.email.trim()) return;
+    if (!file && !f.video.trim()) {
+      setFieldError("Ajoutez un fichier vidéo ou un lien vers votre vidéo.");
+      return;
+    }
+    if (file && file.size > MAX_VIDEO_BYTES) {
+      setFieldError(
+        "La vidéo dépasse 20 Mo. Utilisez plutôt le champ lien (YouTube, Google Drive, WeTransfer)."
+      );
+      return;
+    }
     setSending(true);
     setError(false);
     try {
-      const res = await fetch("/api/video", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(f),
-      });
+      const body = new FormData();
+      body.append("nom", f.nom);
+      body.append("email", f.email);
+      body.append("video", f.video);
+      body.append("message", f.message);
+      if (file) body.append("file", file);
+      const res = await fetch("/api/video", { method: "POST", body });
       if (!res.ok) throw new Error("fail");
       setSent(true);
     } catch (err) {
@@ -236,6 +267,20 @@ function VideoForm() {
         {sending ? "Envoi en cours…" : "Télécharger ma vidéo"}
       </button>
       <div className="rf-grid">
+        <label className="rf-full">
+          Votre vidéo (fichier, max 20 Mo)
+          <input type="file" accept="video/*" onChange={onFile} />
+        </label>
+        <label className="rf-full">
+          Ou collez un lien (pour les vidéos de plus de 20 Mo)
+          <input
+            type="text"
+            value={f.video}
+            onChange={up("video")}
+            placeholder="Collez ici le lien de votre vidéo (YouTube, Google Drive ou WeTransfer)"
+          />
+        </label>
+        {fieldError && <p className="rf-sent rf-error">{fieldError}</p>}
         <label>
           Nom <span className="req">*</span>
           <input type="text" value={f.nom} onChange={up("nom")} required />
@@ -243,16 +288,6 @@ function VideoForm() {
         <label>
           Email <span className="req">*</span>
           <input type="email" value={f.email} onChange={up("email")} required />
-        </label>
-        <label className="rf-full">
-          Lien de la vidéo <span className="req">*</span>
-          <input
-            type="text"
-            value={f.video}
-            onChange={up("video")}
-            placeholder="Collez ici le lien de votre vidéo (YouTube, Google Drive ou WeTransfer)"
-            required
-          />
         </label>
         <label className="rf-full">
           Message
