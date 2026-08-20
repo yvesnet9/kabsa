@@ -232,6 +232,9 @@ function VideoForm() {
 
   return (
     <form className="recruit-form" onSubmit={submit}>
+      <button type="submit" className="info-cta" disabled={sending}>
+        {sending ? "Envoi en cours…" : "Télécharger ma vidéo"}
+      </button>
       <div className="rf-grid">
         <label>
           Nom <span className="req">*</span>
@@ -244,10 +247,10 @@ function VideoForm() {
         <label className="rf-full">
           Lien de la vidéo <span className="req">*</span>
           <input
-            type="url"
+            type="text"
             value={f.video}
             onChange={up("video")}
-            placeholder="https://… (YouTube, Google Drive ou WeTransfer)"
+            placeholder="Collez ici le lien de votre vidéo (YouTube, Google Drive ou WeTransfer)"
             required
           />
         </label>
@@ -256,9 +259,6 @@ function VideoForm() {
           <textarea rows={4} value={f.message} onChange={up("message")} />
         </label>
       </div>
-      <button type="submit" className="info-cta" disabled={sending}>
-        {sending ? "Envoi en cours…" : "Envoyer ma vidéo"}
-      </button>
       {error && (
         <p className="rf-sent rf-error">
           Une erreur s'est produite. Réessayez, ou écrivez à contact@kabsa.be.
