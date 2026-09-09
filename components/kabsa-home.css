@@ -146,6 +146,8 @@
 .kabsa .info-card{background:#fff;border:1px solid var(--grey-200);border-radius:12px;padding:18px}
 .kabsa .info-card h3{font-family:var(--display);text-transform:uppercase;letter-spacing:.04em;font-size:1rem;color:var(--sky-900);margin-bottom:6px}
 .kabsa .info-card p{color:var(--grey-500);font-size:.92rem}
+.kabsa .info-card--link{display:block;text-decoration:none;cursor:pointer;transition:.18s;transition-property:transform,box-shadow,border-color}
+.kabsa .info-card--link:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(11,72,112,.12);border-color:var(--sky-600)}
 .kabsa .info-cta{display:inline-block;margin-top:6px;background:var(--sky-600);color:#fff;font-family:var(--display);text-transform:uppercase;letter-spacing:.05em;font-size:.82rem;padding:10px 18px;border-radius:20px;transition:.18s}
 .kabsa .info-cta:hover{background:var(--sky-900)}
 .kabsa .hero .info-cta{background:var(--orange-600);color:#3A2600;width:100%;font-weight:700;font-size:.92rem;padding:13px 18px}
@@ -300,6 +302,24 @@
   border-top: 1px solid rgba(11,72,112,0.15);
 }
 .kabsa .rf-error { color: #c0392b; }
+
+/* ===== Emplacement vidéo (placeholder, pages disciplines handisport) ===== */
+.kabsa .video-slot {
+  margin-top: 12px;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--grey-200);
+  border-radius: 10px;
+  background: var(--sky-100);
+  color: var(--sky-900);
+  font-family: var(--display);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  font-size: .8rem;
+  text-align: center;
+}
 
 /* ===== Astérisque champs obligatoires ===== */
 .kabsa .req { color: #c0392b; font-weight: 700; margin-left: 1px; }

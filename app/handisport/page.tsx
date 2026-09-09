@@ -37,10 +37,10 @@ export default function HandisportPage() {
 
         <h3 className="rf-blocktitle">Nos disciplines adaptées</h3>
         <div className="info-grid">
-          <div className="info-card">
+          <Link href="/handisport/basket-fauteuil" className="info-card info-card--link">
             <h3>Basket-fauteuil</h3>
             <p>Le basket pratiqué en fauteuil roulant de sport, en équipe, dans un esprit collectif.</p>
-          </div>
+          </Link>
           <div className="info-card">
             <h3>Para-athlétisme</h3>
             <p>Courses, sauts et lancers adaptés, en individuel ou en relais, selon les catégories.</p>
