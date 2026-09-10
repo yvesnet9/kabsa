@@ -153,8 +153,18 @@ export default function BasketFauteuilPage() {
               <div className="video-slot">Vidéo à venir</div>
             </div>
             <div className="info-card">
+              <h3>En images</h3>
+              <p>Moments forts et coulisses du club.</p>
+              <div className="video-slot">Vidéo à venir</div>
+            </div>
+            <div className="info-card">
               <h3>Matchs &amp; compétitions</h3>
               <p>Meilleurs moments des championnats.</p>
+              <div className="video-slot">Vidéo à venir</div>
+            </div>
+            <div className="info-card">
+              <h3>À découvrir</h3>
+              <p>D'autres vidéos à venir bientôt.</p>
               <div className="video-slot">Vidéo à venir</div>
             </div>
             <div className="info-card">
