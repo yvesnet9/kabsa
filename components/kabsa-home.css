@@ -358,3 +358,25 @@
 .kabsa #dons .don-card { margin-top: 14px; max-width: 560px; }
 .kabsa #dons .don-card p { margin: 4px 0; }
 .kabsa #dons .don-legal { margin-top: 12px; font-size: 13px; opacity: 0.75; }
+
+/* ===== Mise en page disciplines handisport (modèle) ===== */
+.kabsa .disc-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 320px;  /* texte | vidéos */
+  gap:34px;
+  margin-top:8px;
+}
+.kabsa .disc-main .lede{text-align:justify;max-width:none}
+.kabsa .disc-main .info-grid{grid-template-columns:repeat(2,1fr)}
+
+.kabsa .disc-media{
+  display:flex;flex-direction:column;
+  justify-content:space-between;
+  gap:22px;
+}
+.kabsa .disc-media .video-slot{margin-top:10px}
+
+@media(max-width:900px){
+  .kabsa .disc-layout{grid-template-columns:1fr;gap:26px}
+  .kabsa .disc-media{justify-content:flex-start}
+}
