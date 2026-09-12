@@ -45,10 +45,10 @@ export default function HandisportPage() {
             <h3>Para-athlétisme</h3>
             <p>Courses, sauts et lancers adaptés, en individuel ou en relais, selon les catégories.</p>
           </Link>
-          <div className="info-card">
+          <Link href="/handisport/natation-adaptee" className="info-card info-card--link">
             <h3>Natation adaptée</h3>
             <p>Nage encadrée et adaptée à chaque nageur, du loisir jusqu'à la compétition.</p>
-          </div>
+          </Link>
           <div className="info-card">
             <h3>Tennis en chaise</h3>
             <p>Le tennis pratiqué en fauteuil roulant, en simple ou en double.</p>
