@@ -49,10 +49,10 @@ export default function HandisportPage() {
             <h3>Natation adaptée</h3>
             <p>Nage encadrée et adaptée à chaque nageur, du loisir jusqu'à la compétition.</p>
           </Link>
-          <div className="info-card">
+          <Link href="/handisport/tennis-chaise" className="info-card info-card--link">
             <h3>Tennis en chaise</h3>
             <p>Le tennis pratiqué en fauteuil roulant, en simple ou en double.</p>
-          </div>
+          </Link>
         </div>
 
         <h3 className="rf-blocktitle rf-blocktitle--2">Accessibilité : quelle discipline pour quel profil ?</h3>
