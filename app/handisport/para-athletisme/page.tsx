@@ -110,17 +110,62 @@ export default function ParaAthletismePage() {
               ont droit (ex. fauteuil de course pour les athlètes ne pouvant courir debout, lames de
               course pour les amputés du membre inférieur).
             </p>
+
+            <h3 className="rf-blocktitle rf-blocktitle--2">
+              IV. Déroulement d'entraînement et préparation physique
+            </h3>
+            <p className="lede">
+              L'entraînement en para-athlétisme demande la même rigueur que chez les valides,
+              articulé autour de plusieurs axes :
+            </p>
+            <ul className="lede">
+              <li>
+                <strong>La préparation physique générale (PPG)</strong> : développement de la
+                force (musculation du haut du corps pour les athlètes en fauteuil), de
+                l'endurance cardiovasculaire, de la souplesse et du gainage.
+              </li>
+              <li>
+                <strong>Le travail technique</strong> : apprivoiser son matériel (régler la
+                trajectoire de son fauteuil, ajuster l'angulation de sa prothèse) ou synchroniser
+                sa course à la perfection avec son guide.
+              </li>
+              <li>
+                <strong>La récupération et le suivi médical</strong> : soins kinésithérapiques
+                adaptés pour éviter les blessures d'usure (très fréquentes aux épaules chez les
+                athlètes en fauteuil).
+              </li>
+            </ul>
+
+            <h3 className="rf-blocktitle rf-blocktitle--2">V. Matchs internes et compétition</h3>
+            <ul className="lede">
+              <li>
+                <strong>Matchs et meetings internes</strong> : les clubs organisent des
+                rencontres amicales ou des tests chronométrés pour évaluer la progression des
+                athlètes.
+              </li>
+              <li>
+                <strong>Compétitions officielles</strong> : les athlètes s'affrontent lors de
+                championnats régionaux, nationaux, puis internationaux (Championnats du monde,
+                Jeux Paralympiques).
+              </li>
+              <li>
+                <strong>Régulation</strong> : les règles de base de World Athletics s'appliquent,
+                mais ajustées — par exemple, le poids des engins de lancer est adapté, et lors
+                d'une course guidée, le guide ne doit jamais tirer l'athlète ni franchir la ligne
+                d'arrivée avant lui.
+              </li>
+            </ul>
           </div>
 
           <aside className="disc-media">
             <div className="info-card">
               <h3>Matériels</h3>
-              <p>Présentation technique des lames, fauteuils et sièges de lancer.</p>
+              <p>Lames de course, fauteuils et sièges de lancer.</p>
               <div className="video-slot">Vidéo à venir</div>
             </div>
             <div className="info-card">
               <h3>Entraînements</h3>
-              <p>Exercices de course, sauts et lancers adaptés.</p>
+              <p>Travail technique, PPG et séances de piste.</p>
               <div className="video-slot">Vidéo à venir</div>
             </div>
             <div className="info-card">
