@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
+import BackButton from "@/components/BackButton";
 
 export default function BasketFauteuilPage() {
   useEffect(() => {
@@ -23,6 +24,7 @@ export default function BasketFauteuilPage() {
   return (
     <section className="info-block reveal" id="discipline">
       <div className="wrap">
+        <BackButton />
         <h2>Basket-fauteuil</h2>
 
         <div className="disc-layout">

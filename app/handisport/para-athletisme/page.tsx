@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
+import BackButton from "@/components/BackButton";
 
 export default function ParaAthletismePage() {
   useEffect(() => {
@@ -23,6 +24,7 @@ export default function ParaAthletismePage() {
   return (
     <section className="info-block reveal" id="discipline">
       <div className="wrap">
+        <BackButton />
         <h2>Para-athlétisme</h2>
 
         <div className="disc-layout">
