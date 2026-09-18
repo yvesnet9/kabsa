@@ -390,3 +390,42 @@
   .kabsa .disc-layout{grid-template-columns:1fr;gap:26px}
   .kabsa .disc-media{justify-content:flex-start}
 }
+
+/* ===== Onglets pages disciplines handisport (composant DisciplineTabs) ===== */
+.kabsa .disc-tabs{margin-top:22px}
+.kabsa .disc-tabs__list{
+  display:flex;
+  gap:6px;
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+  border-bottom:1px solid var(--grey-200);
+  margin-bottom:26px;
+  scrollbar-width:thin;
+}
+.kabsa .disc-tabs__tab{
+  flex:0 0 auto;
+  background:none;
+  border:none;
+  border-bottom:3px solid transparent;
+  padding:10px 16px 12px;
+  font-family:var(--display);
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  font-size:.82rem;
+  font-weight:500;
+  color:var(--grey-500);
+  white-space:nowrap;
+  transition:color .18s,border-color .18s;
+}
+.kabsa .disc-tabs__tab:hover{color:var(--sky-900)}
+.kabsa .disc-tabs__tab:focus-visible{outline:2px solid var(--sky-600);outline-offset:2px}
+.kabsa .disc-tabs__tab.is-active{color:var(--sky-900);border-bottom-color:var(--orange-600)}
+.kabsa .disc-tabs__panel .tab-placeholder{
+  color:var(--grey-500);
+  font-style:italic;
+}
+
+@media(max-width:600px){
+  .kabsa .disc-tabs__list{gap:2px}
+  .kabsa .disc-tabs__tab{padding:9px 12px 10px;font-size:.76rem}
+}

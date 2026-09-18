@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import BackButton from "@/components/BackButton";
+import DisciplineTabs from "@/components/DisciplineTabs";
 
 export default function NatationAdapteePage() {
   useEffect(() => {
@@ -21,13 +22,9 @@ export default function NatationAdapteePage() {
     return () => io.disconnect();
   }, []);
 
-  return (
-    <section className="info-block reveal" id="discipline">
-      <div className="wrap">
-        <BackButton />
-        <h2>Natation adaptée</h2>
-
-        <div className="disc-layout">
+  const presentationContent = (
+    <>
+      <div className="disc-layout">
           <div className="disc-main">
             <p className="lede">
               La natation adaptée est une discipline aquatique structurée pour permettre à toute
@@ -186,16 +183,151 @@ export default function NatationAdapteePage() {
               <div className="video-slot">Vidéo à venir</div>
             </div>
           </aside>
-        </div>
+      </div>
 
-        <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 6 }}>
-          <Link href="/contact" className="info-cta">
-            S'inscrire / Nous contacter
-          </Link>
-          <Link href="/dons" className="info-cta">
-            Faire un don
-          </Link>
+      <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 6 }}>
+        <Link href="/contact" className="info-cta">
+          S'inscrire / Nous contacter
+        </Link>
+        <Link href="/dons" className="info-cta">
+          Faire un don
+        </Link>
+      </div>
+    </>
+  );
+
+  const accessibiliteContent = (
+    <div className="disc-main">
+      <p className="lede">
+        La natation adaptée (ou para-natation) est l&apos;une des rares activités physiques qui
+        offre une liberté totale de mouvement. Elle s&apos;adresse aux personnes en situation de
+        handicap moteur, sensoriel ou mental, en s&apos;ajustant aux capacités de chacun grâce à
+        un accompagnement sur-mesure.
+      </p>
+
+      <h3 className="rf-blocktitle rf-blocktitle--2">Un sport accessible à tous les handicaps</h3>
+      <p className="lede">L&apos;environnement aquatique brise les barrières physiques et cognitives :</p>
+      <ul className="lede">
+        <li>
+          <strong>Handicaps moteurs</strong> : l&apos;effet de flottaison (poussée
+          d&apos;Archimède) libère le corps de la contrainte du fauteuil. Les articulations sont
+          protégées, ce qui permet renforcement musculaire et coordination sans douleur.
+        </li>
+        <li>
+          <strong>Handicaps sensoriels</strong> : pour les déficiences visuelles ou auditives,
+          des repères tactiles et un guidage à la voix (ou par contact) permettent
+          d&apos;évoluer en sécurité.
+        </li>
+        <li>
+          <strong>Handicaps mentaux ou psychiques</strong> : apprentissage par méthodes ludiques
+          et consignes décomposées. L&apos;eau agit comme un relaxant naturel, réduisant
+          l&apos;anxiété et l&apos;hyperactivité.
+        </li>
+      </ul>
+
+      <h3 className="rf-blocktitle rf-blocktitle--2">
+        Équipements adaptés et utilisation en bassin
+      </h3>
+      <p className="lede">
+        La natation demande peu de matériel lourd, mais certains accessoires maximisent
+        l&apos;autonomie :
+      </p>
+      <ul className="lede">
+        <li>
+          <strong>Gilets de flottaison stabilisateurs</strong> : maintiennent le corps à
+          l&apos;horizontale ou à la verticale selon les pathologies.
+        </li>
+        <li>
+          <strong>Attelles de nage et flotteurs de jambes</strong> : stabilisent le bas du corps
+          et évitent que les jambes ne coulent.
+        </li>
+        <li>
+          <strong>Gants palmés</strong> : compensent un manque d&apos;appui dans l&apos;eau.
+        </li>
+      </ul>
+      <p className="lede">
+        L&apos;accessibilité commence dès l&apos;entrée dans l&apos;eau : les piscines modernes
+        intègrent des potences élévatrices ou des plateformes de descente en totale autonomie.
+      </p>
+
+      <h3 className="rf-blocktitle rf-blocktitle--2">Zoom santé : les bienfaits cardiovasculaires</h3>
+      <p className="lede">
+        Nager a un impact direct sur l&apos;appareil circulatoire, particulièrement bénéfique
+        pour les personnes à mobilité réduite :
+      </p>
+      <ul className="lede">
+        <li>
+          <strong>Assouplissement des artères</strong> : la pratique régulière améliore la
+          flexibilité de l&apos;artère carotide et atténue le durcissement des vaisseaux.
+        </li>
+        <li>
+          <strong>Baisse de la tension artérielle</strong> : la pression hydrostatique favorise
+          le retour veineux et réduit l&apos;hypertension.
+        </li>
+        <li>
+          <strong>Efficacité cardiaque</strong> : le cœur gagne en puissance et en volume de
+          pompage, dans un milieu thermal qui régule la température corporelle.
+        </li>
+      </ul>
+
+      <p className="lede">
+        <strong>Un accompagnement humain et sécurisé</strong> : maîtres-nageurs et éducateurs
+        spécialisés formés au handisport, présence rassurante dans l&apos;eau, séances
+        structurées à l&apos;écoute du rythme et de la fatigue de chacun.
+      </p>
+
+      <div className="info-grid">
+        <div className="info-card">
+          <h3>Matériels</h3>
+          <p>Systèmes de mise à l&apos;eau et technique du &quot;tapping&quot;.</p>
+          <div className="video-slot">Vidéo à venir</div>
         </div>
+        <div className="info-card">
+          <h3>Entraînements</h3>
+          <p>Immersion dans une séance hebdomadaire avec nos coachs.</p>
+          <div className="video-slot">Vidéo à venir</div>
+        </div>
+        <div className="info-card">
+          <h3>En images</h3>
+          <p>Moments forts et coulisses du club.</p>
+          <div className="video-slot">Vidéo à venir</div>
+        </div>
+        <div className="info-card">
+          <h3>Matchs &amp; compétitions</h3>
+          <p>Meilleurs moments des championnats.</p>
+          <div className="video-slot">Vidéo à venir</div>
+        </div>
+        <div className="info-card">
+          <h3>À découvrir</h3>
+          <p>D&apos;autres vidéos à venir bientôt.</p>
+          <div className="video-slot">Vidéo à venir</div>
+        </div>
+        <div className="info-card">
+          <h3>Stars nageurs KABSA</h3>
+          <p>Parcours des meilleurs nageurs.</p>
+          <div className="video-slot">Vidéo à venir</div>
+        </div>
+      </div>
+    </div>
+  );
+
+  const comingSoonContent = <p className="lede tab-placeholder">Contenu à venir.</p>;
+
+  const tabs = [
+    { id: "presentation", label: "Présentation", content: presentationContent },
+    { id: "accessibilite", label: "Accessibilité & pratique", content: accessibiliteContent },
+    { id: "infrastructures", label: "Infrastructures", content: comingSoonContent },
+    { id: "horaires-tarifs", label: "Horaires & tarifs", content: comingSoonContent },
+    { id: "type-entrainement", label: "Type d'entraînement", content: comingSoonContent },
+  ];
+
+  return (
+    <section className="info-block reveal" id="discipline">
+      <div className="wrap">
+        <BackButton />
+        <h2>Natation adaptée</h2>
+
+        <DisciplineTabs tabs={tabs} defaultTabId="presentation" />
       </div>
     </section>
   );

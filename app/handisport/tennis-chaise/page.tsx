@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import BackButton from "@/components/BackButton";
+import DisciplineTabs from "@/components/DisciplineTabs";
 
 export default function TennisChaisePage() {
   useEffect(() => {
@@ -21,13 +22,9 @@ export default function TennisChaisePage() {
     return () => io.disconnect();
   }, []);
 
-  return (
-    <section className="info-block reveal" id="discipline">
-      <div className="wrap">
-        <BackButton />
-        <h2>Tennis en chaise</h2>
-
-        <div className="disc-layout">
+  const presentationContent = (
+    <>
+      <div className="disc-layout">
           <div className="disc-main">
             <p className="lede">
               Le tennis en chaise (ou tennis-fauteuil / paratennis) est l'un des handisports les
@@ -185,16 +182,126 @@ export default function TennisChaisePage() {
               <div className="video-slot">Vidéo à venir</div>
             </div>
           </aside>
-        </div>
+      </div>
 
-        <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 6 }}>
-          <Link href="/contact" className="info-cta">
-            S'inscrire / Nous contacter
-          </Link>
-          <Link href="/dons" className="info-cta">
-            Faire un don
-          </Link>
+      <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 6 }}>
+        <Link href="/contact" className="info-cta">
+          S'inscrire / Nous contacter
+        </Link>
+        <Link href="/dons" className="info-cta">
+          Faire un don
+        </Link>
+      </div>
+    </>
+  );
+
+  const accessibiliteContent = (
+    <div className="disc-main">
+      <p className="lede">
+        Le tennis en chaise roulante (ou paratennis) est une discipline dynamique et
+        spectaculaire. Il suit presque en tout point les règles du tennis traditionnel, à une
+        exception majeure : les joueurs ont droit à deux rebonds avant de renvoyer la balle (le
+        2ᵉ rebond pouvant s&apos;effectuer à l&apos;extérieur des limites du terrain).
+      </p>
+      <p className="lede">
+        Ce sport s&apos;adresse généralement à toute personne présentant un handicap moteur
+        fonctionnel permanent qui empêche la pratique debout. Un entretien individuel avec nos
+        encadrants permet de confirmer l&apos;adéquation avec la discipline et d&apos;évaluer les
+        besoins spécifiques (ajustements, sangles, etc.).
+      </p>
+
+      <h3 className="rf-blocktitle rf-blocktitle--2">
+        Le matériel : choisir l&apos;excellence pour débuter et progresser
+      </h3>
+      <p className="lede">
+        Le loisir peut débuter avec n&apos;importe quel équipement, mais l&apos;évolution
+        technique demande vite un fauteuil multisport adapté : ultra-léger (souvent moins de 10
+        kg), très maniable et stable. Caractéristiques :
+      </p>
+      <ul className="lede">
+        <li>
+          <strong>Carrossage des roues arrière</strong> (inclinaison de 15 à 20°) pour des pivots
+          ultra-rapides sans basculer.
+        </li>
+        <li>
+          <strong>Roulette arrière anti-bascule</strong> pour sécuriser les mouvements puissants,
+          notamment au service.
+        </li>
+        <li>
+          <strong>Systèmes d&apos;attache</strong> (sangles, cale-genoux) pour que le joueur et
+          son fauteuil ne fassent plus qu&apos;un.
+        </li>
+      </ul>
+
+      <h3 className="rf-blocktitle rf-blocktitle--2">Déplacements et trajectoires</h3>
+      <p className="lede">
+        En tennis-fauteuil, la clé est le déplacement continu (« rouling »). Sans pas chassés, le
+        joueur dessine des trajectoires fluides en « H » ou en boucles pour aborder la balle avec
+        la bonne inertie. La coordination propulsion / maintien de la raquette / gestion des
+        angles demande une vraie technique de pivot.
+      </p>
+
+      <h3 className="rf-blocktitle rf-blocktitle--2">
+        Maîtrise technique et utilisation sur le terrain
+      </h3>
+      <p className="lede">
+        L&apos;utilisation combine le maniement de la raquette et la poussée simultanée ou
+        alternée des roues : de la phase de service (stabilisation du buste essentielle) aux
+        coups spécifiques comme le revers inversé (pour frapper des balles hautes ou excentrées).
+      </p>
+
+      <div className="info-grid">
+        <div className="info-card">
+          <h3>Matériels</h3>
+          <p>Conception d&apos;un fauteuil de compétition et carrossage des roues.</p>
+          <div className="video-slot">Vidéo à venir</div>
         </div>
+        <div className="info-card">
+          <h3>Entraînements</h3>
+          <p>Les secrets de la synchronisation déplacement/frappe.</p>
+          <div className="video-slot">Vidéo à venir</div>
+        </div>
+        <div className="info-card">
+          <h3>En images</h3>
+          <p>Moments forts et coulisses du club.</p>
+          <div className="video-slot">Vidéo à venir</div>
+        </div>
+        <div className="info-card">
+          <h3>Matchs &amp; compétitions</h3>
+          <p>Meilleurs moments des championnats.</p>
+          <div className="video-slot">Vidéo à venir</div>
+        </div>
+        <div className="info-card">
+          <h3>À découvrir</h3>
+          <p>D&apos;autres vidéos à venir bientôt.</p>
+          <div className="video-slot">Vidéo à venir</div>
+        </div>
+        <div className="info-card">
+          <h3>Stars joueurs KABSA</h3>
+          <p>Parcours des meilleurs joueurs.</p>
+          <div className="video-slot">Vidéo à venir</div>
+        </div>
+      </div>
+    </div>
+  );
+
+  const comingSoonContent = <p className="lede tab-placeholder">Contenu à venir.</p>;
+
+  const tabs = [
+    { id: "presentation", label: "Présentation", content: presentationContent },
+    { id: "accessibilite", label: "Accessibilité & pratique", content: accessibiliteContent },
+    { id: "infrastructures", label: "Infrastructures", content: comingSoonContent },
+    { id: "horaires-tarifs", label: "Horaires & tarifs", content: comingSoonContent },
+    { id: "type-entrainement", label: "Type d'entraînement", content: comingSoonContent },
+  ];
+
+  return (
+    <section className="info-block reveal" id="discipline">
+      <div className="wrap">
+        <BackButton />
+        <h2>Tennis en chaise</h2>
+
+        <DisciplineTabs tabs={tabs} defaultTabId="presentation" />
       </div>
     </section>
   );

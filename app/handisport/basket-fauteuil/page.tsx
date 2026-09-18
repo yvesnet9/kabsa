@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import BackButton from "@/components/BackButton";
+import DisciplineTabs from "@/components/DisciplineTabs";
 
 export default function BasketFauteuilPage() {
   useEffect(() => {
@@ -21,13 +22,9 @@ export default function BasketFauteuilPage() {
     return () => io.disconnect();
   }, []);
 
-  return (
-    <section className="info-block reveal" id="discipline">
-      <div className="wrap">
-        <BackButton />
-        <h2>Basket-fauteuil</h2>
-
-        <div className="disc-layout">
+  const presentationContent = (
+    <>
+      <div className="disc-layout">
           <div className="disc-main">
             <h3 className="rf-blocktitle">I. Définition</h3>
             <p className="lede">
@@ -175,16 +172,163 @@ export default function BasketFauteuilPage() {
               <div className="video-slot">Vidéo à venir</div>
             </div>
           </aside>
-        </div>
+      </div>
 
-        <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 6 }}>
-          <Link href="/contact" className="info-cta">
-            S'inscrire / Nous contacter
-          </Link>
-          <Link href="/dons" className="info-cta">
-            Faire un don
-          </Link>
+      <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 6 }}>
+        <Link href="/contact" className="info-cta">
+          S'inscrire / Nous contacter
+        </Link>
+        <Link href="/dons" className="info-cta">
+          Faire un don
+        </Link>
+      </div>
+    </>
+  );
+
+  const accessibiliteContent = (
+    <div className="disc-main">
+      <p className="lede">
+        Le basket-fauteuil (ou handibasket) est l&apos;un des sports paralympiques les plus
+        spectaculaires et populaires au monde. Alliant vitesse, esprit d&apos;équipe et
+        stratégie, cette discipline offre une liberté totale de mouvement et un esprit de
+        compétition intense.
+      </p>
+
+      <h3 className="rf-blocktitle rf-blocktitle--2">À qui s&apos;adresse le basket-fauteuil ?</h3>
+      <p className="lede">
+        Ce sport est conçu pour être inclusif et équitable. Il s&apos;adresse principalement aux
+        personnes ayant une mobilité réduite des membres inférieurs ou supérieurs, qui les
+        empêche de pratiquer le basket-ball debout. Il convient particulièrement aux profils
+        suivants :
+      </p>
+      <ul className="lede">
+        <li>
+          <strong>Handicaps moteurs divers</strong> : paraplégie, tétraplégie ou assimilée.
+        </li>
+        <li>
+          <strong>Amputations ou agénésies</strong> : amputation d&apos;un ou des deux membres
+          inférieurs.
+        </li>
+        <li>
+          <strong>Pathologies neurologiques ou musculaires</strong> : poliomyélite, infirmité
+          motrice cérébrale (IMC), myopathie, ou spina bifida.
+        </li>
+        <li>
+          <strong>Ouverture aux personnes valides</strong> : en club (selon les réglementations
+          nationales), les personnes valides ou ayant des limitations légères peuvent intégrer
+          les équipes pour favoriser une inclusion réciproque.
+        </li>
+      </ul>
+      <p className="lede">
+        <em>Le saviez-vous ?</em> Un entretien préalable avec le staff médical et technique du
+        club permet d&apos;évaluer votre profil, l&apos;adéquation de la discipline avec vos
+        capacités fonctionnelles et de définir le matériel adapté.
+      </p>
+
+      <h3 className="rf-blocktitle rf-blocktitle--2">
+        Le système de classification : la clé de l&apos;équité
+      </h3>
+      <p className="lede">
+        Pour garantir une compétition juste, chaque joueur reçoit une classification officielle
+        de 1.0 à 4.5 points (jusqu&apos;à 5.0 pour un joueur valide en championnat national),
+        calculée selon son degré de mobilité du tronc et des membres :
+      </p>
+      <ul className="lede">
+        <li>
+          <strong>1.0 point</strong> : mobilité du tronc très limitée (pas d&apos;abdominaux
+          fonctionnels).
+        </li>
+        <li>
+          <strong>4.5 points</strong> : mobilité totale ou quasi-totale du tronc et des bras (ex.
+          amputation sous le genou).
+        </li>
+      </ul>
+      <p className="lede">
+        <em>La règle d&apos;or sur le terrain</em> : le total des points des 5 joueurs alignés en
+        même temps ne peut pas dépasser 14 à 14,5 points (selon le niveau). Cela oblige à
+        composer des équipes mixtes en termes de handicaps, valorisant le rôle de chaque athlète.
+      </p>
+
+      <h3 className="rf-blocktitle rf-blocktitle--2">
+        Les règles du jeu : proches du basket classique
+      </h3>
+      <p className="lede">
+        Le basket-fauteuil se joue avec les mêmes dimensions de terrain, la même hauteur de
+        panier (3,05 m) et la même ligne des 3 points. Les seules adaptations majeures
+        concernent le déplacement :
+      </p>
+      <ul className="lede">
+        <li>
+          <strong>Le « marcher » en fauteuil</strong> : le joueur peut avoir le ballon sur les
+          genoux, mais il doit obligatoirement dribbler, passer ou tirer toutes les deux
+          poussées sur ses roues.
+        </li>
+        <li>
+          <strong>Le fauteuil fait partie du corps</strong> : il est considéré comme une
+          extension du joueur. Les contacts directs et volontaires entre fauteuils sont
+          sanctionnés comme des fautes personnelles.
+        </li>
+      </ul>
+
+      <h3 className="rf-blocktitle rf-blocktitle--2">Rejoignez l&apos;aventure !</h3>
+      <p className="lede">
+        Pour en savoir plus sur l&apos;intégration ou trouver un club affilié près de chez vous,
+        consultez la Ligue Handisport Francophone (LHF) en Belgique ou le Comité Paralympique et
+        Sportif Français (CPSF) en France.
+      </p>
+
+      <div className="info-grid">
+        <div className="info-card">
+          <h3>Matériels</h3>
+          <p>Présentation technique des fauteuils de sport.</p>
+          <div className="video-slot">Vidéo à venir</div>
         </div>
+        <div className="info-card">
+          <h3>Entraînements</h3>
+          <p>Exercices de maniabilité, passes et préparation physique.</p>
+          <div className="video-slot">Vidéo à venir</div>
+        </div>
+        <div className="info-card">
+          <h3>En images</h3>
+          <p>Moments forts et coulisses du club.</p>
+          <div className="video-slot">Vidéo à venir</div>
+        </div>
+        <div className="info-card">
+          <h3>Matchs &amp; compétitions</h3>
+          <p>Meilleurs moments des championnats.</p>
+          <div className="video-slot">Vidéo à venir</div>
+        </div>
+        <div className="info-card">
+          <h3>À découvrir</h3>
+          <p>D&apos;autres vidéos à venir bientôt.</p>
+          <div className="video-slot">Vidéo à venir</div>
+        </div>
+        <div className="info-card">
+          <h3>Stars joueurs KABSA</h3>
+          <p>Parcours des meilleurs joueurs.</p>
+          <div className="video-slot">Vidéo à venir</div>
+        </div>
+      </div>
+    </div>
+  );
+
+  const comingSoonContent = <p className="lede tab-placeholder">Contenu à venir.</p>;
+
+  const tabs = [
+    { id: "presentation", label: "Présentation", content: presentationContent },
+    { id: "accessibilite", label: "Accessibilité & pratique", content: accessibiliteContent },
+    { id: "infrastructures", label: "Infrastructures", content: comingSoonContent },
+    { id: "horaires-tarifs", label: "Horaires & tarifs", content: comingSoonContent },
+    { id: "type-entrainement", label: "Type d'entraînement", content: comingSoonContent },
+  ];
+
+  return (
+    <section className="info-block reveal" id="discipline">
+      <div className="wrap">
+        <BackButton />
+        <h2>Basket-fauteuil</h2>
+
+        <DisciplineTabs tabs={tabs} defaultTabId="presentation" />
       </div>
     </section>
   );
