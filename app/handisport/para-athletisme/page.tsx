@@ -202,7 +202,8 @@ export default function ParaAthletismePage() {
   );
 
   const accessibiliteContent = (
-    <div className="disc-main">
+    <div className="disc-layout">
+      <div className="disc-main">
       <p className="lede">
         Le para-athlétisme est l&apos;une des disciplines phares et les plus populaires du
         mouvement handisport. Reprenant l&apos;ensemble des épreuves de l&apos;athlétisme
@@ -240,7 +241,9 @@ export default function ParaAthletismePage() {
       <p className="lede">
         Trois modules vidéo complets pour vous accompagner dans le choix et la prise en main :
       </p>
-      <div className="info-grid">
+      </div>
+
+      <aside className="disc-media">
         <div className="info-card">
           <h3>Matériels</h3>
           <p>Lames de course, fauteuils et sièges de lancer.</p>
@@ -271,7 +274,7 @@ export default function ParaAthletismePage() {
           <p>Parcours des meilleurs athlètes.</p>
           <div className="video-slot">Vidéo à venir</div>
         </div>
-      </div>
+      </aside>
     </div>
   );
 

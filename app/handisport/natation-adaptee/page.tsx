@@ -197,7 +197,8 @@ export default function NatationAdapteePage() {
   );
 
   const accessibiliteContent = (
-    <div className="disc-main">
+    <div className="disc-layout">
+      <div className="disc-main">
       <p className="lede">
         La natation adaptée (ou para-natation) est l&apos;une des rares activités physiques qui
         offre une liberté totale de mouvement. Elle s&apos;adresse aux personnes en situation de
@@ -275,8 +276,9 @@ export default function NatationAdapteePage() {
         spécialisés formés au handisport, présence rassurante dans l&apos;eau, séances
         structurées à l&apos;écoute du rythme et de la fatigue de chacun.
       </p>
+      </div>
 
-      <div className="info-grid">
+      <aside className="disc-media">
         <div className="info-card">
           <h3>Matériels</h3>
           <p>Systèmes de mise à l&apos;eau et technique du &quot;tapping&quot;.</p>
@@ -307,7 +309,7 @@ export default function NatationAdapteePage() {
           <p>Parcours des meilleurs nageurs.</p>
           <div className="video-slot">Vidéo à venir</div>
         </div>
-      </div>
+      </aside>
     </div>
   );
 

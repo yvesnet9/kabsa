@@ -186,7 +186,8 @@ export default function BasketFauteuilPage() {
   );
 
   const accessibiliteContent = (
-    <div className="disc-main">
+    <div className="disc-layout">
+      <div className="disc-main">
       <p className="lede">
         Le basket-fauteuil (ou handibasket) est l&apos;un des sports paralympiques les plus
         spectaculaires et populaires au monde. Alliant vitesse, esprit d&apos;équipe et
@@ -276,8 +277,9 @@ export default function BasketFauteuilPage() {
         consultez la Ligue Handisport Francophone (LHF) en Belgique ou le Comité Paralympique et
         Sportif Français (CPSF) en France.
       </p>
+      </div>
 
-      <div className="info-grid">
+      <aside className="disc-media">
         <div className="info-card">
           <h3>Matériels</h3>
           <p>Présentation technique des fauteuils de sport.</p>
@@ -308,7 +310,7 @@ export default function BasketFauteuilPage() {
           <p>Parcours des meilleurs joueurs.</p>
           <div className="video-slot">Vidéo à venir</div>
         </div>
-      </div>
+      </aside>
     </div>
   );
 

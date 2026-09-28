@@ -196,7 +196,8 @@ export default function TennisChaisePage() {
   );
 
   const accessibiliteContent = (
-    <div className="disc-main">
+    <div className="disc-layout">
+      <div className="disc-main">
       <p className="lede">
         Le tennis en chaise roulante (ou paratennis) est une discipline dynamique et
         spectaculaire. Il suit presque en tout point les règles du tennis traditionnel, à une
@@ -249,8 +250,9 @@ export default function TennisChaisePage() {
         alternée des roues : de la phase de service (stabilisation du buste essentielle) aux
         coups spécifiques comme le revers inversé (pour frapper des balles hautes ou excentrées).
       </p>
+      </div>
 
-      <div className="info-grid">
+      <aside className="disc-media">
         <div className="info-card">
           <h3>Matériels</h3>
           <p>Conception d&apos;un fauteuil de compétition et carrossage des roues.</p>
@@ -281,7 +283,7 @@ export default function TennisChaisePage() {
           <p>Parcours des meilleurs joueurs.</p>
           <div className="video-slot">Vidéo à venir</div>
         </div>
-      </div>
+      </aside>
     </div>
   );
 
