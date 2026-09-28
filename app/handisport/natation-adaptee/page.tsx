@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 import BackButton from "@/components/BackButton";
 import DisciplineTabs from "@/components/DisciplineTabs";
+import VideoSlot from "@/components/VideoSlot";
 
 export default function NatationAdapteePage() {
   useEffect(() => {
@@ -155,32 +156,32 @@ export default function NatationAdapteePage() {
             <div className="info-card">
               <h3>Matériels</h3>
               <p>Systèmes de mise à l'eau et technique du &quot;tapping&quot;.</p>
-              <div className="video-slot">Vidéo à venir</div>
+              <VideoSlot />
             </div>
             <div className="info-card">
               <h3>Entraînements</h3>
               <p>Immersion dans une séance hebdomadaire avec nos coachs.</p>
-              <div className="video-slot">Vidéo à venir</div>
+              <VideoSlot />
             </div>
             <div className="info-card">
               <h3>En images</h3>
-              <p>Moments forts et coulisses du club.</p>
-              <div className="video-slot">Vidéo à venir</div>
+              <p>Reportage : un challenge de natation adaptée.</p>
+              <VideoSlot youtubeId="gH_jZo3tj08" title="Reportage : un challenge de natation adaptée" />
             </div>
             <div className="info-card">
               <h3>Matchs &amp; compétitions</h3>
               <p>Meilleurs moments des championnats.</p>
-              <div className="video-slot">Vidéo à venir</div>
+              <VideoSlot />
             </div>
             <div className="info-card">
               <h3>À découvrir</h3>
-              <p>D'autres vidéos à venir bientôt.</p>
-              <div className="video-slot">Vidéo à venir</div>
+              <p>Reportage : des cours de natation adaptés pour enfants.</p>
+              <VideoSlot youtubeId="ILtZ9yF-Gnw" title="Reportage : des cours de natation adaptés pour enfants" />
             </div>
             <div className="info-card">
               <h3>Stars nageurs KABSA</h3>
               <p>Parcours des meilleurs nageurs.</p>
-              <div className="video-slot">Vidéo à venir</div>
+              <VideoSlot />
             </div>
           </aside>
       </div>
@@ -282,32 +283,32 @@ export default function NatationAdapteePage() {
         <div className="info-card">
           <h3>Matériels</h3>
           <p>Systèmes de mise à l&apos;eau et technique du &quot;tapping&quot;.</p>
-          <div className="video-slot">Vidéo à venir</div>
+          <VideoSlot />
         </div>
         <div className="info-card">
           <h3>Entraînements</h3>
           <p>Immersion dans une séance hebdomadaire avec nos coachs.</p>
-          <div className="video-slot">Vidéo à venir</div>
+          <VideoSlot />
         </div>
         <div className="info-card">
           <h3>En images</h3>
           <p>Moments forts et coulisses du club.</p>
-          <div className="video-slot">Vidéo à venir</div>
+          <VideoSlot />
         </div>
         <div className="info-card">
           <h3>Matchs &amp; compétitions</h3>
           <p>Meilleurs moments des championnats.</p>
-          <div className="video-slot">Vidéo à venir</div>
+          <VideoSlot />
         </div>
         <div className="info-card">
           <h3>À découvrir</h3>
           <p>D&apos;autres vidéos à venir bientôt.</p>
-          <div className="video-slot">Vidéo à venir</div>
+          <VideoSlot />
         </div>
         <div className="info-card">
           <h3>Stars nageurs KABSA</h3>
           <p>Parcours des meilleurs nageurs.</p>
-          <div className="video-slot">Vidéo à venir</div>
+          <VideoSlot />
         </div>
       </aside>
     </div>
