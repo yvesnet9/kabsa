@@ -41,7 +41,7 @@ export async function POST(request) {
           { filename: file.name || "video", content: buf.toString("base64") },
         ];
       }
-      await fetch("https://api.resend.com/emails", {
+      const res = await fetch("https://api.resend.com/emails", {
         method: "POST",
         headers: {
           Authorization: "Bearer " + apiKey,
@@ -56,7 +56,12 @@ export async function POST(request) {
           attachments,
         }),
       });
-    } catch (e) {}
+      if (!res.ok) {
+        console.error("[mail:video] échec envoi Resend:", res.status, await res.text());
+      }
+    } catch (e) {
+      console.error("[mail:video] échec envoi Resend:", e);
+    }
   }
 
   return NextResponse.json({ ok: true });

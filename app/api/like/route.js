@@ -53,7 +53,7 @@ export async function POST(request) {
   const apiKey = process.env.RESEND_API_KEY;
   if (apiKey) {
     try {
-      await fetch("https://api.resend.com/emails", {
+      const res = await fetch("https://api.resend.com/emails", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${apiKey}`,
@@ -67,7 +67,11 @@ export async function POST(request) {
           text,
         }),
       });
+      if (!res.ok) {
+        console.error("[mail:like] échec envoi Resend:", res.status, await res.text());
+      }
     } catch (e) {
+      console.error("[mail:like] échec envoi Resend:", e);
       // On ignore les erreurs d'envoi : le compteur reste incrémenté même si l'e-mail échoue.
     }
   }
