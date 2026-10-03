@@ -1,6 +1,8 @@
 type VideoSlotProps = {
   youtubeId?: string;
   title?: string;
+  // Format portrait 9:16 (YouTube Shorts).
+  vertical?: boolean;
 };
 
 // Accepte un identifiant seul ou une URL YouTube complète (watch, youtu.be, embed, shorts).
@@ -11,7 +13,7 @@ function extractYoutubeId(value: string): string {
   return match ? match[1] : value.trim();
 }
 
-export default function VideoSlot({ youtubeId, title }: VideoSlotProps) {
+export default function VideoSlot({ youtubeId, title, vertical }: VideoSlotProps) {
   if (!youtubeId) {
     return <div className="video-slot">Vidéo à venir</div>;
   }
@@ -19,7 +21,7 @@ export default function VideoSlot({ youtubeId, title }: VideoSlotProps) {
   const id = extractYoutubeId(youtubeId);
 
   return (
-    <div className="video-embed">
+    <div className={vertical ? "video-embed video-embed--short" : "video-embed"}>
       <iframe
         src={`https://www.youtube-nocookie.com/embed/${id}`}
         title={title}

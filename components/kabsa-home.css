@@ -441,3 +441,14 @@
   .kabsa .disc-tabs__list{gap:2px}
   .kabsa .disc-tabs__tab{padding:9px 12px 10px;font-size:.76rem}
 }
+
+/* ===== Page Services ===== */
+.kabsa .video-embed--short{aspect-ratio:9 / 16;max-width:300px;margin-left:auto;margin-right:auto}
+.kabsa .svc-section .svc-chapo{font-family:var(--display);font-size:1.05rem;color:var(--sky-700);margin:-6px 0 16px;max-width:70ch}
+.kabsa .svc-section .info-card .svc-label{display:block;font-family:var(--display);text-transform:uppercase;letter-spacing:.06em;font-size:.72rem;color:var(--orange-700);margin-top:8px}
+.kabsa .svc-steps{list-style:none;counter-reset:svc;padding:0;margin:6px 0 22px;display:grid;gap:12px}
+.kabsa .svc-steps li{counter-increment:svc;position:relative;padding:14px 16px 14px 62px;background:#fff;border:1px solid var(--grey-200);border-radius:12px;color:var(--grey-500)}
+.kabsa .svc-steps li::before{content:counter(svc);position:absolute;left:16px;top:14px;width:32px;height:32px;border-radius:50%;background:var(--sky-600);color:#fff;font-family:var(--display);font-weight:600;display:flex;align-items:center;justify-content:center}
+.kabsa .svc-steps li strong{color:var(--sky-900)}
+.kabsa .svc-quote{font-style:italic;font-weight:600;color:var(--sky-900);border-left:3px solid var(--orange-600);padding-left:14px;margin-top:8px;max-width:70ch}
+.kabsa .svc-benefit{color:var(--sky-900);font-style:italic;margin:-10px 0 22px;max-width:70ch}
