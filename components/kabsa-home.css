@@ -443,9 +443,8 @@
 }
 
 /* ===== Page Services ===== */
-.kabsa .video-embed--short{aspect-ratio:9 / 16;max-width:300px;margin-left:auto;margin-right:auto}
-.kabsa .svc-section .svc-chapo{font-family:var(--display);font-size:1.05rem;color:var(--sky-700);margin:-6px 0 16px;max-width:70ch}
-.kabsa .svc-section .info-card .svc-label{display:block;font-family:var(--display);text-transform:uppercase;letter-spacing:.06em;font-size:.72rem;color:var(--orange-700);margin-top:8px}
+.kabsa .svc-chapo{font-family:var(--display);font-size:1.05rem;color:var(--sky-700);margin:-6px 0 16px;max-width:70ch}
+.kabsa .info-card .svc-label{display:block;font-family:var(--display);text-transform:uppercase;letter-spacing:.06em;font-size:.72rem;color:var(--orange-700);margin-top:8px}
 .kabsa .svc-steps{list-style:none;counter-reset:svc;padding:0;margin:6px 0 22px;display:grid;gap:12px}
 .kabsa .svc-steps li{counter-increment:svc;position:relative;padding:14px 16px 14px 62px;background:#fff;border:1px solid var(--grey-200);border-radius:12px;color:var(--grey-500)}
 .kabsa .svc-steps li::before{content:counter(svc);position:absolute;left:16px;top:14px;width:32px;height:32px;border-radius:50%;background:var(--sky-600);color:#fff;font-family:var(--display);font-weight:600;display:flex;align-items:center;justify-content:center}
