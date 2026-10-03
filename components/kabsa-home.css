@@ -452,3 +452,6 @@
 .kabsa .svc-steps li strong{color:var(--sky-900)}
 .kabsa .svc-quote{font-style:italic;font-weight:600;color:var(--sky-900);border-left:3px solid var(--orange-600);padding-left:14px;margin-top:8px;max-width:70ch}
 .kabsa .svc-benefit{color:var(--sky-900);font-style:italic;margin:-10px 0 22px;max-width:70ch}
+
+/* ===== Qui sommes-nous : emplacement organigramme ===== */
+.kabsa .orga-slot{margin-top:12px;padding:28px 18px;border:1px dashed var(--grey-200);border-radius:10px;background:var(--sky-100);color:var(--sky-900);font-family:var(--display);text-transform:uppercase;letter-spacing:.04em;font-size:.8rem;text-align:center}

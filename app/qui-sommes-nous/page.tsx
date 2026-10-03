@@ -57,6 +57,9 @@ export default function QuiSommesNousPage() {
           Le Fondateur<br />
           <span>ASBL KABSA</span>
         </p>
+
+        <h3 className="rf-blocktitle rf-blocktitle--2">Organigramme</h3>
+        <div className="orga-slot">Organigramme à venir</div>
       </div>
     </section>
   );
