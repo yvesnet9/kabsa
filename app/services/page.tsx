@@ -48,18 +48,18 @@ export default function ServicesPage() {
 
         <h3 className="rf-blocktitle rf-blocktitle--2">Nos autres services</h3>
         <div className="info-grid">
-          <div className="info-card">
+          <Link href="/services/materiel-infrastructures-adaptes" className="info-card info-card--link">
             <h3>Matériel &amp; infrastructures adaptés</h3>
             <p>Équipements spécialisés et lieux d'entraînement accessibles à chacun.</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/services/coaching-nutritionnel" className="info-card info-card--link">
             <h3>Coaching nutritionnel</h3>
             <p>Un accompagnement alimentaire au service de la santé et de la performance.</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/services/hebergement-delegations" className="info-card info-card--link">
             <h3>Hébergement des délégations</h3>
             <p>Logement temporaire pour les équipes et délégations en stage.</p>
-          </div>
+          </Link>
           <div className="info-card">
             <h3>Assurance pendant les activités</h3>
             <p>Les participants sont couverts durant l'ensemble des séances encadrées.</p>
