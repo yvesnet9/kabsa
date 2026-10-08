@@ -68,14 +68,14 @@ export default function ServicesPage() {
             <h3>Fonds de solidarité</h3>
             <p>Un soutien aux sportifs face aux injustices sportives et aux difficultés de carrière.</p>
           </div>
-          <div className="info-card">
+          <Link href="/services/intermediaire-transport" className="info-card info-card--link">
             <h3>Intermédiaire de transport</h3>
             <p>Organisation et prise en charge des déplacements des sportifs et délégations.</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/services/intermediaire-visa-billet" className="info-card info-card--link">
             <h3>Intermédiaire de visa &amp; billet d'avion</h3>
             <p>Accompagnement dans les démarches de visa et la réservation des billets d'avion.</p>
-          </div>
+          </Link>
         </div>
       </div>
     </section>
