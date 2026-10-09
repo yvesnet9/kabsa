@@ -60,14 +60,14 @@ export default function ServicesPage() {
             <h3>Hébergement des délégations</h3>
             <p>Logement temporaire pour les équipes et délégations en stage.</p>
           </Link>
-          <div className="info-card">
+          <Link href="/services/assurance-activites" className="info-card info-card--link">
             <h3>Assurance pendant les activités</h3>
             <p>Les participants sont couverts durant l'ensemble des séances encadrées.</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/services/fonds-de-solidarite" className="info-card info-card--link">
             <h3>Fonds de solidarité</h3>
             <p>Un soutien aux sportifs face aux injustices sportives et aux difficultés de carrière.</p>
-          </div>
+          </Link>
           <Link href="/services/intermediaire-transport" className="info-card info-card--link">
             <h3>Intermédiaire de transport</h3>
             <p>Organisation et prise en charge des déplacements des sportifs et délégations.</p>
