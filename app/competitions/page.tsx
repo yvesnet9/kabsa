@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Link from "next/link";
 
 export default function CompetitionsPage() {
   useEffect(() => {
@@ -28,18 +29,18 @@ export default function CompetitionsPage() {
           l'international, pour faire progresser ses sportifs et rayonner au-delà des frontières.
         </p>
         <div className="info-grid">
-          <div className="info-card">
+          <Link href="/competitions/nationales" className="info-card info-card--link">
             <h3>Compétitions nationales</h3>
             <p>Participation de nos équipes aux championnats et tournois organisés en Belgique.</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/competitions/internationales" className="info-card info-card--link">
             <h3>Compétitions internationales</h3>
             <p>Rencontres et tournois à l'étranger, échanges sportifs et représentation de KABSA dans le monde.</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/competitions/calendrier" className="info-card info-card--link">
             <h3>Calendrier</h3>
             <p>Le programme détaillé de nos prochaines compétitions sera publié ici prochainement.</p>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

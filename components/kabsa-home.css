@@ -454,3 +454,10 @@
 
 /* ===== Qui sommes-nous : emplacement organigramme ===== */
 .kabsa .orga-slot{margin-top:12px;padding:28px 18px;border:1px dashed var(--grey-200);border-radius:10px;background:var(--sky-100);color:var(--sky-900);font-family:var(--display);text-transform:uppercase;letter-spacing:.04em;font-size:.8rem;text-align:center}
+
+/* ===== Tableaux de calendrier (pages compétitions) ===== */
+.kabsa .comp-table-wrap{margin-top:14px;overflow-x:auto;border:1px solid var(--grey-200);border-radius:12px;background:#fff}
+.kabsa .comp-table{width:100%;min-width:560px;border-collapse:collapse;font-size:.9rem}
+.kabsa .comp-table th{background:var(--sky-100);color:var(--sky-900);font-family:var(--display);text-transform:uppercase;letter-spacing:.04em;font-size:.78rem;text-align:left;padding:10px 12px}
+.kabsa .comp-table td{padding:10px 12px;border-top:1px solid var(--grey-200);color:var(--grey-500);vertical-align:top}
+.kabsa .comp-table td:first-child{color:var(--sky-900);font-weight:600}
