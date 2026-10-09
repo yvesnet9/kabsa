@@ -103,7 +103,11 @@ export default function IntermediaireTransportPage() {
           <div className="info-card">
             <h3>Présentation</h3>
             <p>Vidéo de présentation du service.</p>
-            <div className="video-slot">Vidéo à venir</div>
+            <img
+              src="/services/transport/autocars.jpg"
+              alt="Deux minibus blancs garés en lisière de forêt"
+              style={{ marginTop: 10, width: "100%", aspectRatio: "16 / 9", objectFit: "cover", borderRadius: 10 }}
+            />
           </div>
           <div className="info-card">
             <h3>Démonstration</h3>
@@ -128,7 +132,11 @@ export default function IntermediaireTransportPage() {
           <div className="info-card">
             <h3>À découvrir</h3>
             <p>D&apos;autres vidéos à venir.</p>
-            <div className="video-slot">Vidéo à venir</div>
+            <img
+              src="/services/transport/avion.jpg"
+              alt="Aile d'avion au-dessus des nuages"
+              style={{ marginTop: 10, width: "100%", aspectRatio: "16 / 9", objectFit: "cover", borderRadius: 10 }}
+            />
           </div>
         </aside>
       </div>
