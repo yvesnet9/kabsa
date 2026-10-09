@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Link from "next/link";
 
 export default function DroitsCarrierePage() {
   useEffect(() => {
@@ -29,30 +30,30 @@ export default function DroitsCarrierePage() {
           difficultés qui peuvent briser une carrière.
         </p>
         <div className="info-grid">
-          <div className="info-card">
+          <Link href="/droits-carriere/injustice-sportive" className="info-card info-card--link">
             <h3>Face à l'injustice sportive</h3>
             <p>Discriminations, sélections opaques, athlètes handicapés mis à l'écart : KABSA informe les sportifs sur leurs droits et les oriente pour les faire respecter.</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/droits-carriere/gestion-carriere" className="info-card info-card--link">
             <h3>Gestion de carrière &amp; finances</h3>
             <p>Primes, contrats, sponsors : beaucoup de talents se retrouvent en difficulté faute d'accompagnement. KABSA sensibilise à une gestion saine et à la protection de l'avenir du sportif.</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/droits-carriere/entourage-confiance" className="info-card info-card--link">
             <h3>Un entourage de confiance</h3>
             <p>Conseils, mise en relation avec des experts (juridiques, financiers) et un cadre bienveillant pour que chaque sportif avance sereinement.</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/droits-carriere/accompagnement-juridique" className="info-card info-card--link">
             <h3>Accompagnement juridique</h3>
             <p>Orientation vers des conseils adaptés pour comprendre et défendre ses droits en cas de litige (contrat, sélection, discrimination).</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/droits-carriere/education-financiere" className="info-card info-card--link">
             <h3>Éducation financière</h3>
             <p>Sensibiliser les jeunes talents à gérer primes et revenus, éviter les pièges et préparer sereinement l'avenir.</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/droits-carriere/reconversion" className="info-card info-card--link">
             <h3>Reconversion &amp; après-carrière</h3>
             <p>Anticiper la fin de carrière sportive et préparer une transition sereine : formation, projet professionnel, nouveau départ.</p>
-          </div>
+          </Link>
         </div>
       </div>
     </section>
