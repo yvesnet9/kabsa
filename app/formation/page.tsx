@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Link from "next/link";
 
 export default function FormationPage() {
   useEffect(() => {
@@ -28,26 +29,26 @@ export default function FormationPage() {
           clubs et les institutions pour diffuser une culture du sport inclusif et de qualité.
         </p>
         <div className="info-grid">
-          <div className="info-card">
+          <Link href="/formation/encadrants" className="info-card info-card--link">
             <h3>Formation des encadrants</h3>
             <p>Préparer entraîneurs et animateurs à un encadrement de qualité, adapté aux sportifs valides et handisport.</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/formation/arbitres" className="info-card info-card--link">
             <h3>Formation des arbitres</h3>
             <p>Accompagner arbitres et officiels dans la maîtrise des règles, y compris en handisport.</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/formation/federations" className="info-card info-card--link">
             <h3>Formation du personnel des fédérations</h3>
             <p>Appuyer les institutions et fédérations partenaires dans la montée en compétence de leurs équipes.</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/formation/inclusion" className="info-card info-card--link">
             <h3>Sensibilisation à l'inclusion</h3>
             <p>Des ateliers pour faire évoluer le regard sur le handicap et promouvoir la mixité dans le sport.</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/formation/jeunes-talents" className="info-card info-card--link">
             <h3>Accompagnement des jeunes talents</h3>
             <p>Un parcours structuré, du repérage jusqu'à la préparation à une carrière professionnelle.</p>
-          </div>
+          </Link>
         </div>
       </div>
     </section>
