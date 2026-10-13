@@ -55,42 +55,42 @@ export default function SportPage() {
 
         <h3 className="rf-blocktitle rf-blocktitle--2">Sports individuels</h3>
         <div className="info-grid">
-          <div className="info-card">
+          <Link href="/sport/athletisme" className="info-card info-card--link">
             <h3>Athlétisme (toutes formes)</h3>
             <p>Masculin &amp; Féminin</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/sport/tennis" className="info-card info-card--link">
             <h3>Tennis</h3>
             <p>Masculin &amp; Féminin</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/sport/cyclisme" className="info-card info-card--link">
             <h3>Cyclisme</h3>
             <p>Masculin &amp; Féminin</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/sport/pilotage" className="info-card info-card--link">
             <h3>Pilotage auto / moto</h3>
             <p>Masculin &amp; Féminin</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/sport/natation" className="info-card info-card--link">
             <h3>Natation</h3>
             <p>Masculin &amp; Féminin</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/sport/golf" className="info-card info-card--link">
             <h3>Golf</h3>
             <p>Masculin &amp; Féminin</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/sport/arts-martiaux" className="info-card info-card--link">
             <h3>Arts martiaux &amp; sports de combat</h3>
             <p>Masculin &amp; Féminin</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/sport/halterophilie" className="info-card info-card--link">
             <h3>Haltérophilie</h3>
             <p>Masculin &amp; Féminin</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/sport/autres-disciplines" className="info-card info-card--link">
             <h3>Autres disciplines</h3>
-            <p>D'autres disciplines peuvent rejoindre l'académie — contactez-nous.</p>
-          </div>
+            <p>D&apos;autres disciplines peuvent rejoindre l&apos;académie — contactez-nous.</p>
+          </Link>
         </div>
       </div>
     </section>
