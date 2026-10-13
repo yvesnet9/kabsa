@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Link from "next/link";
 
 export default function SportPage() {
   useEffect(() => {
@@ -30,26 +31,26 @@ export default function SportPage() {
 
         <h3 className="rf-blocktitle">Sports collectifs</h3>
         <div className="info-grid">
-          <div className="info-card">
+          <Link href="/sport/football" className="info-card info-card--link">
             <h3>Football</h3>
             <p>Masculin &amp; Féminin</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/sport/basketball" className="info-card info-card--link">
             <h3>Basketball</h3>
             <p>Masculin &amp; Féminin</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/sport/volleyball" className="info-card info-card--link">
             <h3>Volleyball</h3>
             <p>Masculin &amp; Féminin</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/sport/handball" className="info-card info-card--link">
             <h3>Handball</h3>
             <p>Masculin &amp; Féminin</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/sport/rugby" className="info-card info-card--link">
             <h3>Rugby</h3>
             <p>Masculin &amp; Féminin</p>
-          </div>
+          </Link>
         </div>
 
         <h3 className="rf-blocktitle rf-blocktitle--2">Sports individuels</h3>
