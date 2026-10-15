@@ -45,7 +45,7 @@ export default function Footer() {
                 <rect x="3" y="3" width="18" height="18" rx="2" />
                 <path d="M8 8h8M8 12h8M8 16h5" />
               </svg>
-              <p>N° d'entreprise : BE1038390334</p>
+              <p>N° d'entreprise : BE1038390344</p>
             </div>
           </div>
           <div>

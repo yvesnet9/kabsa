@@ -53,7 +53,7 @@ export default function DonsPage() {
           <p><strong>BIC :</strong> REVOBEB2</p>
           <p><strong>Communication :</strong> « Don KABSA »</p>
           <p className="don-legal">
-            KA Bruxelles Sport Académie ASBL — Rue Joseph Claes 21, 1060 Bruxelles — BE1038390334
+            KA Bruxelles Sport Académie ASBL — Rue Joseph Claes 21, 1060 Bruxelles — BE1038390344
           </p>
         </div>
       </div>

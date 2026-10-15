@@ -28,7 +28,7 @@ export default function NatationPage() {
       <div className="info-card">
         <h3>Présentation</h3>
         <p>Découvrez la section Natation de KABSA.</p>
-        <VideoSlot />
+        <VideoSlot videoSrc="/videos/piscine.mp4" poster="/videos/piscine.jpg" title="Piscine" />
       </div>
       <div className="info-card">
         <h3>Entraînements</h3>

@@ -115,7 +115,7 @@ export default function PreparationTournoisPage() {
             <div className="info-card">
               <h3>Présentation</h3>
               <p>Vidéo de présentation du service.</p>
-              <VideoSlot />
+              <VideoSlot videoSrc="/videos/salle-omnisports.mp4" poster="/videos/salle-omnisports.jpg" title="Salle omnisports" />
             </div>
             <div className="info-card">
               <h3>Démonstration</h3>
