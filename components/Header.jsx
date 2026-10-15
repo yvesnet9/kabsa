@@ -6,6 +6,7 @@ import Image from "next/image";
 
 const NAV = [
   ["Accueil", "/"],
+  ["Sport des valides", "/sport"],
   ["Handisport", "/handisport", "handi"],
   ["Qui sommes-nous", "/qui-sommes-nous"],
   ["Services", "/services"],
