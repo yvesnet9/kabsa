@@ -33,7 +33,7 @@ export default function FootballPage() {
       <div className="info-card">
         <h3>Entraînements</h3>
         <p>Exercices techniques, tactiques et préparation physique.</p>
-        <VideoSlot />
+        <VideoSlot youtubeId="TddtCxnvJO4" title="Football — Entraînements KABSA" vertical />
       </div>
       <div className="info-card">
         <h3>En images</h3>
