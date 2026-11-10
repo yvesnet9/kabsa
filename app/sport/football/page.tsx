@@ -70,58 +70,52 @@ export default function FootballPage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Football — Masculin &amp; Féminin</h3>
+          <h3 className="rf-blocktitle">⚽ Présentation générale</h3>
           <p className="lede">
             <em>Un même ballon, une même passion, deux fois plus de talents.</em>
           </p>
           <p className="lede">
-            Bienvenue au pôle Football de KABSA. Joueur expérimenté ou joueuse débutante, le club
-            vous ouvre ses portes : promouvoir la pratique du football dans un esprit de respect, de
-            progression et de convivialité. Nous développons nos sections masculines et féminines
-            avec le même niveau d&apos;exigence et d&apos;accompagnement.
+            Bienvenue au pôle Football de l&apos;association KABSA ! Que vous soyez un joueur
+            expérimenté ou une joueuse débutante, notre club vous ouvre ses portes. Notre objectif
+            est de promouvoir la pratique du football dans un esprit de respect, de progression et
+            de convivialité. Nous croyons fermement à l&apos;égalité des chances et mettons un point
+            d&apos;honneur à développer nos sections masculines et féminines avec le même niveau
+            d&apos;exigence et d&apos;accompagnement.
           </p>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Section masculine — nos équipes &amp; catégories</h3>
+          <h3 className="rf-blocktitle rf-blocktitle--2">🤵‍♂️ Section Masculine</h3>
+          <h4 className="rf-blocktitle">🏆 Nos Équipes &amp; Catégories</h4>
           <ul className="lede">
             <li>
-              <strong>École de foot (U6 à U11)</strong> : apprentissage par le jeu, motricité et
-              esprit d&apos;équipe.
+              <strong>École de Foot (U6 à U11)</strong> : L&apos;apprentissage par le jeu, la
+              motricité et l&apos;esprit d&apos;équipe.
             </li>
             <li>
-              <strong>Section jeunes (U12 à U18)</strong> : perfectionnement technique, tactique et
-              entrée dans la compétition.
+              <strong>Section Jeunes (U12 à U18)</strong> : Le perfectionnement technique, la
+              tactique et l&apos;entrée dans la compétition.
             </li>
             <li>
-              <strong>Séniors &amp; vétérans (18 ans et +)</strong> : compétition ou football loisir.
+              <strong>Séniors &amp; Vétérans (18 ans et +)</strong> : La compétition de haut niveau
+              ou le football loisir pour continuer à vibrer sur le terrain.
             </li>
           </ul>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Section féminine — en pleine croissance</h3>
+          <h3 className="rf-blocktitle rf-blocktitle--2">👩‍🎓 Section Féminine</h3>
+          <h4 className="rf-blocktitle">🌟 Le Foot Féminin chez KABSA : En pleine croissance !</h4>
           <ul className="lede">
             <li>
-              <strong>Pôle initiation (U7 à U11)</strong> : découverte dans un environnement ludique
-              et bienveillant.
+              <strong>Pôle Initiation (U7 à U11)</strong> : Découverte du football dans un
+              environnement ludique et bienveillant.
             </li>
             <li>
-              <strong>Pôle pré-formation (U12 à U15)</strong> : développement des compétences
+              <strong>Pôle Pré-formation (U12 à U15)</strong> : Développement des compétences
               individuelles et collectives.
             </li>
             <li>
-              <strong>Séniors féminines (16 ans et +)</strong> : esprit d&apos;équipe et
-              compétitivité en championnats régionaux.
+              <strong>Séniors Féminines (16 ans et +)</strong> : Esprit d&apos;équipe, esprit de
+              gagne et compétitivité dans les championnats régionaux.
             </li>
           </ul>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Informations pratiques &amp; inscriptions</h3>
-          <p className="lede">
-            Procédure d&apos;inscription : remplir le formulaire, faire compléter le certificat
-            médical obligatoire par votre médecin, fournir les pièces justificatives (photo
-            d&apos;identité, copie de la pièce d&apos;identité), puis retourner le dossier complet au
-            secrétariat ou en ligne.
-          </p>
-          <p className="lede">
-            Calendrier &amp; classements : à venir. Galerie photos &amp; actualités : à venir.
-          </p>
         </div>
 
         {mediaColumn}
@@ -135,35 +129,83 @@ export default function FootballPage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Horaires des entraînements</h3>
-          <h4 className="rf-blocktitle">Section masculine</h4>
+          <h3 className="rf-blocktitle">
+            ⏱️ Horaires des Entraînements — Section Masculine <em>(à confirmer)</em>
+          </h3>
           <ul className="lede">
-            <li>U6–U11 : mercredi 14h00–15h30 et samedi 10h00–11h30</li>
-            <li>U12–U18 : mardi et jeudi 18h00–19h30</li>
-            <li>Séniors : mardi et jeudi 20h00–22h00</li>
+            <li>U6 - U11 : Mercredi (14h00 - 15h30) et Samedi (10h00 - 11h30)</li>
+            <li>U12 - U18 : Mardi et Jeudi (18h00 - 19h30)</li>
+            <li>Séniors : Mardi et Jeudi (20h00 - 22h00)</li>
           </ul>
-          <h4 className="rf-blocktitle">Section féminine</h4>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            ⏱️ Horaires des Entraînements — Section Féminine <em>(à confirmer)</em>
+          </h3>
           <ul className="lede">
-            <li>U7–U11 féminines : mercredi 15h30–17h00</li>
-            <li>U12–U15 féminines : lundi et vendredi 17h30–19h00</li>
-            <li>Séniors féminines : lundi et mercredi 19h30–21h30</li>
+            <li>U7 - U11 Féminines : Mercredi (15h30 - 17h00)</li>
+            <li>U12 - U15 Féminines : Lundi et Vendredi (17h30 - 19h00)</li>
+            <li>Séniors Féminines : Lundi et Mercredi (19h30 - 21h30)</li>
           </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">🏟️ Informations Pratiques &amp; Inscriptions</h3>
+          <h4 className="rf-blocktitle">📝 Comment s&apos;inscrire ou se réinscrire ?</h4>
           <p className="lede">
-            <em>Horaires à confirmer.</em>
+            Pour rejoindre l&apos;association KABSA pour la saison, la procédure est simple :
+          </p>
+          <ul className="lede">
+            <li>Remplir le formulaire d&apos;inscription.</li>
+            <li>Faire remplir le certificat médical obligatoire par votre médecin.</li>
+            <li>
+              Fournir les pièces justificatives (photo d&apos;identité, copie de la pièce
+              d&apos;identité).
+            </li>
+            <li>
+              Retourner le dossier complet lors des permanences au secrétariat du club ou
+              directement en ligne.
+            </li>
+          </ul>
+
+          <h4 className="rf-blocktitle">💳 Tarifs des Cotisations</h4>
+          <ul className="lede">
+            <li>
+              <strong>Licence Jeune (U12 à U15)</strong> : tarif communiqué à l&apos;inscription
+              (comprend l&apos;assurance, la licence et le pack équipement : maillot, short,
+              chaussettes).
+            </li>
+            <li>
+              <strong>Licence Adulte (U16 et +)</strong> : tarif communiqué à l&apos;inscription
+              (comprend l&apos;assurance, la licence et le pack entraînement).
+            </li>
+            <li>
+              <em>
+                Note : un tarif dégressif est appliqué dès la deuxième inscription pour les membres
+                d&apos;une même famille.
+              </em>
+            </li>
+          </ul>
+
+          <h4 className="rf-blocktitle">📅 Calendrier &amp; Classements</h4>
+          <p className="lede">
+            Suivez les exploits de nos équipes ! Retrouvez les dates des prochains matchs, les
+            résultats et les classements officiels de toutes nos catégories.{" "}
+            <strong>À venir.</strong>
           </p>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Tarifs</h3>
+          <h4 className="rf-blocktitle">📸 Galerie Photos &amp; Actualités</h4>
           <p className="lede">
-            Les tarifs sont communiqués à l&apos;inscription (licence jeune / licence adulte
-            incluant assurance, licence et pack équipement ; tarif dégressif dès la 2ᵉ inscription
-            d&apos;une même famille).
+            <strong>À venir.</strong>
           </p>
+
+          <h4 className="rf-blocktitle">📞 Contactez le Pôle Football</h4>
+          <p className="lede">
+            Une question sur les catégories, une demande d&apos;essai ou besoin d&apos;un
+            renseignement ?
+          </p>
+          {contactCta}
         </div>
 
         {mediaColumn}
       </div>
-
-      {contactCta}
     </>
   );
 
