@@ -70,79 +70,83 @@ export default function RugbyPage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Rugby — Masculin &amp; Féminin</h3>
+          <h3 className="rf-blocktitle">
+            🏉 Rugby Masculin &amp; Féminin — L&apos;Esprit d&apos;Équipe au Cœur de KABSA
+          </h3>
           <p className="lede">
-            <em>L&apos;esprit d&apos;équipe au cœur de KABSA.</em>
-          </p>
-          <p className="lede">
-            Plus qu&apos;un sport, le rugby est une véritable école de vie. Joueur expérimenté ou
-            débutante curieuse de toucher son premier ballon ovale : nos sections masculine et
-            féminine vous ouvrent leurs portes, autour des mêmes valeurs — respect, solidarité,
-            engagement et convivialité.
+            Bienvenue dans la section Rugby de l&apos;association KABSA ! Plus qu&apos;un sport, le
+            rugby est pour nous une véritable école de vie. Que vous soyez un joueur expérimenté ou
+            une débutante curieuse de toucher son premier ballon ovale, nos sections masculine et
+            féminine vous ouvrent leurs portes. Nous partageons tous les mêmes valeurs : Respect,
+            Solidarité, Engagement et Convivialité.
           </p>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">La section masculine : force et stratégie</h3>
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🚹 La Section Masculine : Force et Stratégie
+          </h3>
           <p className="lede">
-            Un projet sportif commun pour développer le potentiel de chaque joueur en visant
-            l&apos;excellence collective.
+            La section masculine de KABSA rassemble des passionnés de tous horizons autour d&apos;un
+            projet sportif commun. Notre objectif ? Développer le potentiel de chaque joueur tout en
+            visant l&apos;excellence collective lors des compétitions.
           </p>
-          <ul className="lede">
+          <ul className="lede disc-arrow-list">
             <li>
-              <strong>Esprit de corps</strong> : un groupe soudé où les anciens guident les plus
+              <strong>Esprit de corps</strong>{" "}: Un groupe soudé où les anciens guident les plus
               jeunes.
             </li>
             <li>
-              <strong>Encadrement de qualité</strong> : des entraîneurs diplômés (technique,
-              condition physique, vision du jeu).
+              <strong>Encadrement de qualité</strong>{" "}: Des entraîneurs diplômés pour parfaire votre
+              technique, votre condition physique et votre vision du jeu.
             </li>
             <li>
-              <strong>Compétition et plaisir</strong> : des entraînements rigoureux en semaine, sans
-              oublier la troisième mi-temps.
+              <strong>Compétition et plaisir</strong>{" "}: Des entraînements rigoureux en semaine pour
+              briller le week-end, sans jamais oublier la fameuse troisième mi-temps.
             </li>
           </ul>
 
           <h3 className="rf-blocktitle rf-blocktitle--2">
-            La section féminine : passion et détermination
+            🚺 La Section Féminine : Passion et Détermination
           </h3>
           <p className="lede">
-            Le rugby féminin est en plein essor, et KABSA en est un fier promoteur. Toutes les
-            joueuses sont accueillies dans une ambiance dynamique et bienveillante.
+            Le rugby féminin est en plein essor, et KABSA en est un fier promoteur ! Notre section
+            féminine accueille les joueuses de tous niveaux dans une ambiance dynamique,
+            bienveillante et résolument compétitive.
           </p>
-          <ul className="lede">
+          <ul className="lede disc-arrow-list">
             <li>
-              <strong>Inclusion et progression</strong> : que vous veniez du crossfit, du handball ou
-              que vous débutiez, le programme s&apos;adapte à votre rythme.
+              <strong>Inclusion et progression</strong>{" "}: Que vous veniez du crossfit, du handball
+              ou que vous n&apos;ayez jamais fait de sport, notre programme s&apos;adapte à votre
+              rythme.
             </li>
             <li>
-              <strong>Sororité et solidarité</strong> : une équipe unie sur le terrain comme en
-              dehors.
+              <strong>Sororité et solidarité</strong>{" "}: Une équipe unie sur le terrain comme en
+              dehors, basée sur l&apos;entraide et le dépassement de soi.
             </li>
             <li>
-              <strong>Ambition sportive</strong> : des entraînements tactiques et physiques pour
-              s&apos;imposer en championnat.
-            </li>
-          </ul>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Le rugby pour tous : nos engagements</h3>
-          <ul className="lede">
-            <li>
-              <strong>Mixité des cultures</strong> : un lieu d&apos;échange et de partage.
-            </li>
-            <li>
-              <strong>Respect du jeu</strong> : tolérance zéro pour la violence ; priorité au beau jeu
-              et au respect de l&apos;arbitre.
-            </li>
-            <li>
-              <strong>Événements communs</strong> : stages de cohésion, tournois de rugby à toucher,
-              soirées de l&apos;association.
+              <strong>Ambition sportive</strong>{" "}: Des entraînements tactiques et physiques pour
+              s&apos;imposer dans notre championnat et porter haut les couleurs de
+              l&apos;association.
             </li>
           </ul>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Comment nous rejoindre ?</h3>
+          <h3 className="rf-blocktitle rf-blocktitle--2">🤝 Le Rugby pour Tous : Nos Engagements</h3>
           <p className="lede">
-            Les deux séances d&apos;essai sont gratuites : munissez-vous d&apos;une paire de
-            crampons, d&apos;un protège-dents et de votre motivation.
+            Chez KABSA, nous croyons en un rugby moderne et accessible. Nos sections partagent :
           </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>La mixité des cultures</strong>{" "}: Le club est un lieu d&apos;échange et de
+              partage.
+            </li>
+            <li>
+              <strong>Le respect du jeu</strong>{" "}: Tolérance zéro pour la violence ; priorité au
+              beau jeu et au respect de l&apos;arbitre.
+            </li>
+            <li>
+              <strong>Des événements communs</strong>{" "}: Stages de cohésion, tournois mixtes de rugby
+              à toucher et soirées de l&apos;association pour souder toute la famille KABSA.
+            </li>
+          </ul>
         </div>
 
         {mediaColumn}
@@ -156,26 +160,23 @@ export default function RugbyPage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Horaires des entraînements</h3>
+          <h3 className="rf-blocktitle">📅 Infos Pratiques &amp; Horaires</h3>
           <p className="lede">
-            Les horaires sont communiqués à l&apos;inscription. Merci d&apos;arriver 15 minutes avant
-            le début de la séance pour l&apos;échauffement.
+            <em>Note : merci d&apos;arriver 15 minutes avant le début de la séance pour
+            l&apos;échauffement.</em>{" "}Horaires communiqués à l&apos;inscription.
           </p>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Tarifs</h3>
-          <p className="lede">Les tarifs sont communiqués à l&apos;inscription.</p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Séances d&apos;essai</h3>
+          <h3 className="rf-blocktitle rf-blocktitle--2">🚀 Prêt(e) à Rejoindre la Mêlée ?</h3>
           <p className="lede">
-            Les deux séances d&apos;essai sont gratuites : munissez-vous d&apos;une paire de
-            crampons, d&apos;un protège-dents et de votre motivation.
+            Les <strong>deux séances d&apos;essai sont gratuites</strong>{" "}! Munissez-vous simplement
+            d&apos;une paire de crampons, d&apos;un protège-dents et de votre motivation.
           </p>
+          <p className="lede"><strong>💳 Tarifs</strong>{" "}: communiqués à l&apos;inscription.</p>
+          {contactCta}
         </div>
 
         {mediaColumn}
       </div>
-
-      {contactCta}
     </>
   );
 

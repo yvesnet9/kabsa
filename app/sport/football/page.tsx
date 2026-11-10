@@ -87,11 +87,11 @@ export default function FootballPage() {
           <h4 className="rf-blocktitle">🏆 Nos Équipes &amp; Catégories</h4>
           <ul className="lede disc-arrow-list">
             <li>
-              <strong>École de Foot (U6 à U11)</strong> : L&apos;apprentissage par le jeu, la
+              <strong>École de Foot (U6 à U11)</strong>{" "}: L&apos;apprentissage par le jeu, la
               motricité et l&apos;esprit d&apos;équipe.
             </li>
             <li>
-              <strong>Section Jeunes (U12 à U18)</strong> : Le perfectionnement technique, la
+              <strong>Section Jeunes (U12 à U18)</strong>{" "}: Le perfectionnement technique, la
               tactique et l&apos;entrée dans la compétition.
             </li>
             <li>
@@ -112,7 +112,7 @@ export default function FootballPage() {
               individuelles et collectives.
             </li>
             <li>
-              <strong>Séniors Féminines (16 ans et +)</strong> : Esprit d&apos;équipe, esprit de
+              <strong>Séniors Féminines (16 ans et +)</strong>{" "}: Esprit d&apos;équipe, esprit de
               gagne et compétitivité dans les championnats régionaux.
             </li>
           </ul>
@@ -168,12 +168,12 @@ export default function FootballPage() {
           <h4 className="rf-blocktitle">💳 Tarifs des Cotisations</h4>
           <ul className="lede disc-arrow-list">
             <li>
-              <strong>Licence Jeune (U12 à U15)</strong> : tarif communiqué à l&apos;inscription
+              <strong>Licence Jeune (U12 à U15)</strong>{" "}: tarif communiqué à l&apos;inscription
               (comprend l&apos;assurance, la licence et le pack équipement : maillot, short,
               chaussettes).
             </li>
             <li>
-              <strong>Licence Adulte (U16 et +)</strong> : tarif communiqué à l&apos;inscription
+              <strong>Licence Adulte (U16 et +)</strong>{" "}: tarif communiqué à l&apos;inscription
               (comprend l&apos;assurance, la licence et le pack entraînement).
             </li>
             <li>

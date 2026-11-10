@@ -70,64 +70,69 @@ export default function HandballPage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Handball — Masculin &amp; Féminin</h3>
+          <h3 className="rf-blocktitle">🤾‍♂️ Handball Masculin &amp; Féminin</h3>
           <p className="lede">
-            Bienvenue dans la section handball de KABSA. Joueur chevronné en quête de compétition ou
-            débutant curieux de découvrir un sport collectif dynamique : nos sections s&apos;adaptent
-            à tous les profils, chez les hommes comme chez les femmes.
+            Bienvenue dans la section dédiée au handball chez KABSA ! Que vous soyez un joueur
+            chevronné à la recherche de compétition ou un débutant souhaitant découvrir un sport
+            collectif dynamique, notre association propose des sections adaptées à tous les profils,
+            chez les hommes comme chez les femmes.
           </p>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Section masculine</h3>
-          <ul className="lede">
+          <h3 className="rf-blocktitle rf-blocktitle--2">📋 Nos Sections &amp; Catégories</h3>
+          <p className="lede">
+            Nous croyons en l&apos;égalité des chances et au développement du sport pour tous. Nos
+            équipes sont structurées pour permettre à chacun de s&apos;épanouir à son niveau.
+          </p>
+          <h4 className="rf-blocktitle">🧑 Section Masculine</h4>
+          <ul className="lede disc-arrow-list">
             <li>
-              <strong>Équipe senior (compétition)</strong> : pour les joueurs confirmés — intensité,
-              rigueur tactique et esprit d&apos;équipe.
+              <strong>Équipe Senior (Compétition)</strong>{" "}: Destinée aux joueurs confirmés qui
+              souhaitent défendre les couleurs de KABSA en championnat. Intensité, rigueur tactique
+              et esprit d&apos;équipe.
             </li>
             <li>
-              <strong>Équipe loisir / espoirs</strong> : pour les jeunes en transition ou les adultes
-              qui privilégient le plaisir du jeu et la convivialité.
+              <strong>Équipe Loisir / Espoirs</strong>{" "}: Parfaite pour les jeunes en transition ou
+              les adultes qui privilégient le plaisir du jeu, le maintien en forme et la
+              convivialité sans la pression du résultat.
+            </li>
+          </ul>
+          <h4 className="rf-blocktitle">👩 Section Féminine</h4>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Équipe Senior (Compétition)</strong>{" "}: Un collectif soudé et ambitieux engagé
+              en compétition. Esprit de corps, dépassement de soi et progression constante sont au
+              rendez-vous.
+            </li>
+            <li>
+              <strong>Équipe Loisir / Découverte</strong>{" "}: Un espace bienveillant pour apprendre
+              les bases du handball, se dépenser et partager des moments forts au sein d&apos;un
+              groupe dynamique.
             </li>
           </ul>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Section féminine</h3>
-          <ul className="lede">
+          <h3 className="rf-blocktitle rf-blocktitle--2">🎯 Nos Valeurs sur le Terrain</h3>
+          <p className="lede">
+            Rejoindre la section handball de KABSA, c&apos;est adhérer à une philosophie sportive
+            basée sur 4 piliers essentiels :
+          </p>
+          <ul className="lede disc-arrow-list">
             <li>
-              <strong>Équipe senior (compétition)</strong> : un collectif soudé et ambitieux, esprit
-              de corps et progression constante.
+              <strong>Le Respect</strong>{" "}: Envers les arbitres, les adversaires, les partenaires et
+              le public.
             </li>
             <li>
-              <strong>Équipe loisir / découverte</strong> : un espace bienveillant pour apprendre les
-              bases et partager des moments forts.
+              <strong>La Solidarité</strong>{" "}: Le handball est le sport collectif par excellence ;
+              aucun exploit n&apos;est individuel.
+            </li>
+            <li>
+              <strong>L&apos;Engagement</strong>{" "}: Donner le meilleur de soi-même, à
+              l&apos;entraînement comme en match.
+            </li>
+            <li>
+              <strong>La Convivialité</strong>{" "}: Prolonger le plaisir du jeu en dehors du terrain
+              grâce aux événements de l&apos;association.
             </li>
           </ul>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Nos valeurs sur le terrain</h3>
-          <ul className="lede">
-            <li>
-              <strong>Le respect</strong> : arbitres, adversaires, partenaires, public.
-            </li>
-            <li>
-              <strong>La solidarité</strong> : aucun exploit n&apos;est individuel.
-            </li>
-            <li>
-              <strong>L&apos;engagement</strong> : donner le meilleur, à l&apos;entraînement comme en
-              match.
-            </li>
-            <li>
-              <strong>La convivialité</strong> : prolonger le plaisir du jeu grâce aux événements de
-              l&apos;association.
-            </li>
-          </ul>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Comment nous rejoindre ?</h3>
-          <p className="lede">
-            Les inscriptions sont ouvertes à partir de septembre, mais il reste possible de nous
-            rejoindre en cours d&apos;année selon les places disponibles. Deux séances d&apos;essai
-            gratuites : venez en tenue de sport avec une bouteille d&apos;eau.
-          </p>
-          <p className="lede">
-            Tarifs, licences, niveau requis : notre équipe est à votre écoute.
-          </p>
         </div>
 
         {mediaColumn}
@@ -141,26 +146,34 @@ export default function HandballPage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Horaires des entraînements</h3>
+          <h3 className="rf-blocktitle">🗓️ Horaires et Lieux d&apos;Entraînement</h3>
           <p className="lede">
             Les entraînements se déroulent tout au long de la saison (hors vacances scolaires) dans
-            nos installations partenaires. Les horaires sont communiqués à l&apos;inscription.
+            nos installations partenaires. Horaires communiqués à l&apos;inscription.
           </p>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Tarifs</h3>
-          <p className="lede">Les tarifs sont communiqués à l&apos;inscription.</p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Séances d&apos;essai</h3>
+          <h3 className="rf-blocktitle rf-blocktitle--2">✍️ Comment nous rejoindre ?</h3>
           <p className="lede">
-            Deux séances d&apos;essai gratuites : venez en tenue de sport avec une bouteille
+            Les inscriptions sont ouvertes à partir du mois de septembre, mais il reste possible de
+            nous rejoindre en cours d&apos;année selon les places disponibles.
+          </p>
+          <p className="lede">
+            <em>Envie de tester avant de vous engager ?</em>{" "}Nous vous offrons <strong>deux séances
+            d&apos;essai gratuites</strong>{" "}! Venez simplement en tenue de sport avec une bouteille
             d&apos;eau.
           </p>
+          <p className="lede"><strong>💳 Tarifs</strong>{" "}: communiqués à l&apos;inscription.</p>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">📞 Contactez la Section Handball</h3>
+          <p className="lede">
+            Une question sur les tarifs, les licences ou le niveau requis ? Notre équipe
+            administrative et nos entraîneurs sont à votre écoute.
+          </p>
+          {contactCta}
         </div>
 
         {mediaColumn}
       </div>
-
-      {contactCta}
     </>
   );
 

@@ -70,55 +70,58 @@ export default function BasketballPage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Basketball — Masculin &amp; Féminin</h3>
+          <h3 className="rf-blocktitle">🏀 Basketball Masculin &amp; Féminin</h3>
           <p className="lede">
-            Bienvenue dans l&apos;espace dédié aux pôles compétitifs et loisirs de KABSA. Le club
-            développe le basketball à tous les niveaux, en garantissant parité et opportunités égales
-            pour les basketteurs et les basketteuses. Compétition de haut niveau ou pratique
-            récréative : vous trouverez l&apos;équipe qui vous correspond.
+            Bienvenue dans l&apos;espace dédié aux pôles compétitifs et loisirs de
+            l&apos;association KABSA. Notre club met un point d&apos;honneur à développer le
+            basketball à tous les niveaux, en garantissant une parité et des opportunités égales
+            pour les basketteurs et les basketteuses. Que vous cherchiez la compétition de haut
+            niveau ou une pratique récréative, vous trouverez l&apos;équipe qui vous correspond.
           </p>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Pôle féminin</h3>
-          <p className="lede">L&apos;esprit d&apos;équipe, l&apos;ambition et le dépassement de soi.</p>
-          <ul className="lede">
+          <h3 className="rf-blocktitle rf-blocktitle--2">👩 Pôle Féminin</h3>
+          <p className="lede">
+            Le pôle féminin de KABSA incarne l&apos;esprit d&apos;équipe, l&apos;ambition et le
+            dépassement de soi. Inspirées par le rayonnement international des grandes équipes, nos
+            joueuses portent fièrement nos couleurs sur les parquets.
+          </p>
+          <h4 className="rf-blocktitle"><em>Nos Équipes Féminines</em></h4>
+          <ul className="lede disc-arrow-list">
             <li>
-              <strong>Seniors Dames (compétition)</strong> : équipe première engagée en championnat
-              régional, objectif play-offs.
+              <strong>Seniors Dames (Compétition)</strong>{" "}: Équipe première engagée en championnat
+              régional. Objectif de performance et accès aux play-offs.
             </li>
             <li>
-              <strong>U19 / U16 Filles (jeunes)</strong> : formation technique avancée, transition
-              vers le niveau adulte.
+              <strong>U19 / U16 Filles (Jeunes)</strong>{" "}: Formation technique avancée, transition
+              vers le niveau adulte et esprit d&apos;équipe.
             </li>
             <li>
-              <strong>Basket loisir / écoles de basket</strong> : apprendre les bases ou
+              <strong>Basket Loisir / Écoles de Basket</strong>{" "}: Pour apprendre les bases ou
               s&apos;entretenir sans la pression des matchs officiels.
             </li>
           </ul>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Pôle masculin</h3>
+          <h3 className="rf-blocktitle rf-blocktitle--2">👨 Pôle Masculin</h3>
           <p className="lede">
-            Du perfectionnement des jeunes à l&apos;expérience des seniors, un cadre structuré pour
-            progresser et performer.
+            Du perfectionnement des jeunes talents à l&apos;expérience de nos équipes seniors, le
+            pôle masculin de KABSA propose un cadre structuré pour progresser, performer et partager
+            la passion du ballon orange.
           </p>
-          <ul className="lede">
+          <h4 className="rf-blocktitle"><em>Nos Équipes Masculines</em></h4>
+          <ul className="lede disc-arrow-list">
             <li>
-              <strong>Seniors Messieurs (compétition)</strong> : équipes engagées en divisions
-              régionales et provinciales.
+              <strong>Seniors Messieurs (Compétition)</strong>{" "}: Équipes engagées en divisions
+              régionales et provinciales. Un jeu physique, tactique et spectaculaire.
             </li>
             <li>
-              <strong>U21 / U18 / U14 Garçons</strong> : championnats de jeunes axés sur le
-              développement des compétences.
+              <strong>U21 / U18 / U14 Garçons</strong>{" "}: Championnats de jeunes axés sur le
+              développement rigoureux des compétences individuelles et collectives.
             </li>
             <li>
-              <strong>Anciens / loisirs</strong> : 5x5 ou 3x3 dans une ambiance conviviale.
+              <strong>Anciens / Loisirs</strong>{" "}: Pour les passionnés qui souhaitent continuer à
+              pratiquer le 5x5 ou le 3x3 dans une ambiance conviviale.
             </li>
           </ul>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Rejoignez l&apos;aventure KABSA</h3>
-          <p className="lede">
-            Essai gratuit, bénévolat, encadrement ou partenariat : contactez-nous.
-          </p>
-          <p className="lede">Calendrier des matchs : à venir.</p>
         </div>
 
         {mediaColumn}
@@ -132,25 +135,36 @@ export default function BasketballPage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Horaires des entraînements</h3>
+          <h3 className="rf-blocktitle">⚙️ Informations Pratiques &amp; Inscriptions</h3>
           <p className="lede">
-            Les entraînements se déroulent toute la semaine dans nos installations partenaires. Les
-            horaires sont communiqués à l&apos;inscription (planning détaillé par catégorie : jours,
-            heures, salles).
+            <em>Horaires et Salles d&apos;Entraînement</em>{" "}— Les entraînements se déroulent tout au
+            long de la semaine dans nos installations partenaires. Le planning détaillé par
+            catégorie (jours, heures, salles) est communiqué à l&apos;inscription.
           </p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Tarifs</h3>
+          <h4 className="rf-blocktitle">💳 Tarifs et Cotisations</h4>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Licence Compétition (Jeunes &amp; Seniors)</strong>{" "}: tarif communiqué à
+              l&apos;inscription (inclus : assurance, maillot officiel, accès aux entraînements et
+              matchs).
+            </li>
+            <li>
+              <strong>Licence Loisir / Académie</strong>{" "}: tarif communiqué à l&apos;inscription
+              (inclus : assurance et entraînements).
+            </li>
+          </ul>
+          <h4 className="rf-blocktitle">📅 Calendrier des matchs (féminins &amp; masculins)</h4>
+          <p className="lede"><strong>À venir.</strong></p>
+          <h4 className="rf-blocktitle">🤝 Rejoignez l&apos;Aventure KABSA !</h4>
           <p className="lede">
-            Les tarifs sont communiqués à l&apos;inscription (licence compétition / licence
-            loisir-académie, incluant assurance, équipement selon formule et accès aux
-            entraînements).
+            Vous souhaitez faire un essai gratuit, devenir bénévole, encadrer une équipe ou devenir
+            partenaire de notre section basket ? Contactez-nous dès aujourd&apos;hui.
           </p>
+          {contactCta}
         </div>
 
         {mediaColumn}
       </div>
-
-      {contactCta}
     </>
   );
 
