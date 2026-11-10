@@ -379,8 +379,11 @@
 .kabsa .disc-main .lede{text-align:justify;max-width:none}
 .kabsa .disc-main .info-grid{grid-template-columns:repeat(2,1fr)}
 /* Liste à flèches (comme les puces du doc Word du proprio) */
-.kabsa .disc-arrow-list{list-style:none;padding-left:0}
+.kabsa .disc-arrow-list{list-style:none;padding-left:1.75em}
 .kabsa .disc-arrow-list li::before{content:"➤";color:var(--orange-600);margin-right:8px}
+/* Pages /sport (les seules à utiliser disc-arrow-list) : de l'air entre chaque titre de section et son contenu */
+.kabsa .disc-tabs:has(.disc-arrow-list) .disc-main .rf-blocktitle{margin-bottom:12px}
+.kabsa .disc-tabs:has(.disc-arrow-list) .disc-main > .rf-blocktitle:first-child{font-weight:800}
 
 .kabsa .disc-media{
   display:flex;flex-direction:column;
