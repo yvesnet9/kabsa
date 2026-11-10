@@ -70,52 +70,92 @@ export default function HalterophiliePage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Haltérophilie — Masculin &amp; Féminin</h3>
-
+          <h3 className="rf-blocktitle">
+            🏋️‍♂️ Haltérophilie Masculin &amp; Féminin — Dépasser ses limites, développer sa force
+          </h3>
           <p className="lede">
-            <em>Dépasser ses limites, développer sa force.</em>
+            Bienvenue dans la section Haltérophilie de l&apos;association KABSA ! Discipline
+            olympique historique, l&apos;haltérophilie est bien plus qu&apos;une simple
+            démonstration de force brute. C&apos;est un sport d&apos;une immense précision
+            technique, mêlant vitesse, souplesse, coordination et mental d&apos;acier. Que vous
+            cherchiez à sculpter votre corps, à booster vos performances athlétiques ou à relever
+            des défis en compétition, notre club vous accompagne pas à pas.
           </p>
 
-          <p className="lede">Discipline olympique historique, l&apos;haltérophilie est un sport d&apos;une grande précision technique mêlant vitesse, souplesse, coordination et mental. Sculpter son corps, booster ses performances ou relever des défis en compétition : le club accompagne pas à pas.</p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Une pratique inclusive : pour elle &amp; pour lui</h3>
-
-          <p className="lede">Un espace d&apos;entraide et de respect où chacun progresse à son rythme.</p>
-
-          <ul className="lede">
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🤝 Une pratique inclusive : Pour Elle &amp; Pour Lui
+          </h3>
+          <p className="lede">
+            À l&apos;association KABSA, nous croyons fermement que les barres de musculation
+            n&apos;ont pas de genre. Notre salle est un espace d&apos;entraide et de respect où
+            chacun progresse à son rythme.
+          </p>
+          <h4 className="rf-blocktitle">👩 Haltérophilie Féminine : Brisez les clichés !</h4>
+          <ul className="lede disc-arrow-list">
             <li>
-              <strong>Haltérophilie féminine</strong> : tonifier la silhouette, densifier la masse osseuse, développer une posture athlétique et une force fonctionnelle ; des débutantes aux compétitrices.
+              <strong>Les bénéfices</strong>{" "}: Contrairement aux idées reçues, l&apos;haltérophilie
+              ne vous « épaissira » pas massivement. Elle permet de tonifier la silhouette, de
+              densifier la masse osseuse, de brûler des calories et de développer une posture
+              athlétique et confiante.
             </li>
             <li>
-              <strong>Haltérophilie masculine</strong> : puissance musculaire globale, détente verticale, renforcement articulaire ; du novice à l&apos;athlète cherchant un transfert de force (combat, sprint, rugby…).
+              <strong>Pour qui ?</strong>{" "}Des débutantes aux compétitrices. C&apos;est le sport
+              idéal pour se réapproprier son corps et développer une force fonctionnelle
+              impressionnante.
+            </li>
+          </ul>
+          <h4 className="rf-blocktitle">👨 Haltérophilie Masculine : Force et explosion</h4>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Les bénéfices</strong>{" "}: Développez une puissance musculaire globale,
+              améliorez votre détente verticale, renforcez vos articulations et optimisez votre
+              condition physique générale.
+            </li>
+            <li>
+              <strong>Pour qui ?</strong>{" "}Que vous soyez novice ou athlète cherchant un transfert de
+              force pour un autre sport (sport de combat, sprint, rugby…), vous trouverez ici un
+              cadre rigoureux pour progresser.
             </li>
           </ul>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Nos deux mouvements phares</h3>
-
-          <ul className="lede">
+          <h3 className="rf-blocktitle rf-blocktitle--2">🎯 Nos deux mouvements phares</h3>
+          <p className="lede">
+            L&apos;haltérophilie repose sur la maîtrise de deux mouvements olympiques passionnants :
+          </p>
+          <ul className="lede disc-arrow-list">
             <li>
-              <strong>L&apos;arraché (snatch)</strong> : monter la barre au-dessus de la tête en un mouvement fluide.
+              <strong>L&apos;Arraché (Snatch)</strong>{" "}: Le mouvement le plus technique. Il consiste
+              à monter la barre directement au-dessus de la tête en un seul mouvement fluide et
+              rapide.
             </li>
             <li>
-              <strong>L&apos;épaulé-jeté (clean &amp; jerk)</strong> : barre aux épaules puis projetée à bout de bras.
+              <strong>L&apos;Épaulé-Jeté (Clean &amp; Jerk)</strong>{" "}: Le mouvement de la force
+              maximale. La barre est d&apos;abord amenée aux épaules (l&apos;épaulé) avant
+              d&apos;être projetée à bout de bras au-dessus de la tête (le jeté).
             </li>
           </ul>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Pourquoi choisir KABSA ?</h3>
-
-          <ul className="lede">
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🎒 Pourquoi choisir l&apos;Association KABSA ?
+          </h3>
+          <ul className="lede disc-arrow-list">
             <li>
-              <strong>Encadrement professionnel</strong> : postures corrigées en temps réel.
+              <strong>Encadrement professionnel</strong>{" "}: Nos entraîneurs diplômés corrigent vos
+              postures en temps réel pour une pratique 100% sécurisée.
             </li>
             <li>
-              <strong>Matériel de qualité</strong> : barres olympiques 15 kg femmes / 20 kg hommes, bumpers, plateaux dédiés.
+              <strong>Matériel de qualité</strong>{" "}: Barres olympiques adaptées (barres de 15 kg
+              pour les femmes, 20 kg pour les hommes), disques de compétition en caoutchouc
+              (bumpers) et plateaux d&apos;haltérophilie dédiés.
             </li>
             <li>
-              <strong>Progression sur-mesure</strong> : un suivi adapté à chaque athlète.
+              <strong>Progression sur-mesure</strong>{" "}: Des séances adaptées à votre niveau, que
+              vous n&apos;ayez jamais touché une barre de votre vie ou que vous visiez les podiums
+              nationaux.
             </li>
             <li>
-              <strong>Esprit de communauté</strong> : entraide et respect au quotidien.
+              <strong>Esprit de communauté</strong>{" "}: Chez KABSA, on s&apos;encourage, on célèbre
+              les records personnels de chacun et on progresse ensemble dans la bonne humeur.
             </li>
           </ul>
         </div>
@@ -131,31 +171,29 @@ export default function HalterophiliePage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Horaires &amp; lieu</h3>
-
-          <p className="lede">Créneaux horaires et lieu communiqués à l&apos;inscription.</p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Équipement requis</h3>
-
-          <ul className="lede">
-            <li>Tenue de sport confortable</li>
-            <li>Chaussures à semelles plates (ou chaussures d&apos;haltérophilie)</li>
-            <li>Motivation</li>
+          <h3 className="rf-blocktitle">🗓️ Informations Pratiques</h3>
+          <ul className="lede disc-arrow-list">
+            <li><strong>Créneaux horaires</strong>{" "}: communiqués à l&apos;inscription.</li>
+            <li><strong>Lieu</strong>{" "}: communiqué à l&apos;inscription.</li>
+            <li>
+              <strong>Équipement requis</strong>{" "}: une tenue de sport confortable, des chaussures à
+              semelles plates (ou chaussures d&apos;haltérophilie) et votre motivation !
+            </li>
           </ul>
+          <p className="lede"><strong>💳 Tarifs</strong>{" "}: communiqués à l&apos;inscription.</p>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Séance d&apos;essai</h3>
-
-          <p className="lede">Séance d&apos;essai gratuite.</p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Tarifs</h3>
-
-          <p className="lede">Communiqués à l&apos;inscription.</p>
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            ✨ Prêt(e) à soulever votre premier poids ?
+          </h3>
+          <p className="lede">
+            Venez tester la discipline lors d&apos;une séance d&apos;essai gratuite ! Les coachs et
+            les adhérents KABSA vous attendent sur le plateau.
+          </p>
+          {contactCta}
         </div>
 
         {mediaColumn}
       </div>
-
-      {contactCta}
     </>
   );
 

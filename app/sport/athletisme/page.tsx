@@ -70,36 +70,81 @@ export default function AthletismePage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Athlétisme (toutes formes) — Masculin &amp; Féminin</h3>
+          <h3 className="rf-blocktitle">
+            🏃‍♂️ Athlétisme (Toutes Formes) — Masculin &amp; Féminin
+          </h3>
           <p className="lede">
-            Bienvenue dans la section Athlétisme de KABSA. Compétition, forme ou simple plaisir de
-            courir : le club accueille femmes et hommes de tous âges et de tous niveaux, dans la
-            diversité des disciplines et un esprit de camaraderie.
+            Bienvenue dans la section Athlétisme de la KABSA ! Que vous cherchiez à repousser vos
+            limites en compétition, à garder la forme ou simplement à partager le plaisir de courir,
+            notre club accueille les femmes et les hommes de tous âges et de tous niveaux.
+            L&apos;athlétisme à la KABSA, c&apos;est la diversité des disciplines alliée à un esprit
+            de camaraderie unique.
           </p>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Nos différentes pratiques</h3>
-          <ul className="lede">
+          <h3 className="rf-blocktitle rf-blocktitle--2">👟 Nos Différentes Pratiques</h3>
+          <p className="lede">
+            Pour que chacun trouve sa voie, nous déclinons l&apos;athlétisme sous toutes ses formes
+            :
+          </p>
+          <h4 className="rf-blocktitle">1. L&apos;Athlétisme sur Piste (Stade)</h4>
+          <p className="lede">
+            Le cœur historique de notre discipline pour les amateurs de performance et de technique.
+          </p>
+          <ul className="lede disc-arrow-list">
             <li>
-              <strong>Athlétisme sur piste (stade)</strong> : courses (sprint 100/200/400 m, haies,
-              demi-fond 800/1500 m, fond 5000/10 000 m), sauts (longueur, triple saut, hauteur,
-              perche), lancers (poids, disque, javelot, marteau).
+              <strong>Courses</strong>{" "}: Sprint (100m, 200m, 400m), haies, demi-fond (800m, 1500m)
+              et fond (5000m, 10 000m).
+            </li>
+            <li><strong>Sauts</strong>{" "}: Longueur, triple saut, hauteur et perche.</li>
+            <li><strong>Lancers</strong>{" "}: Poids, disque, javelot et marteau.</li>
+          </ul>
+          <h4 className="rf-blocktitle">2. Le Hors-Stade &amp; Running</h4>
+          <p className="lede">
+            Pour le plaisir de courir en pleine nature ou sur route, en groupe et à votre rythme.
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Courses sur route</strong>{" "}: Du 10 km au marathon, pour tous les défis.
             </li>
             <li>
-              <strong>Hors-stade &amp; running</strong> : courses sur route (du 10 km au marathon),
-              trail &amp; nature, cross-country.
+              <strong>Trail &amp; Nature</strong>{" "}: Sorties en forêt, courses nature et dénivelés
+              pour les amoureux des grands espaces.
             </li>
             <li>
-              <strong>Athlétisme santé &amp; forme</strong> : marche nordique, remise en forme (PPG,
-              cardio, renforcement musculaire).
+              <strong>Cross-Country</strong>{" "}: La discipline hivernale par excellence pour renforcer
+              le mental et l&apos;endurance.
+            </li>
+          </ul>
+          <h4 className="rf-blocktitle">3. L&apos;Athlétisme Santé &amp; Forme</h4>
+          <p className="lede">
+            Parce que le sport est avant tout un vecteur de bien-être et de santé durable.
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Marche Nordique</strong>{" "}: Une marche dynamique avec bâtons qui sollicite 80%
+              des muscles du corps.
+            </li>
+            <li>
+              <strong>Remise en forme &amp; Condition physique</strong>{" "}: Séances de PPG
+              (Préparation Physique Générale), de cardio et de renforcement musculaire adaptées.
             </li>
           </ul>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Une pratique mixte et inclusive</h3>
+          <h3 className="rf-blocktitle rf-blocktitle--2">👥 Une Pratique Mixte et Inclusive</h3>
           <p className="lede">
-            Groupes ouverts aux femmes et aux hommes, par niveaux (du débutant complet à
-            l&apos;athlète confirmé), avec un encadrement diplômé qui adapte les séances aux
-            objectifs de chacun(e).
+            À la KABSA, la mixité est une force. Nos groupes d&apos;entraînement sont ouverts aux
+            femmes et aux hommes, favorisant l&apos;entraide, le respect et l&apos;émulation
+            collective.
           </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Groupes de niveaux</strong>{" "}: Des débutants complets aux athlètes confirmés.
+            </li>
+            <li>
+              <strong>Encadrement qualifié</strong>{" "}: Nos entraîneurs diplômés adaptent les séances
+              aux capacités et aux objectifs de chacun(e).
+            </li>
+          </ul>
         </div>
 
         {mediaColumn}
@@ -113,27 +158,33 @@ export default function AthletismePage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Horaires &amp; lieux d&apos;entraînement</h3>
-          <p className="lede">Communiqués à l&apos;inscription.</p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Inscription</h3>
-          <p className="lede">Deux séances d&apos;essai gratuites.</p>
-          <ul className="lede">
-            <li>Certificat médical de non-contre-indication (compétition ou loisir)</li>
-            <li>Fiche d&apos;inscription</li>
-          </ul>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Tarifs</h3>
           <p className="lede">
-            Tarifs préférentiels pour les étudiants, les couples et les familles (détails
-            communiqués à l&apos;inscription).
+            <strong>🗓️ Horaires &amp; Lieux d&apos;Entraînement</strong>{" "}: communiqués à
+            l&apos;inscription.
           </p>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">📝 Comment nous rejoindre ?</h3>
+          <p className="lede">Prêt(e) à enfiler vos baskets ? L&apos;inscription est simple !</p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Séance d&apos;essai</strong>{" "}: Venez tester gratuitement deux séances de votre
+              choix.
+            </li>
+            <li>
+              <strong>Documents requis</strong>{" "}: Un certificat médical de non-contre-indication à
+              la pratique de l&apos;athlétisme (en compétition ou en loisir) et la fiche
+              d&apos;inscription remplie.
+            </li>
+            <li>
+              <strong>Tarifs</strong>{" "}: tarifs préférentiels pour les étudiants, les couples et les
+              familles (détails communiqués à l&apos;inscription).
+            </li>
+          </ul>
+          {contactCta}
         </div>
 
         {mediaColumn}
       </div>
-
-      {contactCta}
     </>
   );
 

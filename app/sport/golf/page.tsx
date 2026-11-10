@@ -70,47 +70,90 @@ export default function GolfPage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Golf — Masculin &amp; Féminin</h3>
+          <h3 className="rf-blocktitle">⛳ Golf Masculin &amp; Féminin</h3>
+          <p className="lede">
+            Bienvenue dans l&apos;espace dédié au golf chez KABSA. Que vous soyez un joueur
+            chevronné à la recherche de compétition ou une débutante désireuse d&apos;apprendre les
+            bases de ce sport passionnant, notre section Golf vous propose un encadrement adapté,
+            des événements conviviaux et une communauté passionnée.
+          </p>
 
-          <p className="lede">Joueur chevronné en quête de compétition ou débutante désireuse d&apos;apprendre : la section Golf de KABSA propose un encadrement adapté, des événements conviviaux et une communauté passionnée.</p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Section masculine — performance &amp; camaraderie</h3>
-
-          <ul className="lede">
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            👥 Section Masculine : Performance &amp; Camaraderie
+          </h3>
+          <p className="lede">
+            La section masculine de KABSA rassemble des golfeurs de tous horizons autour de valeurs
+            de dépassement de soi et de convivialité. Nous organisons des activités régulières pour
+            permettre à chacun de progresser à son rythme.
+          </p>
+          <ul className="lede disc-arrow-list">
             <li>
-              <strong>Entraînements et clinics</strong> : swing, putting, stratégie.
+              <strong>Entraînements et Clinics</strong>{" "}: Des sessions collectives animées par des
+              professionnels pour perfectionner votre swing, votre putting et votre stratégie de
+              parcours.
             </li>
             <li>
-              <strong>Compétitions internes</strong> : Stroke Play, Stableford, Match Play.
+              <strong>Compétitions Internes</strong>{" "}: Participez à nos tournois mensuels (Stroke
+              Play, Stableford, Match Play) adaptés à tous les index.
             </li>
             <li>
-              <strong>Rencontres interclubs</strong> : et sorties « découverte ».
+              <strong>Rencontres Interclubs</strong>{" "}: Représentez les couleurs de KABSA lors de
+              rencontres amicales et de championnats régionaux contre d&apos;autres associations.
+            </li>
+            <li>
+              <strong>Sorties « Découverte »</strong>{" "}: Des voyages et des week-ends golfiques
+              organisés pour fouler les plus beaux parcours du pays.
             </li>
           </ul>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Section féminine — dynamisme &amp; partage</h3>
-
-          <ul className="lede">
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            👑 Section Féminine : Dynamisme &amp; Partage
+          </h3>
+          <p className="lede">
+            Le golf au féminin est en plein essor chez KABSA ! Notre section offre un environnement
+            bienveillant, stimulant et chaleureux pour encourager la pratique du golf chez les
+            femmes, quel que soit leur niveau.
+          </p>
+          <ul className="lede disc-arrow-list">
             <li>
-              <strong>Ladies&apos; Days</strong> : des journées dédiées aux golfeuses.
+              <strong>Ladies&apos; Days</strong>{" "}: Des journées exclusivement réservées aux
+              joueuses, combinant parcours de golf, ateliers thématiques et moments de réseautage
+              (lunchs, networking).
             </li>
             <li>
-              <strong>Programmes d&apos;initiation</strong> : formules débutante, prêt de matériel, accès accompagné.
+              <strong>Programmes d&apos;Initiation</strong>{" "}: Des formules « Débutante » pour
+              apprendre le golf sans pression, incluant le prêt de matériel et l&apos;accès
+              accompagné au parcours.
             </li>
             <li>
-              <strong>Ateliers confiance</strong> : bunkers, jeu court, règles officielles.
+              <strong>Ateliers Confiance</strong>{" "}: Sessions spécifiques pour vaincre
+              l&apos;appréhension des bunkers, optimiser le jeu court et maîtriser les Règles
+              Officielles du Golf.
             </li>
             <li>
-              <strong>Trophée Féminin KABSA</strong> : la compétition phare de la section.
+              <strong>Trophée Féminin KABSA</strong>{" "}: Notre grand rendez-vous annuel qui célèbre le
+              talent, l&apos;élégance et la sportivité de nos membres féminines.
             </li>
           </ul>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Événements mixtes &amp; vie du club</h3>
-
-          <ul className="lede">
-            <li>Scramble en double mixte</li>
-            <li>Grand Prix KABSA</li>
-            <li>Sorties de rentrée et de fin d&apos;année</li>
+          <h3 className="rf-blocktitle rf-blocktitle--2">🏆 Événements Mixtes &amp; Vie du Club</h3>
+          <p className="lede">
+            Parce que le golf est avant tout un sport de partage, KABSA met un point d&apos;honneur
+            à organiser des événements mixtes où hommes et femmes partagent la même passion.
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Scramble en Double Mixte</strong>{" "}: Une formule de jeu ludique et stratégique
+              où la cohésion d&apos;équipe fait toute la différence.
+            </li>
+            <li>
+              <strong>Le Grand Prix KABSA</strong>{" "}: Le point d&apos;orgue de notre saison sportive,
+              ouvert à tous les membres, suivi d&apos;un dîner de gala et de la remise des prix.
+            </li>
+            <li>
+              <strong>Sorties de Rentrée et de Fin d&apos;Année</strong>{" "}: Des journées conviviales
+              pour célébrer les réussites de la saison.
+            </li>
           </ul>
         </div>
 
@@ -125,27 +168,29 @@ export default function GolfPage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Adhésion</h3>
-
-          <p className="lede">Adhésion ouverte à tous les membres de KABSA.</p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Licence et handicap</h3>
-
-          <p className="lede">Accompagnement pour l&apos;obtention de la licence et le suivi de l&apos;index (système WHS).</p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Partenariats</h3>
-
-          <p className="lede">Tarifs préférentiels sur les green fees des clubs partenaires et réductions dans des pro-shops de la région.</p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Horaires et tarifs</h3>
-
-          <p className="lede">Communiqués à l&apos;inscription.</p>
+          <h3 className="rf-blocktitle">🛠️ Informations Pratiques &amp; Inscriptions</h3>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Comment nous rejoindre ?</strong>{" "}L&apos;adhésion à la section Golf est
+              ouverte à tous les membres de l&apos;association KABSA.
+            </li>
+            <li>
+              <strong>Licence et Handicap</strong>{" "}: Nous vous accompagnons dans les démarches
+              administratives pour l&apos;obtention de votre licence et le suivi de votre index
+              (système de calcul WHS).
+            </li>
+            <li>
+              <strong>Partenariats</strong>{" "}: Profitez de tarifs préférentiels sur les green fees de
+              nos clubs partenaires et des réductions exclusives dans plusieurs pro-shops de la
+              région.
+            </li>
+          </ul>
+          <p className="lede">Horaires et tarifs communiqués à l&apos;inscription.</p>
+          {contactCta}
         </div>
 
         {mediaColumn}
       </div>
-
-      {contactCta}
     </>
   );
 

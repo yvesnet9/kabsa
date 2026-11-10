@@ -70,30 +70,55 @@ export default function NatationPage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Natation — Masculin &amp; Féminin</h3>
+          <h3 className="rf-blocktitle">🏊‍♂️ Natation Masculin &amp; Féminin</h3>
+          <p className="lede">
+            Bienvenue dans l&apos;espace dédié à la natation au sein de l&apos;association KABSA.
+            Que vous cherchiez à vaincre votre peur de l&apos;eau, perfectionner vos techniques de
+            nage ou vous entraîner dans un cadre compétitif, nos bassins vous sont ouverts. Nous
+            prônons une pratique de la natation inclusive, bienveillante et adaptée aux objectifs de
+            chacun et chacune, sous la supervision de coachs certifiés.
+          </p>
 
-          <p className="lede">Vaincre sa peur de l&apos;eau, perfectionner ses nages ou s&apos;entraîner en cadre compétitif : les bassins de KABSA sont ouverts à tous, sous la supervision de coachs certifiés — une pratique inclusive, bienveillante et adaptée aux objectifs de chacun et chacune.</p>
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🌟 Notre Philosophie : L&apos;Eau pour Tous et Toutes
+          </h3>
+          <p className="lede">
+            À l&apos;association KABSA, nous croyons que la natation est bien plus qu&apos;un sport
+            : c&apos;est un art de vivre, un gage de santé et un vecteur de confiance en soi. Nos
+            sections masculine et féminine sont conçues pour offrir un environnement sécurisant et
+            motivant, respectueux du rythme et des aspirations de chaque membre.
+          </p>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Notre philosophie : l&apos;eau pour tous et toutes</h3>
-
-          <p className="lede">Un environnement sécurisant et motivant, respectueux du rythme de chaque membre.</p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Nos formules &amp; groupes de niveau</h3>
-
-          <ul className="lede">
-            <li>
-              <strong>Aquaphobie &amp; débutants (apprentissage)</strong> : apprivoiser l&apos;eau, la respiration, flotter, premiers déplacements en sécurité.
-            </li>
-            <li>
-              <strong>Intermédiaire (perfectionnement)</strong> : les 4 nages (crawl, dos crawlé, brasse, papillon), endurance et coordination.
-            </li>
-            <li>
-              <strong>Natation loisir &amp; bien-être (entretien)</strong> : renforcement musculaire, capacité cardio-respiratoire, gestion du stress.
-            </li>
-            <li>
-              <strong>Compétition &amp; masters (performance)</strong> : plans intensifs, départs/virages, préparation aux compétitions interclubs ou régionales.
-            </li>
-          </ul>
+          <h3 className="rf-blocktitle rf-blocktitle--2">📊 Nos Formules &amp; Groupes de Niveau</h3>
+          <p className="lede">
+            Pour répondre aux besoins de tous les profils, nos séances sont réparties en quatre
+            grands niveaux, accessibles aux hommes comme aux femmes :
+          </p>
+          <p className="lede">
+            <strong>🔹 1. Aquaphobie &amp; Débutants (Apprentissage)</strong>{" "}— <em>Pour qui
+            ?</em>{" "}Les adultes qui ne se sentent pas à l&apos;aise dans l&apos;eau ou qui n&apos;ont
+            jamais appris à nager. <em>Objectif :</em>{" "}apprivoiser l&apos;élément aquatique,
+            travailler la respiration, flotter et acquérir les premiers réflexes de déplacement en
+            toute sécurité.
+          </p>
+          <p className="lede">
+            <strong>🔹 2. Intermédiaire (Perfectionnement)</strong>{" "}— <em>Pour qui ?</em>{" "}Ceux et
+            celles qui savent déjà nager au moins une nage mais souhaitent s&apos;améliorer.{" "}
+            <em>Objectif :</em>{" "}apprentissage et correction des 4 nages (crawl, dos crawlé, brasse,
+            papillon), amélioration de l&apos;endurance et de la coordination.
+          </p>
+          <p className="lede">
+            <strong>🔹 3. Natation Loisir &amp; Bien-être (Entretien)</strong>{" "}— <em>Pour qui
+            ?</em>{" "}Les nageurs et nageuses autonomes qui recherchent une activité physique régulière
+            sans la pression du chronomètre. <em>Objectif :</em>{" "}renforcement musculaire,
+            développement de la capacité cardio-respiratoire et évacuation du stress.
+          </p>
+          <p className="lede">
+            <strong>🔹 4. Section Compétition &amp; Masters (Performance)</strong>{" "}— <em>Pour qui
+            ?</em>{" "}Les passionnés de vitesse et de technique souhaitant se mesurer aux autres ou à
+            eux-mêmes. <em>Objectif :</em>{" "}plans d&apos;entraînement intensifs, optimisation des
+            départs/virages et préparation aux compétitions interclubs ou régionales.
+          </p>
         </div>
 
         {mediaColumn}
@@ -107,31 +132,43 @@ export default function NatationPage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Horaires des entraînements</h3>
+          <h3 className="rf-blocktitle">📅 Horaires &amp; Plannings des Séances</h3>
+          <p className="lede">
+            Les créneaux sont organisés de manière à garantir un confort de pratique optimal en
+            fonction de vos disponibilités. Horaires communiqués à l&apos;inscription.
+          </p>
 
-          <p className="lede">Créneaux organisés pour un confort de pratique optimal. Les horaires sont communiqués à l&apos;inscription.</p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Tarifs (saison 2026-2027)</h3>
-
-          <p className="lede">Cotisation loisir et cotisation compétition communiquées à l&apos;inscription. Tarifs dégressifs pour les familles et les étudiants.</p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Équipement requis</h3>
-
-          <ul className="lede">
-            <li>Bonnet de bain (obligatoire, fourni aux couleurs de KABSA à l&apos;inscription)</li>
-            <li>Maillot de bain de natation (short de plage interdit)</li>
-            <li>Lunettes</li>
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            📋 Informations Pratiques &amp; Inscriptions
+          </h3>
+          <h4 className="rf-blocktitle"><em>Tarifs (saison 2026-2027)</em></h4>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Cotisation annuelle Loisir</strong>{" "}: tarif communiqué à l&apos;inscription
+              (accès à 2 séances par semaine).
+            </li>
+            <li>
+              <strong>Cotisation annuelle Compétition</strong>{" "}: tarif communiqué à
+              l&apos;inscription (accès aux entraînements + frais d&apos;inscription aux courses).
+            </li>
+            <li>Tarifs dégressifs pour les familles et les étudiants.</li>
           </ul>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Témoignages</h3>
-
-          <p className="lede">Témoignages à venir.</p>
+          <h4 className="rf-blocktitle"><em>Équipement requis</em></h4>
+          <ul className="lede disc-arrow-list">
+            <li>
+              Bonnet de bain (obligatoire, fourni aux couleurs de l&apos;association KABSA lors de
+              l&apos;inscription).
+            </li>
+            <li>Maillot de bain de natation (short de plage interdit).</li>
+            <li>Lunettes de natation.</li>
+          </ul>
+          <h4 className="rf-blocktitle">💬 Témoignages de nos Membres</h4>
+          <p className="lede"><strong>À venir.</strong></p>
+          {contactCta}
         </div>
 
         {mediaColumn}
       </div>
-
-      {contactCta}
     </>
   );
 

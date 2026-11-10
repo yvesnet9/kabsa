@@ -70,55 +70,68 @@ export default function AutresDisciplinesPage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Autres disciplines</h3>
-
+          <h3 className="rf-blocktitle">
+            🌐 Autres disciplines — Envie de faire grandir l&apos;Académie avec nous ?
+          </h3>
           <p className="lede">
-            <em>Envie de faire grandir l&apos;Académie avec nous ?</em>
+            Chez KABSA, notre vision du sport et de l&apos;épanouissement ne s&apos;arrête pas aux
+            frontières des disciplines actuelles. Nous croyons fermement que la diversité des
+            pratiques enrichit notre communauté et offre de nouvelles opportunités à nos membres.
+            L&apos;académie a vocation à évoluer, et votre discipline y a peut-être sa place !
           </p>
 
-          <p className="lede">La vision du sport de KABSA ne s&apos;arrête pas aux disciplines actuelles : la diversité des pratiques enrichit la communauté et offre de nouvelles opportunités aux membres. L&apos;académie a vocation à évoluer — votre discipline y a peut-être sa place.</p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Pourquoi rejoindre l&apos;Académie KABSA ?</h3>
-
-          <ul className="lede">
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🤝 Pourquoi rejoindre l&apos;Académie KABSA ?
+          </h3>
+          <p className="lede">
+            Intégrer notre structure, c&apos;est bénéficier d&apos;un écosystème solide pour
+            développer votre activité :
+          </p>
+          <ul className="lede disc-arrow-list">
             <li>
-              <strong>Infrastructures &amp; logistique</strong> : espaces adaptés, gestion facilitée.
+              <strong>Infrastructures &amp; Logistique</strong>{" "}: Un accès à des espaces adaptés et
+              une gestion facilitée.
             </li>
             <li>
-              <strong>Visibilité accrue</strong> : communication de l&apos;association.
+              <strong>Visibilité accrue</strong>{" "}: Profitez de la communication de
+              l&apos;association pour toucher un public plus large.
             </li>
             <li>
-              <strong>Synergie associative</strong> : échanges entre encadrants, projets transversaux, événements multisports.
+              <strong>Synergie associative</strong>{" "}: Échangez avec d&apos;autres encadrants et
+              participez à des projets transversaux et des événements multisports.
             </li>
             <li>
-              <strong>Valeurs partagées</strong> : respect, dépassement de soi, esprit d&apos;équipe.
+              <strong>Valeurs partagées</strong>{" "}: Rejoignez une aventure humaine axée sur le
+              respect, le dépassement de soi et l&apos;esprit d&apos;équipe.
             </li>
           </ul>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Quel profil recherchons-nous ?</h3>
-
-          <p className="lede">Entraîneur passionné, club en quête de partenariats ou porteur d&apos;un projet sportif innovant : nous étudions toutes les propositions.</p>
-
-          <ul className="lede">
+          <h3 className="rf-blocktitle rf-blocktitle--2">🚀 Quel profil recherchons-nous ?</h3>
+          <p className="lede">
+            Que vous soyez un entraîneur passionné, un club en quête de partenariats ou le porteur
+            d&apos;un projet sportif innovant, nous étudions toutes les propositions :
+          </p>
+          <ul className="lede disc-arrow-list">
             <li>Arts martiaux ou sports de combat complémentaires</li>
             <li>Sports collectifs ou individuels</li>
             <li>Disciplines de bien-être, fitness ou expression corporelle</li>
             <li>Nouvelles pratiques émergentes ou urbaines</li>
           </ul>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Contactez-nous</h3>
-
-          <p className="lede">Un projet, une équipe, ou l&apos;envie de proposer une nouvelle activité ? Rencontrons-nous pour en discuter.</p>
-
+          <h3 className="rf-blocktitle rf-blocktitle--2">📩 Contactez-nous !</h3>
           <p className="lede">
-            <em>« Seul on va plus vite, ensemble on va plus loin. Rejoignez l&apos;aventure KABSA ! »</em>
+            Vous avez un projet, une équipe, ou simplement l&apos;envie de proposer une nouvelle
+            activité au sein de KABSA ? Rencontrons-nous pour en discuter !
+          </p>
+          {contactCta}
+          <p className="lede" style={{ marginTop: 18 }}>
+            <em>« Seul on va plus vite, ensemble on va plus loin. Rejoignez l&apos;aventure KABSA !
+            »</em>
           </p>
         </div>
 
         {mediaColumn}
       </div>
-
-      {contactCta}
     </>
   );
 

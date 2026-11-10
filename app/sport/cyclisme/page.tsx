@@ -70,44 +70,81 @@ export default function CyclismePage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Cyclisme — Masculin &amp; Féminin</h3>
+          <h3 className="rf-blocktitle">🚴‍♂️ Cyclisme Masculin &amp; Féminin</h3>
+          <p className="lede">
+            Chez KABSA, nous croyons que le vélo est un formidable vecteur de rassemblement, de
+            dépassement de soi et de mixité. Notre section cyclisme incarne cette vision en offrant
+            un espace où hommes et femmes partagent la même passion de la route, de la piste ou des
+            sentiers, quel que soit leur niveau. Nous prônons un cyclisme inclusif où la parité
+            n&apos;est pas qu&apos;un mot, mais une réalité partagée à chaque coup de pédale.
+          </p>
 
-          <p className="lede">Le vélo comme vecteur de rassemblement, de dépassement de soi et de mixité : hommes et femmes partagent la même passion de la route, de la piste ou des sentiers, quel que soit leur niveau — un cyclisme inclusif où la parité est une réalité à chaque coup de pédale.</p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Notre philosophie : rouler ensemble, sans distinction</h3>
-
-          <ul className="lede">
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🤝 Notre Philosophie : Rouler Ensemble, Sans Distinction
+          </h3>
+          <p className="lede">
+            La section cyclisme de KABSA repose sur trois piliers fondamentaux :
+          </p>
+          <ul className="lede disc-arrow-list">
             <li>
-              <strong>Mixité sur la route</strong> : entraide, partage, convivialité.
+              <strong>La mixité sur la route</strong>{" "}: Nos entraînements et sorties loisirs sont
+              ouverts à tous. Nous favorisons l&apos;entraide, le partage d&apos;expérience et la
+              convivialité entre cyclistes masculins et féminins.
             </li>
             <li>
-              <strong>Équité dans l&apos;accompagnement</strong> : mêmes conseils, suivi et soutien logistique.
+              <strong>L&apos;équité dans l&apos;accompagnement</strong>{" "}: Que vous participiez à une
+              course locale ou à une randonnée cyclotouriste, chaque membre bénéficie des mêmes
+              conseils techniques, du même suivi et du même soutien logistique.
             </li>
             <li>
-              <strong>Valorisation du cyclisme féminin</strong> : environnement sécurisant et stimulant.
+              <strong>La valorisation du cyclisme féminin</strong>{" "}: Nous mettons un point
+              d&apos;honneur à encourager la pratique des femmes, encore trop souvent
+              sous-représentées dans le peloton, en créant un environnement sécurisant et stimulant.
             </li>
           </ul>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Nos activités &amp; entraînements</h3>
+          <h3 className="rf-blocktitle rf-blocktitle--2">📅 Nos Activités &amp; Entraînements</h3>
+          <p className="lede">
+            Pour que chacun trouve son rythme, nous proposons différentes formules adaptées aux
+            objectifs de nos adhérents :
+          </p>
+          <h4 className="rf-blocktitle">🚴‍♀️ Sorties Loisirs &amp; Cyclotourisme</h4>
+          <p className="lede">
+            <em>Pour qui ?</em>{" "}Débutants, passionnés de paysages et adeptes de la petite reine sans
+            chronomètre. <em>Le programme :</em>{" "}des sorties hebdomadaires (généralement le
+            week-end) avec plusieurs groupes de niveau — rouler ensemble, progresser à son rythme et
+            partager un moment convivial.
+          </p>
+          <h4 className="rf-blocktitle">⚡ Entraînements Performance &amp; Compétition</h4>
+          <p className="lede">
+            <em>Pour qui ?</em>{" "}Cyclistes (hommes et femmes) souhaitant préparer des cyclosportives,
+            des courses régionales ou améliorer leur endurance. <em>Le programme :</em>{" "}séances de
+            fractionné, travail de relance, techniques de peloton et gestion de l&apos;effort.
+          </p>
+          <h4 className="rf-blocktitle">🔧 Ateliers Mécaniques &amp; Sécurité</h4>
+          <p className="lede">
+            <em>Pour qui ?</em>{" "}Tout le monde. <em>Le programme :</em>{" "}apprendre à changer une
+            chambre à air, régler son dérailleur, entretenir sa transmission et adopter les bons
+            réflexes de sécurité en groupe.
+          </p>
 
-          <ul className="lede">
+          <h3 className="rf-blocktitle rf-blocktitle--2">🏆 Nos Engagements pour la Parité</h3>
+          <p className="lede">
+            L&apos;association KABSA s&apos;engage activement pour le développement du sport au
+            féminin comme au masculin à travers :
+          </p>
+          <ul className="lede disc-arrow-list">
             <li>
-              <strong>Sorties loisirs &amp; cyclotourisme</strong> : sorties hebdomadaires (week-end) par groupes de niveau, pour rouler ensemble et progresser à son rythme.
+              Des groupes de niveau homogènes (et non par genre) pour que chacun roule à sa juste
+              valeur.
             </li>
             <li>
-              <strong>Entraînements performance &amp; compétition</strong> : fractionné, travail de relance, techniques de peloton, gestion de l&apos;effort.
+              Des parrains et marraines de club pour guider les nouveaux arrivants et faciliter leur
+              intégration.
             </li>
             <li>
-              <strong>Ateliers mécaniques &amp; sécurité</strong> : changer une chambre à air, régler son dérailleur, entretenir sa transmission, adopter les bons réflexes en groupe.
+              La promotion et la participation paritaire aux événements et compétitions officiels.
             </li>
-          </ul>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Nos engagements pour la parité</h3>
-
-          <ul className="lede">
-            <li>Groupes de niveau homogènes (et non par genre)</li>
-            <li>Parrains et marraines de club</li>
-            <li>Participation paritaire aux événements et compétitions</li>
           </ul>
         </div>
 
@@ -122,23 +159,22 @@ export default function CyclismePage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Horaires des sorties</h3>
+          <p className="lede">
+            Sorties hebdomadaires (généralement le week-end) ; horaires et tarifs communiqués à
+            l&apos;inscription. Calendrier des sorties communiqué aux adhérents.
+          </p>
 
-          <p className="lede">Sorties hebdomadaires (généralement le week-end). Les horaires sont communiqués à l&apos;inscription.</p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Inscription</h3>
-
-          <p className="lede">Séance d&apos;essai possible. Le calendrier des sorties est communiqué aux adhérents.</p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Tarifs</h3>
-
-          <p className="lede">Communiqués à l&apos;inscription.</p>
+          <h3 className="rf-blocktitle rf-blocktitle--2">💬 Rejoignez le Peloton KABSA !</h3>
+          <p className="lede">
+            Que vous soyez un cycliste chevronné ou que vous souhaitiez vous remettre en selle, vous
+            avez votre place parmi nous. Nos maîtres-mots sont le respect, la convivialité et le
+            plaisir de rouler.
+          </p>
+          {contactCta}
         </div>
 
         {mediaColumn}
       </div>
-
-      {contactCta}
     </>
   );
 

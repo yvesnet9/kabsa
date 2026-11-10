@@ -70,27 +70,68 @@ export default function ArtsMartiauxPage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Arts martiaux &amp; sports de combat — Masculin &amp; Féminin</h3>
+          <h3 className="rf-blocktitle">🥋 Arts Martiaux &amp; Sports de Combat</h3>
+          <p className="lede">
+            Bienvenue dans la section dédiée aux arts martiaux et sports de combat de
+            l&apos;association KABSA. Nous proposons des disciplines adaptées à tous les niveaux,
+            des débutants aux pratiquants confirmés, avec une approche inclusive et paritaire
+            (sections masculines et féminines). Que votre objectif soit de vous remettre en forme,
+            d&apos;apprendre à vous défendre, de canaliser votre énergie ou de progresser vers la
+            compétition, nos entraîneurs certifiés vous accompagnent dans une ambiance respectueuse
+            et sécurisée.
+          </p>
 
-          <p className="lede">Des disciplines adaptées à tous les niveaux, des débutants aux confirmés, dans une approche inclusive et paritaire. Remise en forme, self-defense, canalisation de l&apos;énergie ou compétition : des entraîneurs certifiés accompagnent dans une ambiance respectueuse et sécurisée.</p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Nos disciplines</h3>
-
-          <ul className="lede">
+          <h3 className="rf-blocktitle rf-blocktitle--2">📋 Nos Disciplines</h3>
+          <h4 className="rf-blocktitle">🥊 Boxe Pieds-Poings &amp; Kickboxing</h4>
+          <p className="lede">
+            Mélange parfait de techniques de frappe et de conditionnement physique intensif.
+          </p>
+          <ul className="lede disc-arrow-list">
             <li>
-              <strong>Boxe pieds-poings &amp; kickboxing</strong> : techniques de frappe et conditionnement physique ; cardio, endurance, renforcement, gestion du stress ; ados et adultes (sections mixtes ou 100 % féminines).
+              <strong>Bénéfices</strong>{" "}: Cardio, endurance, renforcement musculaire et gestion du
+              stress.
             </li>
             <li>
-              <strong>Arts martiaux traditionnels (karaté / judo)</strong> : techniques fondamentales, katas/formes, self-defense ; discipline, souplesse, confiance en soi ; enfants, ados et adultes.
+              <strong>Public</strong>{" "}: Ados et adultes (sections mixtes ou 100% féminines
+              disponibles).
+            </li>
+          </ul>
+          <h4 className="rf-blocktitle">🥋 Arts Martiaux Traditionnels (Karaté / Judo)</h4>
+          <p className="lede">
+            Apprentissage des techniques fondamentales, des katas/formes et du self-defense.
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Bénéfices</strong>{" "}: Discipline, souplesse, confiance en soi et respect des
+              valeurs traditionnelles.
+            </li>
+            <li><strong>Public</strong>{" "}: Enfants, ados et adultes.</li>
+          </ul>
+          <h4 className="rf-blocktitle">🛡️ Self-Defense / Krav Maga</h4>
+          <p className="lede">
+            Techniques simples et réalistes pour apprendre à faire face aux situations
+            d&apos;agression du quotidien.
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Bénéfices</strong>{" "}: Réflexes, vigilance, gestion de la peur et confiance en
+              soi.
             </li>
             <li>
-              <strong>Self-defense / Krav Maga</strong> : techniques simples et réalistes face aux agressions du quotidien ; réflexes, vigilance, gestion de la peur ; ateliers spécifiques de self-defense féminine.
+              <strong>Focus Féminin</strong>{" "}: Ateliers spécifiques de self-defense féminine centrés
+              sur les situations concrètes.
             </li>
           </ul>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Une pratique pour tous : masculin &amp; féminin</h3>
-
-          <p className="lede">Même niveau d&apos;exigence technique et même respect des règles de sécurité, quel que soit le genre.</p>
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            ⚖️ Une Pratique pour Tous : Masculin &amp; Féminin
+          </h3>
+          <p className="lede">
+            Chez KABSA, nous croyons que les sports de combat sont un formidable vecteur
+            d&apos;égalité et de dépassement de soi. <em>Note : tous nos cours partagent le même
+            niveau d&apos;exigence technique et le même respect des règles de sécurité, peu importe
+            le genre.</em>
+          </p>
         </div>
 
         {mediaColumn}
@@ -104,41 +145,43 @@ export default function ArtsMartiauxPage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Planning des entraînements (à confirmer)</h3>
+          <h3 className="rf-blocktitle">🗓️ Informations Pratiques &amp; Horaires</h3>
+          <p className="lede">
+            <em>Équipement requis :</em>{" "}tenue de sport confortable (ou kimono selon la discipline),
+            protections (gants, protège-dents, protège-tibias) et bouteille d&apos;eau.
+          </p>
+          <p className="lede">
+            <em>Séance d&apos;essai :</em>{" "}la première séance de découverte est gratuite !
+          </p>
 
-          <ul className="lede">
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🕒 Planning des entraînements <em>(à confirmer)</em>
+          </h3>
+          <ul className="lede disc-arrow-list">
             <li>
-              <strong>Lundi &amp; jeudi 19h30–21h00</strong> : kickboxing &amp; boxe (sections hommes / sections femmes).
+              <strong>Lundi &amp; Jeudi (19h30 - 21h00)</strong>{" "}: Kickboxing &amp; Boxe (sections
+              Hommes / sections Femmes)
             </li>
             <li>
-              <strong>Mercredi 18h00–19h30</strong> : arts martiaux traditionnels (mixte).
+              <strong>Mercredi (18h00 - 19h30)</strong>{" "}: Arts Martiaux Traditionnels (mixte)
             </li>
             <li>
-              <strong>Samedi 10h30–12h00</strong> : self-defense &amp; Krav Maga (cours dédiés et mixtes).
+              <strong>Samedi (10h30 - 12h00)</strong>{" "}: Self-Defense &amp; Krav Maga (cours dédiés
+              et mixtes)
             </li>
           </ul>
+          <p className="lede"><strong>💳 Tarifs</strong>{" "}: communiqués à l&apos;inscription.</p>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Équipement requis</h3>
-
-          <ul className="lede">
-            <li>Tenue de sport confortable (ou kimono selon la discipline)</li>
-            <li>Protections (gants, protège-dents, protège-tibias)</li>
-            <li>Bouteille d&apos;eau</li>
-          </ul>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Séance d&apos;essai</h3>
-
-          <p className="lede">Première séance de découverte gratuite.</p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Tarifs</h3>
-
-          <p className="lede">Communiqués à l&apos;inscription.</p>
+          <h3 className="rf-blocktitle rf-blocktitle--2">🎯 Rejoignez-nous !</h3>
+          <p className="lede">
+            Prêt(e) à monter sur le tatami ou sur le ring ? Contactez-nous dès aujourd&apos;hui pour
+            réserver votre cours d&apos;essai gratuit.
+          </p>
+          {contactCta}
         </div>
 
         {mediaColumn}
       </div>
-
-      {contactCta}
     </>
   );
 

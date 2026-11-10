@@ -70,67 +70,96 @@ export default function PilotagePage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Pilotage auto &amp; moto — Masculin &amp; Féminin</h3>
-
+          <h3 className="rf-blocktitle">
+            🏎️ Pilotage Auto &amp; Moto : Le Sens du Partage et de la Performance
+          </h3>
           <p className="lede">
-            <em>Le sens du partage et de la performance.</em>
+            Bienvenue dans l&apos;univers des sports mécaniques de l&apos;association KABSA. Pour
+            nous, le pilotage va bien au-delà de la vitesse : c&apos;est une école de maîtrise, de
+            discipline et de passion partagée. Que vous soyez un pilote chevronné ou que vous
+            souhaitiez monter à bord pour la première fois, nos activités s&apos;adaptent à toutes
+            les envies.
           </p>
 
-          <p className="lede">Dans l&apos;univers des sports mécaniques de KABSA, le pilotage va au-delà de la vitesse : une école de maîtrise, de discipline et de passion partagée, pour le pilote chevronné comme pour le débutant.</p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">La mixité au cœur des circuits</h3>
-
-          <ul className="lede">
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🏁 Une Passion, Zéro Limite : La Mixité au Cœur des Circuits
+          </h3>
+          <p className="lede">
+            Chez KABSA, nous croyons fermement que les trajectoires parfaites n&apos;ont pas de
+            genre. Nous mettons un point d&apos;honneur à promouvoir la mixité et
+            l&apos;accessibilité dans un univers parfois perçu comme fermé.
+          </p>
+          <ul className="lede disc-arrow-list">
             <li>
-              <strong>Pilotage féminin</strong> : sessions, stages et ateliers pour encourager les femmes à prendre le volant ou le guidon.
+              <strong>Pilotage Féminin</strong>{" "}: Des sessions, stages et ateliers pensés pour
+              encourager les femmes à prendre le volant ou le guidon. Rejoignez une communauté
+              grandissante de passionnées qui repoussent leurs limites, brisent les stéréotypes et
+              s&apos;imposent sur l&apos;asphalte.
             </li>
             <li>
-              <strong>Pilotage masculin</strong> : camaraderie, perfectionnement technique, respect mutuel.
+              <strong>Pilotage Masculin</strong>{" "}: Un espace de camaraderie, de perfectionnement
+              technique et de saine émulation où le respect mutuel et l&apos;esprit d&apos;équipe
+              restent la priorité absolue.
             </li>
             <li>
-              <strong>Événements mixtes</strong> : journées de roulage, endurances, challenges karting.
-            </li>
-          </ul>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Section automobile</h3>
-
-          <ul className="lede">
-            <li>
-              <strong>Baptêmes de piste</strong> : en passager aux côtés de pilotes instructeurs.
-            </li>
-            <li>
-              <strong>Stages de perfectionnement</strong> : trajectoire, freinage dégressif, gestion du regard.
-            </li>
-            <li>
-              <strong>Sorties trackdays</strong> : rouler sur circuit en toute sécurité.
+              <strong>Événements Mixtes</strong>{" "}: Des journées de roulage, des endurances et des
+              challenges karting où hommes et femmes partagent les mêmes grilles de départ et
+              vibrent au même rythme.
             </li>
           </ul>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Section moto</h3>
-
-          <ul className="lede">
+          <h3 className="rf-blocktitle rf-blocktitle--2">🛠️ Nos Activités sur Piste et Circuit</h3>
+          <p className="lede">
+            Découvrez nos programmes conçus pour vous faire progresser en toute sécurité :
+          </p>
+          <h4 className="rf-blocktitle">🚗 Section Automobile</h4>
+          <ul className="lede disc-arrow-list">
             <li>
-              <strong>Initiation au guidon</strong> : sur espace sécurisé.
+              <strong>Baptêmes de piste</strong>{" "}: Enfilez votre casque et installez-vous en
+              passager aux côtés de nos pilotes instructeurs pour un shot d&apos;adrénaline pure.
             </li>
             <li>
-              <strong>Pilotage sur circuit</strong> : déhanché, positionnement, dynamique en courbe.
+              <strong>Stages de perfectionnement</strong>{" "}: Apprenez les techniques de trajectoire,
+              le freinage dégressif et la gestion du regard pour optimiser vos chronos.
             </li>
             <li>
-              <strong>Ateliers sécurité &amp; mécanique</strong> : entretien de base, réglages de suspensions.
+              <strong>Sorties Trackdays</strong>{" "}: Venez rouler avec votre propre véhicule ou
+              profitez de nos voitures partenaires lors de journées dédiées sur les plus beaux
+              circuits.
+            </li>
+          </ul>
+          <h4 className="rf-blocktitle">🏍️ Section Moto</h4>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Initiation au guidon</strong>{" "}: Sautez le pas et découvrez les sensations de
+              la moto sur un espace sécurisé.
+            </li>
+            <li>
+              <strong>Pilotage sur circuit</strong>{" "}: Maîtrisez l&apos;art du déhanché, améliorez
+              votre positionnement et comprenez la dynamique de votre machine en courbe.
+            </li>
+            <li>
+              <strong>Ateliers sécurité &amp; mécanique</strong>{" "}: Parce qu&apos;un bon pilote
+              connaît sa machine, nous animons des ateliers sur l&apos;entretien de base et les
+              réglages de suspensions.
             </li>
           </ul>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Pourquoi rejoindre la team KABSA ?</h3>
-
-          <ul className="lede">
+          <h3 className="rf-blocktitle rf-blocktitle--2">🤝 Pourquoi Rejoindre la Team KABSA ?</h3>
+          <ul className="lede disc-arrow-list">
             <li>
-              <strong>Encadrement bienveillant</strong> : passionnés expérimentés et professionnels certifiés, sécurité prioritaire.
+              <strong>Encadrement bienveillant</strong>{" "}: Nos sessions sont supervisées par des
+              passionnés expérimentés et des professionnels certifiés qui placent votre sécurité en
+              priorité.
             </li>
             <li>
-              <strong>Esprit de club</strong> : entraide dans les stands.
+              <strong>Esprit de club</strong>{" "}: Pas de jugement ici. On s&apos;entraide dans les
+              stands et on partage nos conseils après chaque session.
             </li>
             <li>
-              <strong>Accessibilité financière</strong> : tarifs avantageux négociés grâce à nos partenaires.
+              <strong>Accessibilité financière</strong>{" "}: Grâce à nos partenaires, nous négocions
+              des tarifs avantageux pour rendre la pratique sur circuit accessible au plus grand
+              nombre.
             </li>
           </ul>
         </div>
@@ -146,19 +175,21 @@ export default function PilotagePage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Horaires &amp; calendrier</h3>
+          <p className="lede">
+            Sessions, stages et journées de roulage ; horaires et tarifs communiqués à
+            l&apos;inscription (tarifs avantageux grâce à nos partenaires).
+          </p>
 
-          <p className="lede">Sessions, stages et journées de roulage. Le calendrier et les horaires sont communiqués à l&apos;inscription.</p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Tarifs</h3>
-
-          <p className="lede">Tarifs avantageux grâce à nos partenaires, communiqués à l&apos;inscription.</p>
+          <h3 className="rf-blocktitle rf-blocktitle--2">📢 Prêt(e) à faire rugir le moteur ?</h3>
+          <p className="lede">
+            Que vous cherchiez la performance chronométrée ou le simple plaisir de la glisse, votre
+            place est parmi nous.
+          </p>
+          {contactCta}
         </div>
 
         {mediaColumn}
       </div>
-
-      {contactCta}
     </>
   );
 

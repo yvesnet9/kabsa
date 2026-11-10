@@ -70,55 +70,92 @@ export default function TennisPage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Tennis — Masculin &amp; Féminin</h3>
+          <h3 className="rf-blocktitle">🎾 Tennis Masculin &amp; Féminin</h3>
+          <p className="lede">
+            Bienvenue dans l&apos;espace dédié au tennis de l&apos;association KABSA ! Que vous
+            soyez un joueur compétiteur dans l&apos;âme, un adepte du jeu en loisir ou une joueuse
+            souhaitant reprendre le sport dans une ambiance conviviale, notre section tennis est
+            ouverte à toutes et à tous, sans distinction de niveau.
+          </p>
 
-          <p className="lede">Compétiteur dans l&apos;âme, adepte du loisir ou joueuse reprenant le sport dans une ambiance conviviale : la section tennis de KABSA est ouverte à toutes et à tous, sans distinction de niveau.</p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Nos engagements : mixité, performance et plaisir</h3>
-
-          <ul className="lede">
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            👥 Nos Engagements : Mixité, Performance et Plaisir
+          </h3>
+          <p className="lede">
+            À l&apos;association KABSA, nous croyons que le tennis est un formidable vecteur de
+            cohésion sociale, de dépassement de soi et de bien-être. Notre section se décline au
+            masculin comme au féminin pour répondre aux attentes de chacun :
+          </p>
+          <ul className="lede disc-arrow-list">
             <li>
-              <strong>Accès égal</strong> : créneaux équitablement répartis, infrastructures de qualité.
+              <strong>Un accès égal pour tous</strong>{" "}: Des créneaux horaires équitablement
+              répartis et des infrastructures de qualité accessibles à nos joueuses et joueurs.
             </li>
             <li>
-              <strong>Ambiance inclusive</strong> : équilibre entre compétition et plaisir.
+              <strong>Une ambiance inclusive</strong>{" "}: Un parfait équilibre entre l&apos;esprit de
+              compétition et le plaisir de se retrouver sur le court.
             </li>
             <li>
-              <strong>Encadrement diplômé</strong> : progression technique, tactique et physique.
-            </li>
-          </ul>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Section féminine — dynamisme et progression</h3>
-
-          <ul className="lede">
-            <li>
-              <strong>Tennis loisir &amp; Fit&apos;Tennis</strong> : pratique conviviale et remise en forme.
-            </li>
-            <li>
-              <strong>Cours collectifs d&apos;évolution</strong> : par groupes de niveau.
-            </li>
-            <li>
-              <strong>Pôle compétition</strong> : championnats locaux et régionaux.
-            </li>
-          </ul>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Section masculine — intensité et convivialité</h3>
-
-          <ul className="lede">
-            <li>
-              <strong>Entraînements tactiques &amp; physiques</strong> : pour progresser et performer.
-            </li>
-            <li>
-              <strong>Championnats &amp; défis internes</strong> : tournois, « pyramides ».
-            </li>
-            <li>
-              <strong>Tennis loisir</strong> : créneaux libres.
+              <strong>Un encadrement de qualité</strong>{" "}: Des entraîneurs diplômés pour vous
+              accompagner dans votre progression technique, tactique et physique.
             </li>
           </ul>
 
-          <h3 className="rf-blocktitle rf-blocktitle--2">Le double mixte — le cœur de notre vie associative</h3>
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            👕 La Section Féminine : Dynamisme et Progression
+          </h3>
+          <p className="lede">
+            Le tennis féminin au sein de KABSA est en plein essor ! Nous mettons un point
+            d&apos;honneur à créer un environnement bienveillant et stimulant.
+          </p>
+          <h4 className="rf-blocktitle"><em>Nos Formules</em></h4>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Tennis Loisir &amp; Fit&apos;Tennis</strong>{" "}: Pour allier cardio,
+              renforcement musculaire et plaisir du jeu, sans la pression du résultat.
+            </li>
+            <li>
+              <strong>Cours Collectifs d&apos;Évolution</strong>{" "}: Des séances par groupes de niveau
+              pour perfectionner vos coups (coup droit, revers, service) et votre placement.
+            </li>
+            <li>
+              <strong>Pôle Compétition</strong>{" "}: Pour les joueuses souhaitant intégrer nos équipes
+              engagées dans les championnats locaux et régionaux.
+            </li>
+          </ul>
 
-          <p className="lede">Sessions et tournois de double mixte pour mélanger les sections et partager un moment festif.</p>
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🏃‍♂️ La Section Masculine : Intensité et Convivialité
+          </h3>
+          <p className="lede">
+            De l&apos;initiation aux matchs à haute intensité, la section masculine propose des
+            programmes adaptés au rythme et aux objectifs de chaque joueur.
+          </p>
+          <h4 className="rf-blocktitle"><em>Nos Formules</em></h4>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Entraînements Tactiques &amp; Physiques</strong>{" "}: Des séances axées sur la
+              stratégie de jeu, la gestion des moments forts et l&apos;endurance sur le court.
+            </li>
+            <li>
+              <strong>Championnats &amp; Défis Internes</strong>{" "}: Un système de tournois internes
+              et de « pyramides » pour se challenger entre membres tout au long de l&apos;année.
+            </li>
+            <li>
+              <strong>Tennis Loisir</strong>{" "}: Des créneaux libres pour échanger des balles entre
+              amis ou rencontrer de nouveaux partenaires de jeu.
+            </li>
+          </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🤝 Le Double Mixte : Le Cœur de notre Vie Associative
+          </h3>
+          <p className="lede">
+            Parce que le tennis est aussi un sport de partage, nous organisons régulièrement des
+            sessions et tournois de double mixte. C&apos;est l&apos;occasion idéale pour mélanger
+            les sections, renforcer les liens entre les membres et partager un moment festif autour
+            de la petite balle jaune.
+          </p>
         </div>
 
         {mediaColumn}
@@ -132,23 +169,23 @@ export default function TennisPage() {
     <>
       <div className="disc-layout">
         <div className="disc-main">
-          <h3 className="rf-blocktitle">Horaires des entraînements</h3>
-
-          <p className="lede">Entraînements et sessions libres du lundi au dimanche, sur courts intérieurs et extérieurs. Les horaires sont communiqués à l&apos;inscription.</p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Inscription</h3>
-
-          <p className="lede">Séance d&apos;essai gratuite pour découvrir l&apos;ambiance du club. Formulaire d&apos;adhésion en ligne.</p>
-
-          <h3 className="rf-blocktitle rf-blocktitle--2">Tarifs</h3>
-
-          <p className="lede">Communiqués à l&apos;inscription.</p>
+          <h3 className="rf-blocktitle">📅 Planning et Inscriptions</h3>
+          <p className="lede">
+            Les entraînements et sessions libres se déroulent du lundi au dimanche sur nos courts
+            (intérieurs et extérieurs). Horaires et tarifs communiqués à l&apos;inscription.
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              Bénéficiez d&apos;une séance d&apos;essai gratuite pour découvrir l&apos;ambiance du
+              club.
+            </li>
+            <li>Remplissez votre formulaire d&apos;adhésion en ligne en quelques clics.</li>
+          </ul>
+          {contactCta}
         </div>
 
         {mediaColumn}
       </div>
-
-      {contactCta}
     </>
   );
 
