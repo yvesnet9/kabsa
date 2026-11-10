@@ -85,7 +85,7 @@ export default function FootballPage() {
 
           <h3 className="rf-blocktitle rf-blocktitle--2">🤵‍♂️ Section Masculine</h3>
           <h4 className="rf-blocktitle">🏆 Nos Équipes &amp; Catégories</h4>
-          <ul className="lede">
+          <ul className="lede disc-arrow-list">
             <li>
               <strong>École de Foot (U6 à U11)</strong> : L&apos;apprentissage par le jeu, la
               motricité et l&apos;esprit d&apos;équipe.
@@ -102,7 +102,7 @@ export default function FootballPage() {
 
           <h3 className="rf-blocktitle rf-blocktitle--2">👩‍🎓 Section Féminine</h3>
           <h4 className="rf-blocktitle">🌟 Le Foot Féminin chez KABSA : En pleine croissance !</h4>
-          <ul className="lede">
+          <ul className="lede disc-arrow-list">
             <li>
               <strong>Pôle Initiation (U7 à U11)</strong> : Découverte du football dans un
               environnement ludique et bienveillant.
@@ -132,7 +132,7 @@ export default function FootballPage() {
           <h3 className="rf-blocktitle">
             ⏱️ Horaires des Entraînements — Section Masculine <em>(à confirmer)</em>
           </h3>
-          <ul className="lede">
+          <ul className="lede disc-arrow-list">
             <li>U6 - U11 : Mercredi (14h00 - 15h30) et Samedi (10h00 - 11h30)</li>
             <li>U12 - U18 : Mardi et Jeudi (18h00 - 19h30)</li>
             <li>Séniors : Mardi et Jeudi (20h00 - 22h00)</li>
@@ -141,7 +141,7 @@ export default function FootballPage() {
           <h3 className="rf-blocktitle rf-blocktitle--2">
             ⏱️ Horaires des Entraînements — Section Féminine <em>(à confirmer)</em>
           </h3>
-          <ul className="lede">
+          <ul className="lede disc-arrow-list">
             <li>U7 - U11 Féminines : Mercredi (15h30 - 17h00)</li>
             <li>U12 - U15 Féminines : Lundi et Vendredi (17h30 - 19h00)</li>
             <li>Séniors Féminines : Lundi et Mercredi (19h30 - 21h30)</li>
@@ -152,7 +152,7 @@ export default function FootballPage() {
           <p className="lede">
             Pour rejoindre l&apos;association KABSA pour la saison, la procédure est simple :
           </p>
-          <ul className="lede">
+          <ul className="lede disc-arrow-list">
             <li>Remplir le formulaire d&apos;inscription.</li>
             <li>Faire remplir le certificat médical obligatoire par votre médecin.</li>
             <li>
@@ -166,7 +166,7 @@ export default function FootballPage() {
           </ul>
 
           <h4 className="rf-blocktitle">💳 Tarifs des Cotisations</h4>
-          <ul className="lede">
+          <ul className="lede disc-arrow-list">
             <li>
               <strong>Licence Jeune (U12 à U15)</strong> : tarif communiqué à l&apos;inscription
               (comprend l&apos;assurance, la licence et le pack équipement : maillot, short,

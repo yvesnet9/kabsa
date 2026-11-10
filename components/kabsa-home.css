@@ -378,6 +378,9 @@
 }
 .kabsa .disc-main .lede{text-align:justify;max-width:none}
 .kabsa .disc-main .info-grid{grid-template-columns:repeat(2,1fr)}
+/* Liste à flèches (comme les puces du doc Word du proprio) */
+.kabsa .disc-arrow-list{list-style:none;padding-left:0}
+.kabsa .disc-arrow-list li::before{content:"➤";color:var(--orange-600);margin-right:8px}
 
 .kabsa .disc-media{
   display:flex;flex-direction:column;
