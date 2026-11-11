@@ -129,7 +129,11 @@ export default function FormationEncadrantsPage() {
             <div className="info-card">
               <h3>Présentation</h3>
               <p>Vidéo de présentation du service.</p>
-              <VideoSlot />
+              <VideoSlot
+                youtubeId="YfS2E0MpJmY"
+                title="Encadrer et fédérer une équipe"
+                vertical
+              />
             </div>
             <div className="info-card">
               <h3>Démonstration</h3>
