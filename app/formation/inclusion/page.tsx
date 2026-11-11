@@ -101,7 +101,11 @@ export default function SensibilisationInclusionPage() {
             <div className="info-card">
               <h3>Présentation</h3>
               <p>Vidéo de présentation du service.</p>
-              <VideoSlot />
+              <VideoSlot
+                youtubeId="2rXPTCwqTow"
+                title="Dépasser les limites — l’inclusion par le sport"
+                vertical
+              />
             </div>
             <div className="info-card">
               <h3>Démonstration</h3>
