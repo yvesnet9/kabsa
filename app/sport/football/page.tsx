@@ -48,7 +48,7 @@ export default function FootballPage() {
       <div className="info-card">
         <h3>À découvrir</h3>
         <p>D&apos;autres vidéos à venir bientôt.</p>
-        <VideoSlot />
+        <VideoSlot youtubeId="PMI18gYywn4" title="Football — inspiration" vertical />
       </div>
       <div className="info-card">
         <h3>Stars joueurs KABSA</h3>
