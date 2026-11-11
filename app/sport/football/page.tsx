@@ -51,9 +51,9 @@ export default function FootballPage() {
         <VideoSlot youtubeId="PMI18gYywn4" title="Football — inspiration" vertical />
       </div>
       <div className="info-card">
-        <h3>Stars joueurs KABSA</h3>
-        <p>Parcours des meilleurs joueurs et joueuses.</p>
-        <VideoSlot />
+        <h3>Légendes du foot</h3>
+        <p>Inspiration &amp; grands moments du football.</p>
+        <VideoSlot youtubeId="GHm2BYhOVyo" title="Football — légendes du foot" vertical />
       </div>
     </aside>
   );
