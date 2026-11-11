@@ -54,7 +54,7 @@ export default function FormationSponsoringPage() {
               </li>
               <li>
                 <strong>Management sportif</strong> : planification stratégique
-                et gestion de projets sportifs d'envergure.
+                et gestion de projets sportifs d&apos;envergure.
               </li>
               <li>
                 <strong>Marketing &amp; communication</strong> : valoriser son
@@ -80,7 +80,7 @@ export default function FormationSponsoringPage() {
               </li>
               <li>
                 <strong>Technologie &amp; arbitrage</strong> : initiation et
-                perfectionnement aux outils d'aide à l'arbitrage.
+                perfectionnement aux outils d&apos;aide à l&apos;arbitrage.
               </li>
               <li>
                 <strong>Certifications internationales</strong> : accompagnement
@@ -108,7 +108,7 @@ export default function FormationSponsoringPage() {
                 <h3>Pour les entreprises &amp; équipementiers</h3>
                 <p>
                   Visibilité maximale (image associée à la jeunesse, la
-                  performance et l'inclusion), RSE &amp; impact local
+                  performance et l&apos;inclusion), RSE &amp; impact local
                   (engagements sociétaux concrets), réseau exclusif
                   (fédérations, événements et athlètes à fort potentiel).
                 </p>

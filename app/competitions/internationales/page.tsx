@@ -36,20 +36,20 @@ export default function CompetitionsInternationalesPage() {
             </p>
             <p className="lede">
               Cet espace est dédié à notre engagement international : tournois à
-              l'étranger et programmes d'échanges sportifs.
+              l&apos;étranger et programmes d&apos;échanges sportifs.
             </p>
 
             <h3 className="rf-blocktitle">
-              Rencontres &amp; tournois à l'étranger
+              Rencontres &amp; tournois à l&apos;étranger
             </h3>
             <p className="lede">
               Nos athlètes porteront les couleurs de KABSA sur la scène
-              internationale, point d'orgue de mois de préparation :
+              internationale, point d&apos;orgue de mois de préparation :
             </p>
             <ul className="lede">
               <li>
                 <strong>Tournois compétitifs</strong> : participation à des
-                championnats et coupes d'Europe et du monde.
+                championnats et coupes d&apos;Europe et du monde.
               </li>
               <li>
                 <strong>Défis sportifs</strong> : inscription de nos équipes à
@@ -74,12 +74,12 @@ export default function CompetitionsInternationalesPage() {
                 associations partenaires pour des stages partagés.
               </li>
               <li>
-                <strong>Voyages d'immersion</strong> : envoi de nos jeunes et
+                <strong>Voyages d&apos;immersion</strong> : envoi de nos jeunes et
                 encadrants dans des structures internationales.
               </li>
               <li>
                 <strong>Partage de valeurs</strong> : ateliers culturels en
-                marge des entraînements pour favoriser l'ouverture.
+                marge des entraînements pour favoriser l&apos;ouverture.
               </li>
             </ul>
 

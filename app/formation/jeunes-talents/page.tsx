@@ -31,16 +31,16 @@ export default function JeunesTalentsPage() {
         <div className="disc-layout">
           <div className="disc-main">
             <p className="svc-chapo">
-              Un parcours structuré, du repérage terrain jusqu'à la préparation
+              Un parcours structuré, du repérage terrain jusqu&apos;à la préparation
               à une carrière professionnelle.
             </p>
             <p className="lede">
               KABSA place la jeunesse au cœur de son action. Chaque jeune talent
-              recèle un potentiel unique qui ne demande qu'à être révélé,
+              recèle un potentiel unique qui ne demande qu&apos;à être révélé,
               encadré et propulsé. Notre mission : transformer cette étincelle
               brute en une réussite durable, sur le plan humain comme
               professionnel. Notre méthodologie repose sur un parcours
-              d'excellence en quatre étapes.
+              d&apos;excellence en quatre étapes.
             </p>
 
             <h3 className="rf-blocktitle">Un parcours en quatre étapes</h3>
@@ -50,13 +50,13 @@ export default function JeunesTalentsPage() {
                 sur le terrain. Nos équipes et recruteurs partenaires
                 identifient les jeunes qui se démarquent par leur discipline,
                 leur créativité ou leurs aptitudes. <em>Critères :</em> au-delà
-                du talent brut, la motivation, l'état d'esprit et la résilience.{" "}
+                du talent brut, la motivation, l&apos;état d&apos;esprit et la résilience.{" "}
                 <em>Inclusion :</em> une attention particulière aux talents
                 issus de milieux modestes.
               </li>
               <li>
                 <strong>
-                  2. L'évaluation et la cartographie des compétences
+                  2. L&apos;évaluation et la cartographie des compétences
                 </strong>{" "}
                 : un bilan complet à 360° — analyse technique fine, bilan des
                 soft skills (confiance, communication, gestion du stress), et{" "}
@@ -73,15 +73,15 @@ export default function JeunesTalentsPage() {
               <li>
                 <strong>4. La préparation à la carrière professionnelle</strong>{" "}
                 : immersion et réseau (entreprises partenaires, clubs,
-                institutions), outils d'insertion (CV, simulations d'entretiens,
-                gestion de l'image publique, initiation à la gestion financière)
+                institutions), outils d&apos;insertion (CV, simulations d&apos;entretiens,
+                gestion de l&apos;image publique, initiation à la gestion financière)
                 et accompagnement contractuel (conseils juridiques et
                 administratifs pour les premiers contrats).
               </li>
             </ul>
 
             <h3 className="rf-blocktitle rf-blocktitle--2">
-              Rejoignez l'aventure KABSA
+              Rejoignez l&apos;aventure KABSA
             </h3>
             <ul className="lede">
               <li>
