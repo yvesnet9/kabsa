@@ -28,7 +28,7 @@ export default function BasketballPage() {
       <div className="info-card">
         <h3>Présentation</h3>
         <p>Découvrez le pôle Basketball de KABSA.</p>
-        <VideoSlot />
+        <VideoSlot youtubeId="OkyI0Q3qwWI" title="Basket — passion du ballon orange" vertical />
       </div>
       <div className="info-card">
         <h3>Entraînements</h3>
