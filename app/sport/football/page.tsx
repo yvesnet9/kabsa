@@ -38,7 +38,7 @@ export default function FootballPage() {
       <div className="info-card">
         <h3>En images</h3>
         <p>Moments forts et coulisses du club.</p>
-        <VideoSlot />
+        <VideoSlot youtubeId="IYly1kKltD0" title="Football — ambiance & passion" vertical />
       </div>
       <div className="info-card">
         <h3>Matchs &amp; compétitions</h3>
