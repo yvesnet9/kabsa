@@ -156,7 +156,11 @@ export default function CompetitionsInternationalesPage() {
             <div className="info-card">
               <h3>Présentation</h3>
               <p>Vidéo de présentation du service.</p>
-              <VideoSlot />
+              <VideoSlot
+                youtubeId="DekADy6x_x4"
+                title="Ballon d’Or — le sommet du football mondial"
+                vertical
+              />
             </div>
             <div className="info-card">
               <h3>Démonstration</h3>
