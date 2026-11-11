@@ -125,7 +125,11 @@ export default function FormationSponsoringPage() {
             <div className="info-card">
               <h3>Présentation</h3>
               <p>Vidéo de présentation du service.</p>
-              <VideoSlot />
+              <VideoSlot
+                youtubeId="4vdcvrrgo98"
+                title="Sponsoriser un jeune talent"
+                vertical
+              />
             </div>
             <div className="info-card">
               <h3>Démonstration</h3>
