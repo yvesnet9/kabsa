@@ -165,7 +165,11 @@ export default function CompetitionsInternationalesPage() {
             <div className="info-card">
               <h3>Démonstration</h3>
               <p>Démonstration en conditions réelles.</p>
-              <VideoSlot />
+              <VideoSlot
+                youtubeId="nXjihewclpY"
+                title="Cérémonie du Ballon d’Or"
+                vertical
+              />
             </div>
             <div className="info-card">
               <h3>Séance type</h3>
