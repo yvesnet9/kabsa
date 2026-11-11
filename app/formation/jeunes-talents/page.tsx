@@ -113,7 +113,11 @@ export default function JeunesTalentsPage() {
             <div className="info-card">
               <h3>Démonstration</h3>
               <p>Démonstration en conditions réelles.</p>
-              <VideoSlot />
+              <VideoSlot
+                youtubeId="5xvJpi1ODGs"
+                title="L’apprentissage par le jeu"
+                vertical
+              />
             </div>
             <div className="info-card">
               <h3>Séance type</h3>
