@@ -35,7 +35,7 @@ export default function SensibilisationInclusionPage() {
               dans le sport.
             </p>
             <p className="lede">
-              C'est au cœur de l'ADN de KABSA : nous co-construisons des espaces
+              C&apos;est au cœur de l&apos;ADN de KABSA : nous co-construisons des espaces
               de rencontre où le sport devient un langage universel, brisant les
               barrières et faisant évoluer durablement les mentalités.
             </p>
@@ -43,7 +43,7 @@ export default function SensibilisationInclusionPage() {
             <h3 className="rf-blocktitle">Nos objectifs</h3>
             <ul className="lede">
               <li>
-                Déconstruire les préjugés liés au handicap par l'action et le
+                Déconstruire les préjugés liés au handicap par l&apos;action et le
                 partage.
               </li>
               <li>
@@ -65,16 +65,16 @@ export default function SensibilisationInclusionPage() {
             </h3>
             <p className="lede">
               Nous intervenons auprès des entreprises, des établissements
-              scolaires (du primaire à l'université) et des collectivités /
+              scolaires (du primaire à l&apos;université) et des collectivités /
               clubs sportifs.
             </p>
             <ul className="lede">
               <li>
-                <strong>1. Ateliers d'initiation aux parasports</strong> : mise
+                <strong>1. Ateliers d&apos;initiation aux parasports</strong> : mise
                 en situation réelle — découverte du basket-fauteuil, de la
                 boccia, du cécifoot ou du volley-assis. <em>Objectif :</em>{" "}
-                vivre le sport autrement, comprendre les notions d'adaptation et
-                développer l'empathie par le jeu.
+                vivre le sport autrement, comprendre les notions d&apos;adaptation et
+                développer l&apos;empathie par le jeu.
               </li>
               <li>
                 <strong>2. Conférences &amp; tables rondes inspirantes</strong>{" "}
@@ -88,7 +88,7 @@ export default function SensibilisationInclusionPage() {
                   entreprises)
                 </strong>{" "}
                 : ateliers pratiques pour intégrer et manager la diversité en
-                s'inspirant des valeurs du sport. <em>Objectif :</em>{" "}
+                s&apos;inspirant des valeurs du sport. <em>Objectif :</em>{" "}
                 transformer les obligations RSE en leviers de cohésion et de
                 performance collective.
               </li>
