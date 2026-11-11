@@ -104,7 +104,11 @@ export default function JeunesTalentsPage() {
             <div className="info-card">
               <h3>Présentation</h3>
               <p>Vidéo de présentation du service.</p>
-              <VideoSlot />
+              <VideoSlot
+                youtubeId="2uPeJHumMQ8"
+                title="Détecter et former les jeunes talents"
+                vertical
+              />
             </div>
             <div className="info-card">
               <h3>Démonstration</h3>
