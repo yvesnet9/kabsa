@@ -22,161 +22,177 @@ export default function BasketFauteuilPage() {
     return () => io.disconnect();
   }, []);
 
+  const mediaColumn = (
+    <aside className="disc-media">
+      <div className="info-card">
+        <h3>Matériels</h3>
+        <p>Présentation technique des fauteuils de sport.</p>
+        <div className="video-slot">Vidéo à venir</div>
+      </div>
+      <div className="info-card">
+        <h3>Entraînements</h3>
+        <p>Exercices de maniabilité, passes et préparation physique.</p>
+        <div className="video-slot">Vidéo à venir</div>
+      </div>
+      <div className="info-card">
+        <h3>En images</h3>
+        <p>Moments forts et coulisses du club.</p>
+        <div className="video-slot">Vidéo à venir</div>
+      </div>
+      <div className="info-card">
+        <h3>Matchs &amp; compétitions</h3>
+        <p>Meilleurs moments des championnats.</p>
+        <div className="video-slot">Vidéo à venir</div>
+      </div>
+      <div className="info-card">
+        <h3>À découvrir</h3>
+        <p>D&apos;autres vidéos à venir bientôt.</p>
+        <div className="video-slot">Vidéo à venir</div>
+      </div>
+      <div className="info-card">
+        <h3>Stars joueurs KABSA</h3>
+        <p>Parcours des meilleurs athlètes.</p>
+        <div className="video-slot">Vidéo à venir</div>
+      </div>
+    </aside>
+  );
+
   const presentationContent = (
     <>
       <div className="disc-layout">
-          <div className="disc-main">
-            <h3 className="rf-blocktitle">I. Définition</h3>
-            <p className="lede">
-              Le basket-fauteuil (ou handibasket) est un sport collectif dérivé du basket-ball
-              traditionnel, conçu spécifiquement pour être pratiqué en fauteuil roulant. Né à la fin
-              de la Seconde Guerre mondiale pour la rééducation des soldats blessés, il est devenu
-              l'une des disciplines phares des Jeux Paralympiques. Les règles fondamentales restent
-              très proches du basket debout : deux équipes de cinq joueurs s'affrontent sur un terrain
-              de dimensions standard, et le panier est fixé à la même hauteur réglementaire de 3,05
-              mètres.
-            </p>
-            <p className="lede">
-              La principale adaptation concerne la règle du "marcher" : le porteur de balle a le droit
-              de poser le ballon sur ses genoux et de pousser les roues de son fauteuil deux fois
-              maximum. S'il effectue une troisième poussée sans dribbler, passer ou tirer, une
-              infraction est sifflée.
-            </p>
+        <div className="disc-main">
+          <h3 className="rf-blocktitle">♿ Présentation du Basket Fauteuil chez KABSA</h3>
 
-            <h3 className="rf-blocktitle rf-blocktitle--2">II. Conditions pour pratiquer</h3>
-            <h4 className="rf-blocktitle">Qui peut pratiquer le basket-fauteuil ?</h4>
-            <p className="lede">
-              Le basket-fauteuil s'adresse principalement aux athlètes présentant des déficiences
-              motrices variées affectant la partie inférieure ou supérieure du corps. Cela inclut
-              notamment :
-            </p>
-            <ul className="lede">
-              <li>Les personnes atteintes de paraplégie, tétraplégie ou hémiplégie</li>
-              <li>Les personnes ayant subi une amputation ou souffrant d'agénésie</li>
-              <li>Les personnes atteintes d'infirmité motrice cérébrale (IMC) ou de poliomyélite</li>
-              <li>Les personnes souffrant d'autres atteintes neurologiques ou articulaires sévères</li>
-            </ul>
-            <p className="lede">
-              Afin d'assurer une équité parfaite, chaque joueur reçoit une classification
-              fonctionnelle allant de 1,0 à 4,5 points en fonction de son degré de mobilité du tronc et
-              de ses membres. Plus la note est basse, plus le handicap est lourd. Lors d'un match
-              officiel, la somme des points des cinq joueurs présents sur le terrain pour une équipe ne
-              doit pas dépasser 14 points (ou 14,5 points dans certaines compétitions nationales de
-              clubs). Le règlement autorise également la pratique pour les joueurs valides (crédités de
-              5 points) afin de favoriser la mixité et l'inclusion.
-            </p>
+          <h3 className="rf-blocktitle rf-blocktitle--2">🏀 L&apos;essence de la discipline</h3>
+          <p className="lede">
+            Le basket fauteuil (ou handibasket) est un sport collectif spectaculaire, dérivé du
+            basket-ball traditionnel et conçu pour être pratiqué en fauteuil roulant. Créé à la fin
+            de la Seconde Guerre mondiale pour la rééducation des soldats blessés, il est
+            aujourd&apos;hui l&apos;une des disciplines phares des Jeux Paralympiques.
+          </p>
+          <p className="lede">
+            Sur le terrain, l&apos;intensité et l&apos;exigence sont identiques à celles du basket
+            debout : deux équipes de cinq joueurs s&apos;affrontent sur un terrain aux dimensions
+            standards avec un panier fixé à 3,05 mètres de hauteur. La principale adaptation
+            concerne la règle du « marcher » : un joueur en possession du ballon peut le poser sur
+            ses genoux et pousser ses roues deux fois maximum avant de devoir dribbler, passer ou
+            tirer.
+          </p>
 
-            <h3 className="rf-blocktitle rf-blocktitle--2">III. Matériels adaptés</h3>
-            <h4 className="rf-blocktitle">Quel matériel pour pratiquer ce sport ?</h4>
-            <p className="lede">
-              Le matériel de base comprend le ballon classique et un terrain standard, mais l'élément
-              central reste le fauteuil roulant de sport. Contrairement aux fauteuils de ville, le
-              fauteuil de handibasket est une véritable machine de compétition conçue pour la vitesse,
-              la maniabilité et la sécurité. Il se caractérise par :
-            </p>
-            <ul className="lede">
-              <li>
-                Des roues arrière fortement inclinées (carrossage important) pour faciliter les
-                virages rapides et assurer une stabilité latérale optimale.
-              </li>
-              <li>
-                Une ou deux petites roulettes anti-bascule à l'arrière pour empêcher le joueur de
-                basculer lors des accélérations ou des tirs en extension.
-              </li>
-              <li>
-                Un cadre rigide et léger (souvent en aluminium ou en titane) équipé d'un pare-chocs
-                avant pour protéger les jambes lors des impacts.
-              </li>
-              <li>Des sangles de maintien au niveau des cuisses et du bassin pour faire corps avec la structure.</li>
-            </ul>
-            <h4 className="rf-blocktitle">Qui a droit à ce matériel ?</h4>
-            <p className="lede">
-              Chez KABSA, lors des entraînements, tous les pratiquants inscrits (en situation de
-              handicap ou valides) ont le droit d'utiliser un fauteuil adapté. En compétition
-              officielle, le fauteuil doit impérativement répondre aux normes strictes de l'IWBF
-              (International Wheelchair Basketball Federation), notamment concernant la hauteur
-              maximale de l'assise qui varie selon la classification du joueur.
-            </p>
+          <h3 className="rf-blocktitle rf-blocktitle--2">♿ Un sport inclusif ouvert à tous</h3>
+          <p className="lede">
+            Chez KABSA, le basket fauteuil s&apos;adresse principalement aux personnes présentant
+            une déficience motrice (paraplégie, tétraplégie, hémiplégie, amputation, agénésie,
+            infirmité motrice cérébrale, poliomyélite ou atteintes articulaires et neurologiques
+            sévères).
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>🏀 La classification fonctionnelle</strong>{" "}: Pour garantir une équité
+              sportive parfaite, chaque joueur reçoit une note allant de 1,0 à 4,5 points selon son
+              degré de mobilité du tronc et des membres (plus le handicap est lourd, plus la note
+              est basse). En match officiel, le total des points des cinq joueurs d&apos;une équipe
+              sur le terrain ne doit pas dépasser 14 points (ou 14,5 points dans certains
+              championnats nationaux).
+            </li>
+            <li>
+              <strong>♿ L&apos;ouverture aux joueurs valides</strong>{" "}: Afin de favoriser la
+              mixité et l&apos;inclusion, le règlement autorise également les joueurs valides
+              (crédités de 5 points) à pratiquer la discipline et à intégrer les effectifs.
+            </li>
+          </ul>
 
-            <h3 className="rf-blocktitle rf-blocktitle--2">
-              IV. Déroulement d'entraînement et préparation physique
-            </h3>
-            <div className="info-grid">
-              <div className="info-card">
-                <h3>Manipulation du fauteuil (Chair Skills)</h3>
-                <p>Sprints, slaloms, freinages brusques et pivots pour maîtriser parfaitement ses déplacements.</p>
-              </div>
-              <div className="info-card">
-                <h3>Travail technique</h3>
-                <p>
-                  Dribble synchronisé avec les poussées de roues, passes à une ou deux mains, et tirs
-                  en suspension (sans décoller du fauteuil).
-                </p>
-              </div>
-              <div className="info-card">
-                <h3>Tactique collective</h3>
-                <p>Mise en place des écrans et des blocs, transitions rapides et gestion des 24 secondes de possession.</p>
-              </div>
-              <div className="info-card">
-                <h3>Préparation physique</h3>
-                <p>
-                  Renforcement du haut du corps (bras, épaules, dorsaux et abdominaux), combiné à un
-                  travail cardiovasculaire de fond.
-                </p>
-              </div>
-            </div>
+          <h3 className="rf-blocktitle rf-blocktitle--2">⚙️ Un matériel de haute précision</h3>
+          <p className="lede">
+            Si le ballon et le terrain restent classiques, le fauteuil roulant de sport est le
+            véritable outil de performance du joueur. Conçu sur mesure pour allier vitesse,
+            maniabilité et sécurité, il se distingue d&apos;un fauteuil de ville par plusieurs
+            caractéristiques techniques :
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>♿ Des roues arrière fortement inclinées (carrossage)</strong>{" "}: Elles
+              offrent une stabilité latérale optimale et permettent des changements de direction
+              ultra-rapides.
+            </li>
+            <li>
+              <strong>🛡️ Des roulettes anti-bascule à l&apos;arrière</strong>{" "}: Elles sécurisent
+              le joueur lors des accélérations brusques ou des tirs en extension.
+            </li>
+            <li>
+              <strong>⚡ Un cadre rigide et léger</strong>{" "}: Fabriqué en aluminium ou en titane,
+              il intègre un pare-chocs à l&apos;avant pour protéger les jambes lors des contacts.
+            </li>
+            <li>
+              <strong>🔒 Des sangles de maintien</strong>{" "}: Positionnées aux cuisses et au
+              bassin, elles permettent au joueur de faire corps avec sa machine.
+            </li>
+          </ul>
 
-            <h3 className="rf-blocktitle rf-blocktitle--2">V. Matchs internes et compétition</h3>
-            <p className="lede">
-              La vie de KABSA est rythmée par les confrontations. Les matchs internes permettent de
-              tester les différentes combinaisons de joueurs tout en respectant la règle des 14 points
-              sur le terrain.
-            </p>
-            <p className="lede">
-              Au niveau national et international, KABSA s'engage à placer les meilleurs joueurs dans
-              des compétitions officielles structurées par divisions. Les matchs durent 40 minutes,
-              répartis en 4 périodes de 10 minutes. Le jeu est extrêmement dynamique et spectaculaire :
-              les chocs tactiques entre fauteuils font partie intégrante du spectacle.
-            </p>
-          </div>
+          <p className="lede">
+            <em>🏀 L&apos;engagement KABSA :</em>{" "}Lors des entraînements au sein de notre club,
+            tous les pratiquants inscrits — en situation de handicap ou valides — bénéficient
+            d&apos;un accès à un fauteuil adapté. Pour les rencontres officielles, chaque équipement
+            est contrôlé selon les normes strictes de l&apos;IWBF (International Wheelchair
+            Basketball Federation), notamment sur la hauteur d&apos;assise liée à la classification
+            du joueur.
+          </p>
 
-          <aside className="disc-media">
-            <div className="info-card">
-              <h3>Matériels</h3>
-              <p>Présentation technique des fauteuils de sport.</p>
-              <div className="video-slot">Vidéo à venir</div>
-            </div>
-            <div className="info-card">
-              <h3>Entraînements</h3>
-              <p>Exercices de maniabilité, passes et préparation physique.</p>
-              <div className="video-slot">Vidéo à venir</div>
-            </div>
-            <div className="info-card">
-              <h3>En images</h3>
-              <p>Moments forts et coulisses du club.</p>
-              <div className="video-slot">Vidéo à venir</div>
-            </div>
-            <div className="info-card">
-              <h3>Matchs &amp; compétitions</h3>
-              <p>Meilleurs moments des championnats.</p>
-              <div className="video-slot">Vidéo à venir</div>
-            </div>
-            <div className="info-card">
-              <h3>À découvrir</h3>
-              <p>D'autres vidéos à venir bientôt.</p>
-              <div className="video-slot">Vidéo à venir</div>
-            </div>
-            <div className="info-card">
-              <h3>Stars joueurs KABSA</h3>
-              <p>Parcours des meilleurs athlètes.</p>
-              <div className="video-slot">Vidéo à venir</div>
-            </div>
-          </aside>
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🏋️ Nos entraînements et la préparation physique
+          </h3>
+          <p className="lede">
+            Nos séances sont structurées pour développer à la fois l&apos;aisance individuelle et la
+            cohésion d&apos;équipe :
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>♿ Manipulation du fauteuil (Chair Skills)</strong>{" "}: Travail de sprints,
+              slaloms, freinages et pivots pour maîtriser ses déplacements.
+            </li>
+            <li>
+              <strong>🏀 Technique individuelle</strong>{" "}: Coordination entre le dribble et la
+              poussée des roues, passes à une ou deux mains et tirs (effectués en restant
+              impérativement assis dans le fauteuil, sous peine de faute technique).
+            </li>
+            <li>
+              <strong>📋 Tactique collective</strong>{" "}: Mise en place des blocs et des écrans —
+              les fauteuils servant à bloquer l&apos;espace pour libérer des coéquipiers —,
+              transitions rapides et gestion des 24 secondes de possession.
+            </li>
+            <li>
+              <strong>💪 Préparation physique</strong>{" "}: Le handibasket sollicitant fortement le
+              haut du corps, un travail spécifique de renforcement musculaire (bras, épaules, dos,
+              abdominaux) et d&apos;endurance cardiovasculaire est intégré pour tenir le rythme
+              intense des matchs.
+            </li>
+          </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🏆 De la pratique interne à la haute compétition
+          </h3>
+          <p className="lede">
+            La vie sportive de KABSA est rythmée par la compétition à tous les niveaux. Nos matchs
+            internes permettent à chacun de progresser en situation réelle et de tester les
+            combinaisons d&apos;équipes dans le respect de la règle des 14 points.
+          </p>
+          <p className="lede">
+            Pour nos éléments les plus aguerris, KABSA s&apos;engage au niveau national et
+            international en intégrant ses meilleurs joueurs dans les championnats officiels
+            structurés par divisions (Nationale 3 et au-delà). Les rencontres se disputent en 4
+            quart-temps de 10 minutes. C&apos;est un spectacle total où l&apos;engagement physique
+            et les chocs tactiques entre fauteuils exigent aussi une réactivité exemplaire des
+            mécaniciens en bord de terrain pour réparer la moindre crevaison ou casse mécanique en
+            un temps record.
+          </p>
+        </div>
+
+        {mediaColumn}
       </div>
 
       <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 6 }}>
         <Link href="/contact" className="info-cta">
-          S'inscrire / Nous contacter
+          S&apos;inscrire / Nous contacter
         </Link>
         <Link href="/dons" className="info-cta">
           Faire un don
@@ -186,132 +202,292 @@ export default function BasketFauteuilPage() {
   );
 
   const accessibiliteContent = (
-    <div className="disc-layout">
-      <div className="disc-main">
-      <p className="lede">
-        Le basket-fauteuil (ou handibasket) est l&apos;un des sports paralympiques les plus
-        spectaculaires et populaires au monde. Alliant vitesse, esprit d&apos;équipe et
-        stratégie, cette discipline offre une liberté totale de mouvement et un esprit de
-        compétition intense.
-      </p>
+    <>
+      <div className="disc-layout">
+        <div className="disc-main">
+          <h3 className="rf-blocktitle">♿🏀 Accessibilité &amp; Pratique chez KABSA</h3>
 
-      <h3 className="rf-blocktitle rf-blocktitle--2">À qui s&apos;adresse le basket-fauteuil ?</h3>
-      <p className="lede">
-        Ce sport est conçu pour être inclusif et équitable. Il s&apos;adresse principalement aux
-        personnes ayant une mobilité réduite des membres inférieurs ou supérieurs, qui les
-        empêche de pratiquer le basket-ball debout. Il convient particulièrement aux profils
-        suivants :
-      </p>
-      <ul className="lede">
-        <li>
-          <strong>Handicaps moteurs divers</strong> : paraplégie, tétraplégie ou assimilée.
-        </li>
-        <li>
-          <strong>Amputations ou agénésies</strong> : amputation d&apos;un ou des deux membres
-          inférieurs.
-        </li>
-        <li>
-          <strong>Pathologies neurologiques ou musculaires</strong> : poliomyélite, infirmité
-          motrice cérébrale (IMC), myopathie, ou spina bifida.
-        </li>
-        <li>
-          <strong>Ouverture aux personnes valides</strong> : en club (selon les réglementations
-          nationales), les personnes valides ou ayant des limitations légères peuvent intégrer
-          les équipes pour favoriser une inclusion réciproque.
-        </li>
-      </ul>
-      <p className="lede">
-        <em>Le saviez-vous ?</em> Un entretien préalable avec le staff médical et technique du
-        club permet d&apos;évaluer votre profil, l&apos;adéquation de la discipline avec vos
-        capacités fonctionnelles et de définir le matériel adapté.
-      </p>
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🤝 Une discipline ouverte à tous les profils
+          </h3>
+          <p className="lede">
+            Chez KABSA, nous croyons que le sport est un vecteur d&apos;inclusion unique. Le basket
+            fauteuil s&apos;adresse avant tout aux personnes présentant une déficience motrice
+            affectant les membres inférieurs ou supérieurs (paraplégie, tétraplégie, hémiplégie,
+            amputation, agénésie, infirmité motrice cérébrale, poliomyélite ou atteintes
+            articulaires et neurologiques sévères).
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>🏀 L&apos;équité grâce à la classification</strong>{" "}: Pour que chacun
+              trouve sa place sur le terrain, chaque joueur en situation de handicap se voit
+              attribuer un barème de 1,0 à 4,5 points selon ses capacités fonctionnelles. Lors des
+              rencontres officielles, le total des points des cinq joueurs présents sur le parquet
+              ne peut excéder 14 points (ou 14,5 points selon les championnats).
+            </li>
+            <li>
+              <strong>♿ La mixité avec les joueurs valides</strong>{" "}: Le handibasket a la
+              particularité d&apos;autoriser les joueurs valides (évalués à 5 points) à rejoindre
+              les équipes. C&apos;est l&apos;occasion idéale de partager un sport exigeant entre
+              amis ou en famille, dans un véritable esprit de cohésion.
+            </li>
+          </ul>
 
-      <h3 className="rf-blocktitle rf-blocktitle--2">
-        Le système de classification : la clé de l&apos;équité
-      </h3>
-      <p className="lede">
-        Pour garantir une compétition juste, chaque joueur reçoit une classification officielle
-        de 1.0 à 4.5 points (jusqu&apos;à 5.0 pour un joueur valide en championnat national),
-        calculée selon son degré de mobilité du tronc et des membres :
-      </p>
-      <ul className="lede">
-        <li>
-          <strong>1.0 point</strong> : mobilité du tronc très limitée (pas d&apos;abdominaux
-          fonctionnels).
-        </li>
-        <li>
-          <strong>4.5 points</strong> : mobilité totale ou quasi-totale du tronc et des bras (ex.
-          amputation sous le genou).
-        </li>
-      </ul>
-      <p className="lede">
-        <em>La règle d&apos;or sur le terrain</em> : le total des points des 5 joueurs alignés en
-        même temps ne peut pas dépasser 14 à 14,5 points (selon le niveau). Cela oblige à
-        composer des équipes mixtes en termes de handicaps, valorisant le rôle de chaque athlète.
-      </p>
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            ⚙️ Prêt de matériel : venez comme vous êtes !
+          </h3>
+          <p className="lede">
+            Pas besoin d&apos;investir dans un équipement coûteux pour débuter ou s&apos;entraîner
+            chez KABSA. Nous mettons tout en œuvre pour lever les freins matériels :
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>♿ Mise à disposition de fauteuils de sport</strong>{" "}: Lors de nos séances
+              d&apos;entraînement, tous les membres inscrits — en situation de handicap comme
+              valides — ont accès à un fauteuil roulant adapté fourni par le club.
+            </li>
+            <li>
+              <strong>🛡️ Sécurité et confort</strong>{" "}: Nos fauteuils sont équipés de roues
+              inclinées (carrossage) pour la stabilité, de roulettes anti-bascule, de pare-chocs
+              avant et de sangles de maintien. Notre équipe vous aide à régler votre assise dès
+              votre arrivée.
+            </li>
+            <li>
+              <strong>🏀 Pratique en compétition</strong>{" "}: Pour les joueurs évoluant en
+              championnat officiel, le club veille à la conformité stricte des fauteuils avec les
+              normes internationales de l&apos;IWBF (notamment sur la hauteur maximale de
+              l&apos;assise).
+            </li>
+          </ul>
 
-      <h3 className="rf-blocktitle rf-blocktitle--2">
-        Les règles du jeu : proches du basket classique
-      </h3>
-      <p className="lede">
-        Le basket-fauteuil se joue avec les mêmes dimensions de terrain, la même hauteur de
-        panier (3,05 m) et la même ligne des 3 points. Les seules adaptations majeures
-        concernent le déplacement :
-      </p>
-      <ul className="lede">
-        <li>
-          <strong>Le « marcher » en fauteuil</strong> : le joueur peut avoir le ballon sur les
-          genoux, mais il doit obligatoirement dribbler, passer ou tirer toutes les deux
-          poussées sur ses roues.
-        </li>
-        <li>
-          <strong>Le fauteuil fait partie du corps</strong> : il est considéré comme une
-          extension du joueur. Les contacts directs et volontaires entre fauteuils sont
-          sanctionnés comme des fautes personnelles.
-        </li>
-      </ul>
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🏟️ Un accueil et des infrastructures adaptés
+          </h3>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>♿ Accès de plain-pied</strong>{" "}: Nos salles d&apos;entraînement et de
+              match disposent d&apos;accès sans marches, de portes larges et d&apos;ascenseurs ou
+              rampes aux normes PMR.
+            </li>
+            <li>
+              <strong>🚿 Vestiaires et sanitaires accessibles</strong>{" "}: Des espaces spacieux et
+              adaptés sont disponibles pour vous changer et vous doucher en toute autonomie.
+            </li>
+            <li>
+              <strong>🚗 Stationnement facilité</strong>{" "}: Des places de parking réservées sont
+              situées à proximité immédiate de l&apos;entrée du complexe sportif.
+            </li>
+          </ul>
 
-      <h3 className="rf-blocktitle rf-blocktitle--2">Rejoignez l&apos;aventure !</h3>
-      <p className="lede">
-        Pour en savoir plus sur l&apos;intégration ou trouver un club affilié près de chez vous,
-        consultez la Ligue Handisport Francophone (LHF) en Belgique ou le Comité Paralympique et
-        Sportif Français (CPSF) en France.
-      </p>
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            📋 Comment rejoindre KABSA ? (Démarches et essais)
+          </h3>
+          <p className="lede">
+            Que vous soyez débutant complet, ancien basketteur ou compétiteur confirmé, intégrer le
+            club se fait en toute simplicité :
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>🏀 Séance d&apos;essai gratuite</strong>{" "}: Venez tester le maniement du
+              fauteuil et le tir au panier lors d&apos;un entraînement découverte. Prévoyez
+              simplement une tenue de sport confortable et de l&apos;eau.
+            </li>
+            <li>
+              <strong>🩺 Dossier d&apos;inscription</strong>{" "}: Pour valider votre licence, un
+              certificat médical de non-contre-indication à la pratique du basket fauteuil (en
+              loisir ou en compétition) vous sera demandé.
+            </li>
+            <li>
+              <strong>📅 Accompagnement personnalisé</strong>{" "}: Nos entraîneurs et mécaniciens
+              vous accueillent pour évaluer vos besoins, ajuster votre matériel et vous intégrer
+              progressivement au collectif.
+            </li>
+          </ul>
+        </div>
+
+        {mediaColumn}
       </div>
+    </>
+  );
 
-      <aside className="disc-media">
-        <div className="info-card">
-          <h3>Matériels</h3>
-          <p>Présentation technique des fauteuils de sport.</p>
-          <div className="video-slot">Vidéo à venir</div>
+  const infrastructuresContent = (
+    <>
+      <div className="disc-layout">
+        <div className="disc-main">
+          <h3 className="rf-blocktitle">🏟️♿ Nos Infrastructures chez KABSA</h3>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🏀 Un terrain homologué pour la performance
+          </h3>
+          <p className="lede">
+            Le basket fauteuil exige une surface de jeu irréprochable pour garantir la vitesse des
+            déplacements, la précision des pivots et la sécurité des athlètes. KABSA évolue dans un
+            complexe sportif moderne répondant aux exigences de la compétition :
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>📐 Dimensions réglementaires</strong>{" "}: Un terrain standard de 28 mètres
+              sur 15 mètres, offrant tout l&apos;espace nécessaire au jeu rapide et aux phases
+              tactiques.
+            </li>
+            <li>
+              <strong>🏀 Équipements officiels</strong>{" "}: Des paniers fixés à la hauteur
+              réglementaire de 3,05 mètres, équipés de panneaux en verre trempé et d&apos;afficheurs
+              électroniques des 24 secondes de possession.
+            </li>
+            <li>
+              <strong>✨ Revêtement haute glisse</strong>{" "}: Un parquet (ou sol sportif
+              synthétique haute densité) parfaitement entretenu, offrant une adhérence optimale aux
+              pneus des fauteuils sans laisser de traces.
+            </li>
+          </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">♿ Un complexe sportif 100 % accessible</h3>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>🚪 Accès de plain-pied</strong>{" "}: Entrée directe sans seuil ni marche
+              depuis l&apos;extérieur jusqu&apos;au bord du terrain, avec des portes automatiques
+              extra-larges pour faciliter le passage des fauteuils de sport.
+            </li>
+            <li>
+              <strong>🚿 Vestiaires et sanitaires PMR</strong>{" "}: Des espaces spacieux équipés de
+              bancs de transfert, de douches à l&apos;italienne avec sièges rabattables et de
+              sanitaires adaptés.
+            </li>
+            <li>
+              <strong>🚗 Stationnement dédié</strong>{" "}: Des places de parking réservées PMR
+              situées juste devant l&apos;entrée principale du gymnase pour simplifier le chargement
+              et le déchargement du matériel.
+            </li>
+          </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🔧 L&apos;espace technique et le stockage du matériel
+          </h3>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>♿ Local de stockage sécurisé</strong>{" "}: Une salle située au niveau du
+              terrain abrite le parc de fauteuils mis à disposition des adhérents, ainsi que le
+              matériel d&apos;entraînement (ballons, plots, chasubles).
+            </li>
+            <li>
+              <strong>🛠️ Zone mécanique et atelier</strong>{" "}: Un espace équipé (compresseur
+              haute pression, pièces de rechange, outillage spécifique) permettant à nos mécaniciens
+              d&apos;intervenir rapidement avant, pendant et après les matchs pour ajuster un
+              réglage ou réparer une crevaison.
+            </li>
+          </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">👏 Accueil du public et des supporters</h3>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>👀 Tribunes accessibles</strong>{" "}: Des emplacements réservés aux personnes
+              à mobilité réduite avec une vue dégagée sur l&apos;ensemble du parquet.
+            </li>
+            <li>
+              <strong>☕ Espace convivialité</strong>{" "}: Un hall d&apos;accueil ou club-house pour
+              prolonger les échanges après les entraînements et célébrer les victoires lors des
+              jours de match.
+            </li>
+          </ul>
         </div>
-        <div className="info-card">
-          <h3>Entraînements</h3>
-          <p>Exercices de maniabilité, passes et préparation physique.</p>
-          <div className="video-slot">Vidéo à venir</div>
+
+        {mediaColumn}
+      </div>
+    </>
+  );
+
+  const typeEntrainementContent = (
+    <>
+      <div className="disc-layout">
+        <div className="disc-main">
+          <h3 className="rf-blocktitle">🏀♿ Nos Types d&apos;Entraînement chez KABSA</h3>
+          <p className="lede">
+            Chez KABSA, nos séances sont conçues pour s&apos;adapter au niveau, aux objectifs et aux
+            capacités physiques de chaque pratiquant. Que vous veniez pour le plaisir du jeu ou pour
+            viser les sommets des championnats nationaux, notre encadrement propose des
+            entraînements complets et progressifs.
+          </p>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">📋 Les 4 piliers d&apos;une séance type</h3>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>♿ La manipulation du fauteuil (Chair Skills)</strong>{" "}: Avant même de
+              toucher le ballon, il faut faire corps avec sa machine. Nos exercices travaillent les
+              accélérations explosives, les slaloms serrés, les freinages brusques et les pivots
+              rapides.
+            </li>
+            <li>
+              <strong>🏀 Les fondamentaux techniques avec ballon</strong>{" "}: Apprentissage et
+              perfectionnement du dribble synchronisé avec les poussées de roues (règle des deux
+              poussées), passes précises en mouvement, et tirs en suspension (réalisés en restant
+              assis dans le fauteuil).
+            </li>
+            <li>
+              <strong>🧠 La tactique et le jeu collectif</strong>{" "}: En handibasket, l&apos;espace
+              occupé par les fauteuils est stratégique. Nous travaillons la pose d&apos;écrans et de
+              blocs pour libérer les shooteurs, les transitions rapides en contre-attaque et la
+              gestion du chrono des 24 secondes.
+            </li>
+            <li>
+              <strong>💪 La préparation physique adaptée</strong>{" "}: Le basket fauteuil sollicite
+              intensément le haut du corps. Nos séances intègrent du renforcement musculaire ciblé
+              (bras, épaules, dorsaux, sangle abdominale) et un travail d&apos;endurance
+              cardiovasculaire indispensable sur les 40 minutes de match.
+            </li>
+          </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🎯 Des formules adaptées à chaque profil
+          </h3>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>🌱 Groupe Découverte &amp; Loisir (Débutants et mixité)</strong>{" "}: Ouvert à
+              tous (personnes en situation de handicap et joueurs valides), ce créneau met
+              l&apos;accent sur la prise en main du fauteuil, l&apos;apprentissage ludique des
+              règles et le plaisir du jeu collectif sans pression de résultat.
+            </li>
+            <li>
+              <strong>🔥 Groupe Compétition (Perfectionnement et équipe première)</strong>{" "}:
+              Destiné aux joueurs engagés en championnat (Nationale 3 et divisions supérieures).
+              Rythme soutenu, travail approfondi des systèmes de jeu, des combinaisons à 14 points
+              et de l&apos;intensité des duels physiques.
+            </li>
+            <li>
+              <strong>⚡ Séances Spécifiques &amp; Matchs Internes</strong>{" "}: Des temps dédiés au
+              travail individuel (adresse au tir, mécanique de poussée) ainsi que des oppositions
+              internes arbitrées pour mettre en application les schémas tactiques en conditions
+              réelles.
+            </li>
+          </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            ⏱️ Déroulement classique d&apos;une séance (1h30 à 2h00)
+          </h3>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>🔧 15 min – Préparation et réglages</strong>{" "}: Installation dans le
+              fauteuil, vérification de la pression des pneus, ajustement des sangles et
+              échauffement articulaire du haut du corps.
+            </li>
+            <li>
+              <strong>♿ 25 min – Maniabilité et cardio</strong>{" "}: Parcours d&apos;agilité en
+              fauteuil, sprints et travail de résistance.
+            </li>
+            <li>
+              <strong>🏀 30 min – Ateliers techniques</strong>{" "}: Dribble, passes en mouvement et
+              séquences de tirs sous pression.
+            </li>
+            <li>
+              <strong>🏆 30 min – Opposition et tactique</strong>{" "}: Mise en situation de match à
+              5 contre 5 avec consignes collectives et retour au calme (étirements).
+            </li>
+          </ul>
         </div>
-        <div className="info-card">
-          <h3>En images</h3>
-          <p>Moments forts et coulisses du club.</p>
-          <div className="video-slot">Vidéo à venir</div>
-        </div>
-        <div className="info-card">
-          <h3>Matchs &amp; compétitions</h3>
-          <p>Meilleurs moments des championnats.</p>
-          <div className="video-slot">Vidéo à venir</div>
-        </div>
-        <div className="info-card">
-          <h3>À découvrir</h3>
-          <p>D&apos;autres vidéos à venir bientôt.</p>
-          <div className="video-slot">Vidéo à venir</div>
-        </div>
-        <div className="info-card">
-          <h3>Stars joueurs KABSA</h3>
-          <p>Parcours des meilleurs joueurs.</p>
-          <div className="video-slot">Vidéo à venir</div>
-        </div>
-      </aside>
-    </div>
+
+        {mediaColumn}
+      </div>
+    </>
   );
 
   const comingSoonContent = <p className="lede tab-placeholder">Contenu à venir.</p>;
@@ -319,9 +495,9 @@ export default function BasketFauteuilPage() {
   const tabs = [
     { id: "presentation", label: "Présentation", content: presentationContent },
     { id: "accessibilite", label: "Accessibilité & pratique", content: accessibiliteContent },
-    { id: "infrastructures", label: "Infrastructures", content: comingSoonContent },
+    { id: "infrastructures", label: "Infrastructures", content: infrastructuresContent },
     { id: "horaires-tarifs", label: "Horaires & tarifs", content: comingSoonContent },
-    { id: "type-entrainement", label: "Type d'entraînement", content: comingSoonContent },
+    { id: "type-entrainement", label: "Type d'entraînement", content: typeEntrainementContent },
   ];
 
   return (
