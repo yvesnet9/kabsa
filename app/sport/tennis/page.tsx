@@ -189,14 +189,258 @@ export default function TennisPage() {
     </>
   );
 
-  const comingSoonContent = <p className="lede tab-placeholder">Contenu à venir.</p>;
+  const accessibiliteContent = (
+    <>
+      <div className="disc-layout">
+        <div className="disc-main">
+          <h3 className="rf-blocktitle">
+            📍 Accessibilité &amp; Pratique : Tout ce qu&apos;il faut savoir avant de jouer
+          </h3>
+          <p className="lede">
+            Chez KABSA, nous mettons tout en œuvre pour que votre expérience sportive soit simple,
+            fluide et agréable dès votre arrivée au club. Retrouvez ici toutes les informations
+            utiles pour rejoindre nos courts intérieurs et extérieurs en toute sérénité.
+          </p>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">♿ Un Club Ouvert et Accessible à Tous</h3>
+          <p className="lede">
+            Parce que la mixité et l&apos;inclusion sont au cœur de nos engagements, nos
+            installations sont pensées pour accueillir chaque pratiquant dans les meilleures
+            conditions :
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Accès PMR (Personnes à Mobilité Réduite)</strong>{" "}: L&apos;ensemble de nos
+              infrastructures (accueil, vestiaires, sanitaires et accès aux courts) est de
+              plain-pied et dispose d&apos;équipements adaptés.
+            </li>
+            <li>
+              <strong>Accueil de tous les publics</strong>{" "}: Que vous veniez en famille, entre
+              amis ou en solo, nos espaces de vie et notre club-house sont ouverts à tous pour
+              partager un moment convivial avant ou après l&apos;effort.
+            </li>
+            <li>
+              <strong>Prêt de matériel</strong>{" "}: Vous débutez ou avez oublié votre équipement ?
+              Nous mettons à votre disposition des raquettes et des balles pour votre séance
+              d&apos;essai gratuite ou vos premières sessions.
+            </li>
+          </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🚆 Comment Venir ? (Accès &amp; Transports)
+          </h3>
+          <p className="lede">
+            Notre complexe sportif est facilement accessible, quel que soit votre mode de
+            déplacement :
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>En transports en commun</strong>{" "}: arrêt de bus / métro / tramway
+              communiqué au secrétariat, à quelques minutes à pied des courts.
+            </li>
+            <li>
+              <strong>En voiture</strong>{" "}: Un parking gratuit et sécurisé est réservé aux
+              membres du club juste devant l&apos;entrée principale (avec places dédiées PMR et
+              bornes de recharge électrique).
+            </li>
+            <li>
+              <strong>À vélo</strong>{" "}: Des arceaux sécurisés sont installés à l&apos;entrée du
+              complexe pour stationner votre vélo en toute tranquillité.
+            </li>
+          </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            👟 Infos Pratiques &amp; Bonnes Habitudes
+          </h3>
+          <p className="lede">
+            Pour préserver la qualité de nos surfaces de jeu et garantir la sécurité de chacun sur
+            le terrain :
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Tenue adaptée</strong>{" "}: Le port de chaussures de tennis propres (semelles
+              non marquantes, adaptées à la surface) est obligatoire sur l&apos;ensemble des courts.
+            </li>
+            <li>
+              <strong>Réservation des terrains</strong>{" "}: Pour vos créneaux de Tennis Loisir,
+              réservez votre court en quelques clics depuis votre espace membre en ligne.
+            </li>
+            <li>
+              <strong>Horaires d&apos;ouverture</strong>{" "}: Le club vous accueille du lundi au
+              dimanche (horaires communiqués à l&apos;inscription).
+            </li>
+          </ul>
+        </div>
+
+        {mediaColumn}
+      </div>
+    </>
+  );
+
+  const infrastructuresContent = (
+    <>
+      <div className="disc-layout">
+        <div className="disc-main">
+          <h3 className="rf-blocktitle">🏟️ Nos Infrastructures et Équipements</h3>
+          <p className="lede">
+            Pour vous permettre de jouer toute l&apos;année, quelle que soit la météo,
+            l&apos;association KABSA dispose d&apos;installations modernes et entretenues :
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Courts intérieurs et extérieurs</strong>{" "}: Profitez de terrains couverts
+              chauffés et éclairés pour la saison hivernale, ainsi que de courts en plein air pour
+              les beaux jours.
+            </li>
+            <li>
+              <strong>Vestiaires et douches</strong>{" "}: Des espaces propres, sécurisés et équipés
+              de casiers individuels sont à votre disposition (pensez à apporter votre cadenas).
+            </li>
+            <li>
+              <strong>Espace détente / Club-house</strong>{" "}: Un lieu chaleureux pour débriefer
+              vos matchs, vous rafraîchir et participer à la vie associative du club.
+            </li>
+          </ul>
+        </div>
+
+        {mediaColumn}
+      </div>
+    </>
+  );
+
+  const typeEntrainementContent = (
+    <>
+      <div className="disc-layout">
+        <div className="disc-main">
+          <h3 className="rf-blocktitle">
+            🎾 Types d&apos;Entraînement : Une Approche Adaptée à Vos Objectifs
+          </h3>
+          <p className="lede">
+            À l&apos;association KABSA, nous savons que chaque joueur et chaque joueuse a ses
+            propres envies. Que vous souhaitiez découvrir la petite balle jaune, retrouver la forme
+            physique ou préparer vos prochains tournois, nos entraîneurs diplômés vous proposent des
+            formats variés et évolutifs.
+          </p>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🌱 L&apos;Initiation et la Découverte (Débutants)
+          </h3>
+          <p className="lede">
+            Vous n&apos;avez jamais tenu une raquette ou vous reprenez après une longue pause ? Ce
+            programme est fait pour vous donner confiance rapidement, sans pression :
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Les bases techniques</strong>{" "}: Apprentissage ludique des coups
+              fondamentaux (coup droit, revers, service et volée) et du jeu de jambes.
+            </li>
+            <li>
+              <strong>Compréhension du jeu</strong>{" "}: Maîtrise des règles, du comptage des
+              points et des premiers échanges en situation réelle.
+            </li>
+            <li>
+              <strong>Pédagogie adaptée</strong>{" "}: Utilisation de balles intermédiaires si
+              nécessaire pour favoriser les échanges longs et le plaisir immédiat.
+            </li>
+          </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            📈 Les Cours Collectifs d&apos;Évolution (Tous Niveaux)
+          </h3>
+          <p className="lede">
+            Organisés par petits groupes homogènes (4 à 6 joueurs maximum par court), ces
+            entraînements hebdomadaires visent une progression régulière et structurée :
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Perfectionnement technique</strong>{" "}: Travail sur la régularité, la
+              précision, la puissance et les effets (lift, slice).
+            </li>
+            <li>
+              <strong>Sens tactique</strong>{" "}: Apprendre à construire son point, varier les
+              zones de jeu et identifier les points faibles de l&apos;adversaire.
+            </li>
+            <li>
+              <strong>Mises en situation</strong>{" "}: Alternance entre exercices ciblés (« paniers
+              de balles ») et matchs à thèmes.
+            </li>
+          </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🏆 Le Pôle Compétition (Joueurs &amp; Joueuses Engagés)
+          </h3>
+          <p className="lede">
+            Destiné aux membres souhaitant représenter les couleurs de KABSA en championnats
+            individuels ou par équipes, ce format met l&apos;accent sur l&apos;intensité et la
+            performance :
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Stratégie de match</strong>{" "}: Gestion des points importants, adaptation
+              face à différents styles de jeu et préparation aux matchs en double.
+            </li>
+            <li>
+              <strong>Préparation physique spécifique</strong>{" "}: Travail d&apos;explosivité,
+              d&apos;endurance sur le court et de prévention des blessures.
+            </li>
+            <li>
+              <strong>Préparation mentale</strong>{" "}: Gestion du stress, concentration et routine
+              entre les points.
+            </li>
+          </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            ⚡ Le Fit&apos;Tennis &amp; Cardio-Tennis (Forme &amp; Dépense)
+          </h3>
+          <p className="lede">
+            Envie de vous dépenser un maximum en musique et dans la bonne humeur ? Le
+            Fit&apos;Tennis transforme le court en véritable salle de fitness à ciel ouvert :
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Zéro pression de résultat</strong>{" "}: L&apos;objectif n&apos;est pas la
+              technique pure, mais le mouvement continu et le dépassement de soi.
+            </li>
+            <li>
+              <strong>Séances rythmées</strong>{" "}: Enchaînement de frappes rapides,
+              d&apos;ateliers d&apos;agilité et de renforcement musculaire.
+            </li>
+            <li>
+              <strong>Convivialité garantie</strong>{" "}: Une ambiance collective ultra-motivante,
+              idéale pour évacuer le stress de la journée.
+            </li>
+          </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🎯 Les Cours Individuels ou en Duo (Sur-Mesure)
+          </h3>
+          <p className="lede">
+            Pour débloquer un coup précis, accélérer votre progression ou bénéficier d&apos;un suivi
+            100 % personnalisé :
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Diagnostic précis</strong>{" "}: Analyse détaillée de votre gestuelle et de
+              vos déplacements avec votre coach.
+            </li>
+            <li>
+              <strong>Flexibilité totale</strong>{" "}: Créneaux planifiés à la carte selon vos
+              disponibilités et vos objectifs personnels.
+            </li>
+          </ul>
+        </div>
+
+        {mediaColumn}
+      </div>
+    </>
+  );
 
   const tabs = [
     { id: "presentation", label: "Présentation", content: presentationContent },
-    { id: "accessibilite", label: "Accessibilité & pratique", content: comingSoonContent },
-    { id: "infrastructures", label: "Infrastructures", content: comingSoonContent },
+    { id: "accessibilite", label: "Accessibilité & pratique", content: accessibiliteContent },
+    { id: "infrastructures", label: "Infrastructures", content: infrastructuresContent },
     { id: "horaires-tarifs", label: "Horaires & tarifs", content: horairesTarifsContent },
-    { id: "type-entrainement", label: "Type d'entraînement", content: comingSoonContent },
+    { id: "type-entrainement", label: "Type d'entraînement", content: typeEntrainementContent },
   ];
 
   return (
