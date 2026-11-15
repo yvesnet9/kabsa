@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import BackButton from "@/components/BackButton";
-import VideoSlot from "@/components/VideoSlot";
+import DisciplineTabs from "@/components/DisciplineTabs";
 
 export default function CompetitionsNationalesPage() {
   useEffect(() => {
@@ -22,172 +22,261 @@ export default function CompetitionsNationalesPage() {
     return () => io.disconnect();
   }, []);
 
+  const mediaColumn = (
+    <aside className="disc-media">
+      <div className="info-card">
+        <h3>Présentation</h3>
+        <p>Vidéo de présentation du service.</p>
+        <div className="video-slot">Vidéo à venir</div>
+      </div>
+      <div className="info-card">
+        <h3>Démonstration</h3>
+        <p>Démonstration en conditions réelles.</p>
+        <div className="video-slot">Vidéo à venir</div>
+      </div>
+      <div className="info-card">
+        <h3>Séance type</h3>
+        <p>Déroulé d&apos;une séance type.</p>
+        <div className="video-slot">Vidéo à venir</div>
+      </div>
+      <div className="info-card">
+        <h3>Témoignages</h3>
+        <p>Retours de pratiquants.</p>
+        <div className="video-slot">Vidéo à venir</div>
+      </div>
+      <div className="info-card">
+        <h3>En images</h3>
+        <p>Moments forts en images.</p>
+        <div className="video-slot">Vidéo à venir</div>
+      </div>
+      <div className="info-card">
+        <h3>À découvrir</h3>
+        <p>D&apos;autres vidéos à venir.</p>
+        <div className="video-slot">Vidéo à venir</div>
+      </div>
+    </aside>
+  );
+
+  const presentationContent = (
+    <>
+      <div className="disc-layout">
+        <div className="disc-main">
+          <h3 className="rf-blocktitle">
+            ♿🏃‍♂️ Compétitions nationales belges : L&apos;excellence au cœur de la Belgique
+          </h3>
+          <p className="lede">
+            Ancrée à Bruxelles depuis sa création, KA BRUXELLES SPORT ACADEMIE asbl (KABSA) fait
+            du territoire belge son premier terrain d&apos;expression et de progression. Pour
+            permettre à nos jeunes athlètes (de 15 à 25 ans) — valides 🏃‍♂️ et en situation de
+            handicap physique ♿ — d&apos;atteindre le haut niveau, l&apos;académie souhaite
+            s&apos;investir pleinement dans les championnats officiels, les tournois nationaux
+            et l&apos;organisation de rencontres inclusives à travers toute la Belgique.
+          </p>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🎯 Notre ancrage national : Former et performer en Belgique
+          </h3>
+          <p className="lede">
+            La Belgique dispose d&apos;un écosystème sportif riche et dynamique, soutenu par une
+            forte volonté en faveur de l&apos;inclusion et de l&apos;égalité des chances. KABSA
+            s&apos;appuie sur cet environnement pour préparer ses athlètes aux exigences de la
+            compétition :
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Une passerelle vers l&apos;élite belge (♿ &amp; 🏃‍♂️)</strong>{" "}: Grâce à
+              nos séances d&apos;entraînement tactique, physique et kinésithérapeutique dans des
+              infrastructures bruxelloises adaptées <em>(lieux à confirmer)</em>, nous préparons
+              nos sportifs à rivaliser dans les meilleures divisions nationales.
+            </li>
+            <li>
+              <strong>Un ancrage dans les circuits officiels</strong>{" "}: KABSA souhaite
+              travailler en lien avec les instances de référence du sport belge afin
+              d&apos;ouvrir à ses membres les portes des circuits officiels.
+            </li>
+            <li>
+              <strong>La promotion de la mixité sur tout le territoire</strong>{" "}: En engageant
+              des équipes dans des disciplines comme le cécifoot 🦯⚽, l&apos;athlétisme 🏃‍♂️ et
+              le basket-fauteuil ♿🏀, nous faisons rayonner les valeurs d&apos;inclusion de
+              Bruxelles jusqu&apos;en Wallonie et en Flandre.
+            </li>
+          </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🏆🥇 Le parcours compétitif KABSA sur le territoire belge
+          </h3>
+          <p className="lede">
+            La montée en puissance de nos sportifs en Belgique suivra une progression structurée
+            :
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Matchs amicaux et rencontres interclubs</strong>{" "}: Dès la constitution de
+              nos noyaux, nos équipes disputeront des matchs internes puis affronteront les
+              clubs sportifs bruxellois et les équipes belges.
+            </li>
+            <li>
+              <strong>Engagements sur les circuits régionaux et nationaux</strong>{" "}: Nos
+              athlètes individuels et nos équipes participeront aux championnats officiels
+              organisés par les fédérations francophones, néerlandophones et nationales.
+            </li>
+            <li>
+              <strong>Organisation de tournois inclusifs à Bruxelles (♿🤝🏃‍♂️)</strong>{" "}: KABSA
+              prévoit d&apos;organiser ses propres événements de sensibilisation et tournois
+              ouverts dans la capitale pour rassembler le grand public, les écoles, les centres
+              de revalidation et les clubs autour du sport partagé.
+            </li>
+          </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            📋 Les grands rendez-vous du calendrier sportif belge (paysage visé)
+          </h3>
+          <p className="lede">
+            Pour guider nos athlètes vers la performance, KABSA cible les rendez-vous
+            incontournables du calendrier belge, couvrant aussi bien le handisport (♿) que les
+            circuits valides (🏃‍♂️) :
+          </p>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            1. Les événements multisports et inclusifs nationaux (♿ &amp; 🏃‍♂️)
+          </h3>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Les Championnats Multisports Adaptés (CMA) (♿)</strong>{" "}: Compétitions
+              organisées à travers les provinces francophones dans de nombreuses disciplines
+              (athlétisme, natation, tennis de table, sports collectifs).
+            </li>
+            <li>
+              <strong>Les Jeux Nationaux de Special Olympics Belgium (♿)</strong>{" "}: Le plus
+              grand événement multisport annuel en Belgique dédié aux athlètes présentant un
+              handicap mental.
+            </li>
+            <li>
+              <strong>Les journées et tournois Festi&apos;Handisport (♿🤝🏃‍♂️)</strong>{" "}:
+              Événements de promotion et rencontres inclusives organisés en Wallonie et à
+              Bruxelles.
+            </li>
+          </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            2. Les compétitions nationales par discipline phare
+          </h3>
+          <p className="lede">
+            <em>Athlétisme &amp; Para-athlétisme (♿ &amp; 🏃‍♂️) :</em>
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Les Championnats de Belgique d&apos;Athlétisme (toutes catégories et
+              espoirs/juniors)</strong>{" "}: Les rendez-vous nationaux majeurs sur piste et en
+              salle.
+            </li>
+            <li>
+              <strong>La Handicross Cup (♿)</strong>{" "}: Le circuit national de cross-country
+              handisport disputé sur plusieurs manches en Belgique.
+            </li>
+            <li>
+              <strong>Les Meetings Nationaux et Mémoriaux belges (♿ &amp; 🏃‍♂️)</strong>{" "}:
+              Compétitions de référence sur piste, incluant des épreuves intégrées pour athlètes
+              paralympiques.
+            </li>
+          </ul>
+          <p className="lede">
+            <em>Basket-fauteuil &amp; Basketball (♿ &amp; 🏃‍♂️) :</em>
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Le Championnat de Belgique de Basket en fauteuil roulant
+              (♿)</strong> et <strong>la Coupe de Belgique de Basket-fauteuil (♿)</strong>{" "}: Les
+              compétitions nationales de la discipline.
+            </li>
+            <li>
+              <strong>Les Championnats Nationaux et Régionaux de Basketball (Top Division &amp;
+              catégories jeunes U16-U21) (🏃‍♂️)</strong>.
+            </li>
+          </ul>
+          <p className="lede">
+            <em>Cécifoot &amp; Football (🦯⚽ &amp; 🏃‍♂️⚽) :</em>
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Les Tournois Nationaux et Rencontres Interclubs de Cécifoot (🦯⚽)</strong>.
+            </li>
+            <li>
+              <strong>La Coupe de Belgique et les Championnats Nationaux de Football
+              (🏃‍♂️⚽)</strong>.
+            </li>
+            <li>
+              <strong>Le Handifoot Festival (♿⚽)</strong>{" "}: Événement national rassemblant les
+              équipes de football adapté.
+            </li>
+          </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🏃‍♂️ Les grands défis collectifs (esprit d&apos;équipe)
+          </h3>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>L&apos;Ekiden de Bruxelles</strong>{" "}: Marathon (42,195 km) couru en relais
+              par équipes de 6, chaque automne. Idéal pour souder l&apos;esprit d&apos;équipe.
+            </li>
+            <li>
+              <strong>Le Crossing Belgium</strong>{" "}: Raid-expédition multidisciplinaire en
+              équipes de 4 (trail, VTT, escalade, kayak) à la mi-novembre.
+            </li>
+            <li>
+              <strong>Le Challenge Run in Brussels</strong>{" "}: Critérium de courses à pied à
+              Bruxelles et en périphérie tout au long de l&apos;année.
+            </li>
+            <li>
+              <strong>Les courses à obstacles par équipe (Mud Runs)</strong>{" "}: Événements de
+              cohésion très populaires en automne.
+            </li>
+          </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🎥📺 L&apos;actualité des compétitions belges sur KA TV Sport
+          </h3>
+          <p className="lede">
+            Retrouvez les résumés de matchs, les interviews de nos coachs et les coulisses des
+            championnats belges sur notre chaîne KA TV Sport (YouTube, TikTok et réseaux
+            sociaux).
+          </p>
+        </div>
+
+        {mediaColumn}
+      </div>
+
+      <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 6 }}>
+        <Link href="/contact" className="info-cta">
+          Nous contacter
+        </Link>
+      </div>
+    </>
+  );
+
+  const comingSoonContent = (
+    <p className="lede tab-placeholder">Contenu à venir.</p>
+  );
+
+  const tabs = [
+    { id: "presentation", label: "Présentation", content: presentationContent },
+    { id: "deroulement", label: "Déroulement", content: comingSoonContent },
+    {
+      id: "tarifs-formules",
+      label: "Tarifs & formules",
+      content: comingSoonContent,
+    },
+    { id: "temoignages", label: "Témoignages", content: comingSoonContent },
+  ];
+
   return (
     <section className="info-block reveal" id="discipline">
       <div className="wrap">
         <BackButton />
         <h2>Compétitions nationales</h2>
 
-        <div className="disc-layout">
-          <div className="disc-main">
-            <p className="svc-chapo">
-              Porter haut nos couleurs à travers toute la Belgique, lors
-              d'événements multidisciplinaires majeurs.
-            </p>
-            <p className="lede">
-              KABSA ne se limite pas à une seule discipline : notre force réside
-              dans la polyvalence. Nous participerons aux grands rassemblements
-              multidisciplinaires organisés en Belgique — tournois
-              inter-associations, challenges nationaux, rencontres officielles —
-              vitrines du talent, de la détermination et du fair-play de nos
-              membres.
-            </p>
+        <DisciplineTabs tabs={tabs} defaultTabId="presentation" />
 
-            <h3 className="rf-blocktitle">Nos objectifs en compétition</h3>
-            <ul className="lede">
-              <li>
-                <strong>Excellence sportive</strong> : viser le podium,
-                repousser nos limites, nous mesurer aux meilleurs du pays.
-              </li>
-              <li>
-                <strong>Esprit d'équipe et cohésion</strong> : renforcer les
-                liens entre nos membres.
-              </li>
-              <li>
-                <strong>Rayonnement de KABSA</strong> : représenter nos valeurs
-                d'inclusion, de respect et de mixité.
-              </li>
-            </ul>
-
-            <h3 className="rf-blocktitle rf-blocktitle--2">
-              Les grands challenges collectifs d'automne
-            </h3>
-            <p className="lede">
-              Des événements belges existants auxquels le club pourra participer
-              :
-            </p>
-            <ul className="lede">
-              <li>
-                <strong>L'Ekiden de Bruxelles</strong> : chaque automne
-                (octobre) au Stade Roi Baudouin — marathon (42,195 km) en relais
-                par équipes de 6. Idéal pour l'esprit d'équipe.
-              </li>
-              <li>
-                <strong>Le Crossing Belgium</strong> : raid d'endurance
-                multidisciplinaire en équipes de 4, mi-novembre, à travers la
-                Belgique (trail, VTT, escalade, kayak).
-              </li>
-              <li>
-                <strong>Le Challenge Run in Brussels</strong> : critérium de
-                courses à pied, +20 épreuves à Bruxelles et en périphérie.
-              </li>
-              <li>
-                <strong>Courses à obstacles par équipe</strong> : BE(A)ST
-                Obstacle Run, Endurance Weekend de Spa-Francorchamps (novembre).
-              </li>
-            </ul>
-
-            <h3 className="rf-blocktitle rf-blocktitle--2">
-              Compétitions et tournois structurés
-            </h3>
-            <ul className="lede">
-              <li>
-                <strong>Championnats multisports adaptés (CMA)</strong> :
-                organisés par la Ligue Handisport Francophone (LHF) de septembre
-                à juillet — championnats par équipe (futsal, basket,
-                athlétisme).
-              </li>
-              <li>
-                <strong>
-                  Tournois francophones inter-clubs de futsal / mini-foot
-                </strong>{" "}
-                : dès la rentrée, à Bruxelles et en Wallonie.
-              </li>
-            </ul>
-
-            <h3 className="rf-blocktitle rf-blocktitle--2">
-              Calendrier des challenges
-            </h3>
-            <div className="comp-table-wrap">
-              <table className="comp-table">
-                <thead>
-                  <tr>
-                    <th>Événement</th>
-                    <th>Discipline</th>
-                    <th>Format</th>
-                    <th>Période</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Ekiden de Bruxelles</td>
-                    <td>Athlétisme / course relais</td>
-                    <td>Équipe de 6</td>
-                    <td>Octobre</td>
-                  </tr>
-                  <tr>
-                    <td>Crossing Belgium</td>
-                    <td>Trail, VTT, kayak, escalade</td>
-                    <td>Équipe de 4</td>
-                    <td>Novembre</td>
-                  </tr>
-                  <tr>
-                    <td>Run in Brussels</td>
-                    <td>Course urbaine &amp; nature</td>
-                    <td>Classement inter-clubs</td>
-                    <td>Automne / annuel</td>
-                  </tr>
-                  <tr>
-                    <td>Tournois futsal &amp; omnisports</td>
-                    <td>Sports collectifs en salle</td>
-                    <td>Équipes KABSA</td>
-                    <td>Oct.–Déc.</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <aside className="disc-media">
-            <div className="info-card">
-              <h3>Présentation</h3>
-              <p>Vidéo de présentation du service.</p>
-              <VideoSlot />
-            </div>
-            <div className="info-card">
-              <h3>Démonstration</h3>
-              <p>Démonstration en conditions réelles.</p>
-              <VideoSlot />
-            </div>
-            <div className="info-card">
-              <h3>Séance type</h3>
-              <p>Déroulé d&apos;une séance type.</p>
-              <VideoSlot />
-            </div>
-            <div className="info-card">
-              <h3>Témoignages</h3>
-              <p>Retours de pratiquants.</p>
-              <VideoSlot />
-            </div>
-            <div className="info-card">
-              <h3>En images</h3>
-              <p>Moments forts en images.</p>
-              <VideoSlot />
-            </div>
-            <div className="info-card">
-              <h3>À découvrir</h3>
-              <p>D&apos;autres vidéos à venir.</p>
-              <VideoSlot />
-            </div>
-          </aside>
-        </div>
-
-        <div
-          style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 6 }}
-        >
-          <Link href="/contact" className="info-cta">
-            Nous contacter
-          </Link>
-        </div>
       </div>
     </section>
   );
