@@ -200,6 +200,79 @@ export default function CompetitionsInternationalesPage() {
           </ul>
 
           <h3 className="rf-blocktitle rf-blocktitle--2">
+            🔄 Échanges sportifs &amp; culturels
+          </h3>
+          <p className="lede">
+            Pour KABSA, le sport est un langage universel et un formidable outil de
+            rapprochement entre les peuples. Au-delà de la compétition, l&apos;académie souhaite
+            développer une véritable dynamique d&apos;échanges internationaux :
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Accueil de délégations</strong>{" "}: Recevoir des clubs et associations
+              partenaires étrangers pour des stages intensifs partagés, grâce à nos
+              infrastructures adaptées et à notre Pôle Logistique &amp; Social.
+            </li>
+            <li>
+              <strong>Voyages d&apos;immersion</strong>{" "}: Envoyer nos jeunes et nos encadrants
+              découvrir de nouvelles méthodes d&apos;entraînement au sein de structures
+              internationales.
+            </li>
+            <li>
+              <strong>Partage de valeurs</strong>{" "}: Organiser des ateliers culturels en marge
+              des entraînements pour favoriser l&apos;ouverture d&apos;esprit et
+              l&apos;apprentissage mutuel.
+            </li>
+          </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🌐 Représentation de KABSA dans le monde
+          </h3>
+          <p className="lede">
+            KABSA ambitionne de devenir un ambassadeur actif de ses valeurs citoyennes à
+            l&apos;échelle internationale :
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Congrès et colloques</strong>{" "}: Participer aux rencontres et séminaires
+              internationaux dédiés au sport, à l&apos;inclusion et au mouvement paralympique.
+            </li>
+            <li>
+              <strong>Réseau de partenaires</strong>{" "}: Nouer des collaborations avec des
+              fédérations, des académies et des organisations engagées, pour développer des
+              projets à fort impact social.
+            </li>
+            <li>
+              <strong>Rayonnement de notre modèle</strong>{" "}: Promouvoir un sport accessible,
+              éthique et solidaire au-delà de nos frontières locales.
+            </li>
+          </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🏆 Palmarès &amp; carnet de bord
+          </h3>
+          <p className="lede">
+            Chaque déplacement à l&apos;étranger est une aventure humaine autant que sportive,
+            que notre équipe média souhaite documenter pas à pas :
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Suivi des performances</strong>{" "}: Partager en direct le parcours de nos
+              athlètes et leurs résultats à chaque compétition internationale.
+            </li>
+            <li>
+              <strong>Le journal des aventures</strong>{" "}: Faire vivre les coulisses des
+              tournois, les anecdotes de voyage et les témoignages de nos athlètes à leur
+              retour.
+            </li>
+            <li>
+              <strong>Retour en images</strong>{" "}: Retrouver albums photos et vidéos des moments
+              forts vécus aux quatre coins du monde, sur KA TV Sport (YouTube, TikTok et réseaux
+              sociaux).
+            </li>
+          </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
             🎥📺 Suivez nos athlètes autour du monde avec KA TV Sport
           </h3>
           <p className="lede">
