@@ -74,6 +74,62 @@ export default function CompetitionsNationalesPage() {
           </p>
 
           <h3 className="rf-blocktitle rf-blocktitle--2">
+            🏆 Bienvenue dans l&apos;arène de l&apos;excellence
+          </h3>
+          <p className="lede">
+            Pour l&apos;association KABSA, la participation aux compétitions nationales
+            représentera l&apos;aboutissement de mois d&apos;entraînements rigoureux, de
+            discipline et de passion. L&apos;académie aura à cœur de porter haut ses couleurs à
+            travers toute la Belgique lors d&apos;événements multidisciplinaires majeurs.
+          </p>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🇧🇪 Notre présence sur la scène belge
+          </h3>
+          <p className="lede">
+            KABSA ne se limite pas à une seule discipline : sa force réside dans sa polyvalence
+            et sa capacité à s&apos;illustrer dans des compétitions qui mettent à l&apos;épreuve
+            la variété de ses compétences athlétiques et stratégiques. L&apos;académie souhaite
+            participer activement aux grands rassemblements multidisciplinaires organisés en
+            Belgique — tournois inter-associations, challenges sportifs nationaux ou rencontres
+            officielles — autant de vitrines pour démontrer le talent, la détermination et le
+            fair-play de ses membres.
+          </p>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🤝 Nos objectifs en compétition
+          </h3>
+          <p className="lede">
+            Chaque tournoi national où KABSA engagera ses équipes poursuivra un triple objectif
+            :
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>L&apos;excellence sportive</strong>{" "}: Viser le podium, repousser ses
+              limites physiques et tactiques, et offrir à nos athlètes une plateforme pour se
+              mesurer aux meilleurs du pays.
+            </li>
+            <li>
+              <strong>L&apos;esprit d&apos;équipe et de cohésion</strong>{" "}: Renforcer les liens
+              entre nos membres — en compétition, on gagne ensemble et on apprend ensemble.
+            </li>
+            <li>
+              <strong>Le rayonnement de KABSA</strong>{" "}: Représenter dignement les valeurs
+              d&apos;inclusion, de respect et de mixité qui font l&apos;ADN de
+              l&apos;association, auprès du public comme des autres organisations belges.
+            </li>
+          </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🚀 Rejoignez l&apos;aventure compétitive
+          </h3>
+          <p className="lede">
+            Vous avez l&apos;âme d&apos;un compétiteur et souhaitez défendre les couleurs de
+            KABSA à l&apos;échelle nationale ? Nos équipes multidisciplinaires sont ouvertes aux
+            talents valides et en situation de handicap.
+          </p>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
             🎯 Notre ancrage national : Former et performer en Belgique
           </h3>
           <p className="lede">
