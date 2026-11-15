@@ -113,17 +113,6 @@ export default function CompetitionsInternationalesPage() {
               de nos noyaux, nos équipes disputeront des matchs internes puis affronteront des
               clubs extérieurs pour acquérir l&apos;expérience du haut niveau.
             </li>
-            <li>
-              <strong>Tournois européens et internationaux</strong>{" "}: En lien avec les circuits
-              officiels et les fédérations de référence, nous souhaitons engager nos sportifs
-              sur les compétitions reconnues.
-            </li>
-            <li>
-              <strong>Accueil de délégations à Bruxelles</strong>{" "}: Grâce à notre Pôle
-              Logistique &amp; Social, KABSA ambitionne d&apos;organiser des tournois inclusifs
-              à Bruxelles et d&apos;accueillir des délégations étrangères (infrastructures
-              adaptées, hébergement temporaire et suivi nutritionnel sur mesure).
-            </li>
           </ul>
 
           <h3 className="rf-blocktitle rf-blocktitle--2">
@@ -200,12 +189,44 @@ export default function CompetitionsInternationalesPage() {
           </ul>
 
           <h3 className="rf-blocktitle rf-blocktitle--2">
+            🌍 KABSA au-delà des frontières
+          </h3>
+          <p className="lede">
+            L&apos;association KABSA a pour ambition de dépasser les frontières pour faire
+            rayonner ses valeurs de partage, de dépassement de soi et de fraternité à travers le
+            monde. Cet espace est dédié à notre engagement international, de nos futurs tournois
+            à l&apos;étranger à nos programmes d&apos;échanges sportifs.
+          </p>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🏆 Rencontres &amp; Tournois à l&apos;Étranger
+          </h3>
+          <p className="lede">
+            Nous souhaitons que, chaque saison, nos athlètes portent fièrement les couleurs de
+            KABSA sur la scène internationale. Ces compétitions seront le point d&apos;orgue de
+            mois de préparation intensive :
+          </p>
+          <ul className="lede disc-arrow-list">
+            <li>
+              <strong>Tournois compétitifs</strong>{" "}: Engager nos équipes sur des championnats
+              et des coupes d&apos;Europe et du monde.
+            </li>
+            <li>
+              <strong>Défis sportifs</strong>{" "}: Inscrire nos équipes à des événements de grande
+              envergure pour affronter l&apos;élite mondiale.
+            </li>
+            <li>
+              <strong>Palmarès en construction</strong>{" "}: Suivre en direct les résultats et les
+              performances de nos membres à chaque déplacement.
+            </li>
+          </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
             🔄 Échanges sportifs &amp; culturels
           </h3>
           <p className="lede">
             Pour KABSA, le sport est un langage universel et un formidable outil de
-            rapprochement entre les peuples. Au-delà de la compétition, l&apos;académie souhaite
-            développer une véritable dynamique d&apos;échanges internationaux :
+            rapprochement entre les peuples :
           </p>
           <ul className="lede disc-arrow-list">
             <li>
@@ -249,21 +270,16 @@ export default function CompetitionsInternationalesPage() {
           </ul>
 
           <h3 className="rf-blocktitle rf-blocktitle--2">
-            🏆 Palmarès &amp; carnet de bord
+            📸 L&apos;heure des souvenirs (Galerie &amp; Carnet de bord)
           </h3>
           <p className="lede">
             Chaque déplacement à l&apos;étranger est une aventure humaine autant que sportive,
-            que notre équipe média souhaite documenter pas à pas :
+            que notre équipe média souhaite faire vivre :
           </p>
           <ul className="lede disc-arrow-list">
             <li>
-              <strong>Suivi des performances</strong>{" "}: Partager en direct le parcours de nos
-              athlètes et leurs résultats à chaque compétition internationale.
-            </li>
-            <li>
-              <strong>Le journal des aventures</strong>{" "}: Faire vivre les coulisses des
-              tournois, les anecdotes de voyage et les témoignages de nos athlètes à leur
-              retour.
+              <strong>Le journal des aventures</strong>{" "}: Partager les anecdotes de voyage, les
+              coulisses des compétitions et les témoignages de nos athlètes à leur retour.
             </li>
             <li>
               <strong>Retour en images</strong>{" "}: Retrouver albums photos et vidéos des moments
@@ -271,6 +287,17 @@ export default function CompetitionsInternationalesPage() {
               sociaux).
             </li>
           </ul>
+
+          <h3 className="rf-blocktitle rf-blocktitle--2">
+            🗓️ Dans la dynamique des grands rendez-vous mondiaux
+          </h3>
+          <p className="lede">
+            Afin d&apos;inscrire ses programmes dans la dynamique des grands mouvements sportifs
+            internationaux, KABSA veille sur les calendriers des compétitions mondiales :
+            qu&apos;il s&apos;agisse de s&apos;en inspirer pour ses propres échanges ou d&apos;y
+            projeter ses athlètes, ces événements incarnent l&apos;idéal de fraternité
+            universelle auquel l&apos;académie adhère.
+          </p>
 
           <h3 className="rf-blocktitle rf-blocktitle--2">
             🎥📺 Suivez nos athlètes autour du monde avec KA TV Sport
