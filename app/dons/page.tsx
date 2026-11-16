@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Link from "next/link";
 
 export default function DonsPage() {
   useEffect(() => {
@@ -25,22 +26,22 @@ export default function DonsPage() {
         <h2>Soutenez KABSA</h2>
         <p className="lede">
           Chaque don aide KABSA à offrir aux jeunes — valides et handisportifs — les infrastructures,
-          le matériel adapté et l'encadrement qu'ils méritent. Ensemble, faisons du sport un véritable
-          levier d'inclusion.
+          le matériel adapté et l&apos;encadrement qu&apos;ils méritent. Ensemble, faisons du sport un véritable
+          levier d&apos;inclusion.
         </p>
         <div className="info-grid">
-          <div className="info-card">
+          <Link href="/dons/materiel-adapte" className="info-card info-card--link">
             <h3>Du matériel adapté</h3>
-            <p>Fauteuils de sport, équipements spécialisés et matériel d'entraînement.</p>
-          </div>
-          <div className="info-card">
+            <p>Fauteuils de sport, équipements spécialisés et matériel d&apos;entraînement.</p>
+          </Link>
+          <Link href="/dons/infrastructures-accessibles" className="info-card info-card--link">
             <h3>Des infrastructures accessibles</h3>
             <p>Terrains, salles et vestiaires ouverts et adaptés à tous.</p>
-          </div>
-          <div className="info-card">
+          </Link>
+          <Link href="/dons/encadrement-qualite" className="info-card info-card--link">
             <h3>Un encadrement de qualité</h3>
             <p>Entraîneurs diplômés, préparation physique et suivi personnalisé.</p>
-          </div>
+          </Link>
         </div>
 
         <h3 className="rf-blocktitle rf-blocktitle--2">Faire un don par virement</h3>
