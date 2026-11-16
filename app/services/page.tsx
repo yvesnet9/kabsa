@@ -30,7 +30,7 @@ export default function ServicesPage() {
           inclusives et professionnelles.
         </p>
 
-        <h3 className="rf-blocktitle">Nos services d'accompagnement</h3>
+        <h3 className="rf-blocktitle">Nos services d&apos;accompagnement</h3>
         <div className="info-grid">
           <Link href="/services/coaching-technique" className="info-card info-card--link">
             <h3>Coaching technique &amp; tactique</h3>
@@ -50,7 +50,7 @@ export default function ServicesPage() {
         <div className="info-grid">
           <Link href="/services/materiel-infrastructures-adaptes" className="info-card info-card--link">
             <h3>Matériel &amp; infrastructures adaptés</h3>
-            <p>Équipements spécialisés et lieux d'entraînement accessibles à chacun.</p>
+            <p>Équipements spécialisés et lieux d&apos;entraînement accessibles à chacun.</p>
           </Link>
           <Link href="/services/coaching-nutritionnel" className="info-card info-card--link">
             <h3>Coaching nutritionnel</h3>
@@ -62,7 +62,7 @@ export default function ServicesPage() {
           </Link>
           <Link href="/services/assurance-activites" className="info-card info-card--link">
             <h3>Assurance pendant les activités</h3>
-            <p>Les participants sont couverts durant l'ensemble des séances encadrées.</p>
+            <p>Les participants sont couverts durant l&apos;ensemble des séances encadrées.</p>
           </Link>
           <Link href="/services/fonds-de-solidarite" className="info-card info-card--link">
             <h3>Fonds de solidarité</h3>
@@ -73,8 +73,8 @@ export default function ServicesPage() {
             <p>Organisation et prise en charge des déplacements des sportifs et délégations.</p>
           </Link>
           <Link href="/services/intermediaire-visa-billet" className="info-card info-card--link">
-            <h3>Intermédiaire de visa &amp; billet d'avion</h3>
-            <p>Accompagnement dans les démarches de visa et la réservation des billets d'avion.</p>
+            <h3>Intermédiaire de visa &amp; billet d&apos;avion</h3>
+            <p>Accompagnement dans les démarches de visa et la réservation des billets d&apos;avion.</p>
           </Link>
         </div>
       </div>

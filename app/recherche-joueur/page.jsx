@@ -101,7 +101,7 @@ function RecruiterForm() {
       </button>
       {sent && (
         <p className="rf-sent">
-          Votre logiciel de messagerie s'ouvre avec la demande pré-remplie. Merci !
+          Votre logiciel de messagerie s&apos;ouvre avec la demande pré-remplie. Merci !
         </p>
       )}
     </form>
@@ -203,7 +203,7 @@ function PlayerForm() {
       </button>
       {error && (
         <p className="rf-sent rf-error">
-          Une erreur s'est produite. Réessayez, ou écrivez à contact@kabsa.be.
+          Une erreur s&apos;est produite. Réessayez, ou écrivez à contact@kabsa.be.
         </p>
       )}
     </form>
@@ -230,7 +230,7 @@ export default function RechercheJoueurPage() {
   return (
     <section className="info-block reveal" id="recherche">
       <div className="wrap">
-        <h2>Recherche d'un joueur ou d'un sportif talentueux de toutes disciplines</h2>
+        <h2>Recherche d&apos;un joueur ou d&apos;un sportif talentueux de toutes disciplines</h2>
 
         <h3 className="rf-blocktitle">Vous recherchez un joueur ?</h3>
         <p className="lede">

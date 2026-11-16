@@ -28,11 +28,11 @@ export default function HandisportPage() {
           Bienvenue dans notre espace dédié au Handisport. Chez KABSA, nous croyons fermement que le
           handicap ne doit jamais être un frein à la passion, au dépassement de soi et au plaisir du
           collectif. Que vous cherchiez à reprendre une activité physique, à découvrir une nouvelle
-          discipline ou à vibrer à travers la compétition, notre structure s'adapte à vous. Grâce à des
+          discipline ou à vibrer à travers la compétition, notre structure s&apos;adapte à vous. Grâce à des
           infrastructures accessibles, du matériel spécialisé et des encadrants diplômés, nous vous
           offrons un environnement sécurisé, inclusif et dynamique pour pratiquer votre sport
-          sereinement. Explorez nos disciplines adaptées et venez partager avec nous l'esprit d'équipe,
-          le dépassement de soi et l'énergie du sport !
+          sereinement. Explorez nos disciplines adaptées et venez partager avec nous l&apos;esprit d&apos;équipe,
+          le dépassement de soi et l&apos;énergie du sport !
         </p>
 
         <h3 className="rf-blocktitle">Nos disciplines adaptées</h3>
@@ -47,7 +47,7 @@ export default function HandisportPage() {
           </Link>
           <Link href="/handisport/natation-adaptee" className="info-card info-card--link">
             <h3>Natation adaptée</h3>
-            <p>Nage encadrée et adaptée à chaque nageur, du loisir jusqu'à la compétition.</p>
+            <p>Nage encadrée et adaptée à chaque nageur, du loisir jusqu&apos;à la compétition.</p>
           </Link>
           <Link href="/handisport/tennis-chaise" className="info-card info-card--link">
             <h3>Tennis en chaise</h3>
@@ -61,7 +61,7 @@ export default function HandisportPage() {
         </p>
         <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 6 }}>
           <Link href="/contact" className="info-cta">
-            S'inscrire / Nous contacter
+            S&apos;inscrire / Nous contacter
           </Link>
           <Link href="/dons" className="info-cta">
             Faire un don

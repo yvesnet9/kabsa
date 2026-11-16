@@ -28,14 +28,14 @@ export default function QuiSommesNousPage() {
           ciment de notre inclusion. »
         </p>
         <p className="lede">
-          Aujourd'hui en Belgique, des milliers de jeunes partagent la même passion pour le sport, la
-          même rigueur à l'entraînement et la même ambition de réussite. Pourtant, une frontière
+          Aujourd&apos;hui en Belgique, des milliers de jeunes partagent la même passion pour le sport, la
+          même rigueur à l&apos;entraînement et la même ambition de réussite. Pourtant, une frontière
           invisible persiste trop souvent entre les athlètes valides et les sportifs en situation de
-          handicap. Manque d'infrastructures adaptées, absence de structures de formation inclusives,
-          parcours professionnels cloisonnés… Autant de barrières qui freinent l'épanouissement de nos
+          handicap. Manque d&apos;infrastructures adaptées, absence de structures de formation inclusives,
+          parcours professionnels cloisonnés… Autant de barrières qui freinent l&apos;épanouissement de nos
           talents.
         </p>
-        <p className="lede">C'est pour briser ces barrières qu'est née l'ASBL KABSA.</p>
+        <p className="lede">C&apos;est pour briser ces barrières qu&apos;est née l&apos;ASBL KABSA.</p>
         <p className="lede">
           Notre vision est simple mais ambitieuse : faire de la mixité une force absolue. En
           réunissant des jeunes de 12 à 30 ans, valides et handisportifs, au sein des mêmes
@@ -47,10 +47,10 @@ export default function QuiSommesNousPage() {
         <p className="lede">
           En octobre 2026, KABSA ouvrira officiellement ses portes à Bruxelles et à travers toute la
           Belgique. Mais nous ne pourrons pas mener cette révolution sociétale seuls. Pour offrir à ces
-          jeunes les stades, les piscines et les équipements adaptés qu'ils méritent, nous avons besoin
-          de partenaires audacieux. Soutenir KABSA, ce n'est pas seulement associer votre nom à un
-          projet sportif : c'est devenir un acteur concret de l'inclusion, valoriser la diversité et
-          propulser la jeunesse belge vers l'excellence.
+          jeunes les stades, les piscines et les équipements adaptés qu&apos;ils méritent, nous avons besoin
+          de partenaires audacieux. Soutenir KABSA, ce n&apos;est pas seulement associer votre nom à un
+          projet sportif : c&apos;est devenir un acteur concret de l&apos;inclusion, valoriser la diversité et
+          propulser la jeunesse belge vers l&apos;excellence.
         </p>
         <p className="edito-punch">Ensemble, changeons les règles du jeu.</p>
         <p className="edito-sign">

@@ -79,7 +79,7 @@ function LikeButton() {
     return (
       <div className="svc like-btn liked" aria-pressed="true">
         <span className="ic">❤️</span>
-        <span className="like-text">J'aime le site<br />Clique ici</span>
+        <span className="like-text">J&apos;aime le site<br />Clique ici</span>
         {count !== null && <span className="like-count">{count}</span>}
       </div>
     );
@@ -89,7 +89,7 @@ function LikeButton() {
     <div className="like-wrap">
       <button className="svc like-btn" onClick={() => setOpen((o) => !o)}>
         <span className="ic">❤️</span>
-        <span className="like-text">J'aime le site<br />Clique ici</span>
+        <span className="like-text">J&apos;aime le site<br />Clique ici</span>
         {count !== null && <span className="like-count">{count}</span>}
       </button>
 
@@ -187,7 +187,7 @@ function ContactForm() {
       </button>
       {error && (
         <p className="rf-sent rf-error">
-          Une erreur s'est produite. Réessayez, ou écrivez à contact@kabsa.be.
+          Une erreur s&apos;est produite. Réessayez, ou écrivez à contact@kabsa.be.
         </p>
       )}
     </form>
@@ -296,7 +296,7 @@ function VideoForm() {
       </div>
       {error && (
         <p className="rf-sent rf-error">
-          Une erreur s'est produite. Réessayez, ou écrivez à contact@kabsa.be.
+          Une erreur s&apos;est produite. Réessayez, ou écrivez à contact@kabsa.be.
         </p>
       )}
     </form>
@@ -346,8 +346,8 @@ export default function KabsaHome() {
             </h1>
             <p className="lead">
               KABSA accueille tout sportif, handicapé ou valide, débutant ou ancien, pour une remise à
-              niveau et une préparation de haut niveau. Football, handisport, préparation d'équipes
-              nationales et formation : nous accompagnons chaque parcours, du loisir jusqu'à la carrière
+              niveau et une préparation de haut niveau. Football, handisport, préparation d&apos;équipes
+              nationales et formation : nous accompagnons chaque parcours, du loisir jusqu&apos;à la carrière
               professionnelle.
             </p>
             <div className="featured featured--video">
@@ -362,7 +362,7 @@ export default function KabsaHome() {
             <p>
               Vous êtes un sportif ? Envoyez-nous le lien de votre vidéo, nous la découvrirons. Pas
               besoin de la rendre publique : vous pouvez utiliser YouTube (en mode « non répertorié »),
-              Google Drive ou WeTransfer — le lien reste privé et n'est partagé qu'avec nous.
+              Google Drive ou WeTransfer — le lien reste privé et n&apos;est partagé qu&apos;avec nous.
             </p>
             <VideoForm />
           </div>
@@ -395,15 +395,15 @@ export default function KabsaHome() {
           <div className="triad">
             <div className="val">
               <h3>Discipline</h3>
-              <p>La rigueur à l'entraînement et le respect des règles, du vestiaire au terrain.</p>
+              <p>La rigueur à l&apos;entraînement et le respect des règles, du vestiaire au terrain.</p>
             </div>
             <div className="val">
               <h3>Persévérance</h3>
-              <p>L'effort qui dure : remise à niveau, préparation, retour à la performance.</p>
+              <p>L&apos;effort qui dure : remise à niveau, préparation, retour à la performance.</p>
             </div>
             <div className="val">
               <h3>Succès</h3>
-              <p>Accompagner chaque sportif du loisir jusqu'à la carrière professionnelle.</p>
+              <p>Accompagner chaque sportif du loisir jusqu&apos;à la carrière professionnelle.</p>
             </div>
           </div>
         </div>

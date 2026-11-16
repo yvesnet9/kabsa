@@ -25,18 +25,18 @@ export default function DroitsCarrierePage() {
       <div className="wrap">
         <h2>Protéger et accompagner les sportifs</h2>
         <p className="lede">
-          KABSA ne se limite pas à l'entraînement : l'académie défend les sportifs — en
+          KABSA ne se limite pas à l&apos;entraînement : l&apos;académie défend les sportifs — en
           particulier les jeunes et les athlètes handisport — contre les injustices et les
           difficultés qui peuvent briser une carrière.
         </p>
         <div className="info-grid">
           <Link href="/droits-carriere/injustice-sportive" className="info-card info-card--link">
-            <h3>Face à l'injustice sportive</h3>
-            <p>Discriminations, sélections opaques, athlètes handicapés mis à l'écart : KABSA informe les sportifs sur leurs droits et les oriente pour les faire respecter.</p>
+            <h3>Face à l&apos;injustice sportive</h3>
+            <p>Discriminations, sélections opaques, athlètes handicapés mis à l&apos;écart : KABSA informe les sportifs sur leurs droits et les oriente pour les faire respecter.</p>
           </Link>
           <Link href="/droits-carriere/gestion-carriere" className="info-card info-card--link">
             <h3>Gestion de carrière &amp; finances</h3>
-            <p>Primes, contrats, sponsors : beaucoup de talents se retrouvent en difficulté faute d'accompagnement. KABSA sensibilise à une gestion saine et à la protection de l'avenir du sportif.</p>
+            <p>Primes, contrats, sponsors : beaucoup de talents se retrouvent en difficulté faute d&apos;accompagnement. KABSA sensibilise à une gestion saine et à la protection de l&apos;avenir du sportif.</p>
           </Link>
           <Link href="/droits-carriere/entourage-confiance" className="info-card info-card--link">
             <h3>Un entourage de confiance</h3>
@@ -48,7 +48,7 @@ export default function DroitsCarrierePage() {
           </Link>
           <Link href="/droits-carriere/education-financiere" className="info-card info-card--link">
             <h3>Éducation financière</h3>
-            <p>Sensibiliser les jeunes talents à gérer primes et revenus, éviter les pièges et préparer sereinement l'avenir.</p>
+            <p>Sensibiliser les jeunes talents à gérer primes et revenus, éviter les pièges et préparer sereinement l&apos;avenir.</p>
           </Link>
           <Link href="/droits-carriere/reconversion" className="info-card info-card--link">
             <h3>Reconversion &amp; après-carrière</h3>

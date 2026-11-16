@@ -25,7 +25,7 @@ export default function FormationPage() {
       <div className="wrap">
         <h2>Formation</h2>
         <p className="lede">
-          KABSA ne forme pas seulement des sportifs : l'académie accompagne aussi les encadrants, les
+          KABSA ne forme pas seulement des sportifs : l&apos;académie accompagne aussi les encadrants, les
           clubs et les institutions pour diffuser une culture du sport inclusif et de qualité.
         </p>
         <div className="info-grid">
@@ -42,12 +42,12 @@ export default function FormationPage() {
             <p>Appuyer les institutions et fédérations partenaires dans la montée en compétence de leurs équipes.</p>
           </Link>
           <Link href="/formation/inclusion" className="info-card info-card--link">
-            <h3>Sensibilisation à l'inclusion</h3>
+            <h3>Sensibilisation à l&apos;inclusion</h3>
             <p>Des ateliers pour faire évoluer le regard sur le handicap et promouvoir la mixité dans le sport.</p>
           </Link>
           <Link href="/formation/jeunes-talents" className="info-card info-card--link">
             <h3>Accompagnement des jeunes talents</h3>
-            <p>Un parcours structuré, du repérage jusqu'à la préparation à une carrière professionnelle.</p>
+            <p>Un parcours structuré, du repérage jusqu&apos;à la préparation à une carrière professionnelle.</p>
           </Link>
         </div>
       </div>

@@ -32,11 +32,11 @@ export default function InstitutionsPage() {
         <div className="info-grid">
           <Link href="/institutions/remise-a-niveau" className="info-card info-card--link">
             <h3>Remise à niveau des sportifs</h3>
-            <p>Visa, billet d'avion, hébergement, entraînement et rapport détaillé du stage.</p>
+            <p>Visa, billet d&apos;avion, hébergement, entraînement et rapport détaillé du stage.</p>
           </Link>
           <Link href="/institutions/preparation-tournois" className="info-card info-card--link">
             <h3>Préparation de tournois</h3>
-            <p>Réception d'équipes nationales, matchs amicaux et évaluation du niveau collectif.</p>
+            <p>Réception d&apos;équipes nationales, matchs amicaux et évaluation du niveau collectif.</p>
           </Link>
           <Link href="/institutions/formation-sponsoring" className="info-card info-card--link">
             <h3>Formation &amp; sponsoring</h3>
@@ -44,7 +44,7 @@ export default function InstitutionsPage() {
           </Link>
         </div>
         <a className="info-cta" href={INSTITUTION_MAILTO}>
-          Faire une demande d'adhésion
+          Faire une demande d&apos;adhésion
         </a>
       </div>
     </section>

@@ -63,7 +63,7 @@ function ContactForm() {
       </button>
       {error && (
         <p className="rf-sent rf-error">
-          Une erreur s'est produite. Réessayez, ou écrivez à contact@kabsa.be.
+          Une erreur s&apos;est produite. Réessayez, ou écrivez à contact@kabsa.be.
         </p>
       )}
     </form>

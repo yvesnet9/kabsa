@@ -45,7 +45,7 @@ export default function Footer() {
                 <rect x="3" y="3" width="18" height="18" rx="2" />
                 <path d="M8 8h8M8 12h8M8 16h5" />
               </svg>
-              <p>N° d'entreprise : BE1038390344</p>
+              <p>N° d&apos;entreprise : BE1038390344</p>
             </div>
           </div>
           <div>
@@ -54,7 +54,7 @@ export default function Footer() {
               <li className="row"><p><Link href="/qui-sommes-nous">Qui sommes-nous</Link></p></li>
               <li className="row"><p><Link href="/services">Nos services</Link></p></li>
               <li className="row"><p><Link href="/handisport">Handisport</Link></p></li>
-              <li className="row"><p><Link href="/recherche-joueur">Recherche d'un joueur</Link></p></li>
+              <li className="row"><p><Link href="/recherche-joueur">Recherche d&apos;un joueur</Link></p></li>
               <li className="row"><p><Link href="/formation">Formation</Link></p></li>
               <li className="row"><p><Link href="/dons">Faire un don</Link></p></li>
             </ul>
@@ -79,7 +79,7 @@ export default function Footer() {
                 Fédérations, institutions et clubs : rejoignez KABSA via une convention de
                 collaboration et accédez à nos services à tarif préférentiel.
               </p>
-              <a href={INSTITUTION_MAILTO}>Faire une demande d'adhésion</a>
+              <a href={INSTITUTION_MAILTO}>Faire une demande d&apos;adhésion</a>
             </div>
           </div>
         </div>

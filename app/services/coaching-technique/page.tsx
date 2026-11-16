@@ -34,7 +34,7 @@ export default function CoachingTechniquePage() {
           <p className="lede">
             Pour franchir un cap et atteindre vos objectifs, la volonté seule ne
             suffit pas : il faut y associer la précision du geste et
-            l'intelligence de la situation. Notre programme de coaching
+            l&apos;intelligence de la situation. Notre programme de coaching
             technique &amp; tactique est conçu pour les passionnés et les
             compétiteurs qui refusent de stagner et veulent maximiser leur
             potentiel.
@@ -72,7 +72,7 @@ export default function CoachingTechniquePage() {
             <li>
               <strong>Analyse vidéo &amp; biomécanique</strong> : observation de
               vos séquences de jeu et de vos mouvements pour identifier points
-              forts et axes d'amélioration.
+              forts et axes d&apos;amélioration.
             </li>
             <li>
               <strong>Ateliers techniques ciblés</strong> : exercices isolés et
@@ -83,13 +83,13 @@ export default function CoachingTechniquePage() {
               pour tester réactivité, placement et lecture du jeu.
             </li>
             <li>
-              <strong>Débriefing stratégique</strong> : retour d'expérience
+              <strong>Débriefing stratégique</strong> : retour d&apos;expérience
               après chaque session pour mesurer les gains et ajuster la suite.
             </li>
           </ul>
 
           <h3 className="rf-blocktitle rf-blocktitle--2">
-            À qui s'adresse ce programme ?
+            À qui s&apos;adresse ce programme ?
           </h3>
           <div className="info-grid" style={{ marginTop: 14 }}>
             <div className="info-card">
@@ -154,7 +154,7 @@ export default function CoachingTechniquePage() {
 
       <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 6 }}>
         <Link href="/contact" className="info-cta">
-          S'inscrire / Nous contacter
+          S&apos;inscrire / Nous contacter
         </Link>
         <Link href="/dons" className="info-cta">
           Faire un don
