@@ -36,7 +36,7 @@ export default function HandisportPage() {
         </p>
 
         <h3 className="rf-blocktitle">Nos disciplines adaptées</h3>
-        <div className="info-grid">
+        <div className="info-grid info-grid--2">
           <Link href="/handisport/basket-fauteuil" className="info-card info-card--link">
             <h3>Basket-fauteuil</h3>
             <p>Le basket pratiqué en fauteuil roulant de sport, en équipe, dans un esprit collectif.</p>
@@ -45,13 +45,13 @@ export default function HandisportPage() {
             <h3>Para-athlétisme</h3>
             <p>Courses, sauts et lancers adaptés, en individuel ou en relais, selon les catégories.</p>
           </Link>
-          <Link href="/handisport/natation-adaptee" className="info-card info-card--link">
-            <h3>Natation adaptée</h3>
-            <p>Nage encadrée et adaptée à chaque nageur, du loisir jusqu&apos;à la compétition.</p>
-          </Link>
           <Link href="/handisport/tennis-chaise" className="info-card info-card--link">
             <h3>Tennis en chaise</h3>
             <p>Le tennis pratiqué en fauteuil roulant, en simple ou en double.</p>
+          </Link>
+          <Link href="/handisport/natation-adaptee" className="info-card info-card--link">
+            <h3>Natation adaptée</h3>
+            <p>Nage encadrée et adaptée à chaque nageur, du loisir jusqu&apos;à la compétition.</p>
           </Link>
         </div>
 

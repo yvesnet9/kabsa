@@ -143,6 +143,7 @@
 .kabsa #apropos .lede{text-align:justify}
 .kabsa #handisport .lede{text-align:justify}
 .kabsa .info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.kabsa .info-grid--2{grid-template-columns:repeat(2,1fr)}
 .kabsa .info-card{background:#fff;border:1px solid var(--grey-200);border-radius:12px;padding:18px}
 .kabsa .info-card h3{font-family:var(--display);text-transform:uppercase;letter-spacing:.04em;font-size:1rem;color:var(--sky-900);margin-bottom:6px}
 .kabsa .info-card p{color:var(--grey-500);font-size:.92rem}
